@@ -17,6 +17,9 @@
 		16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9629A42B4100FD1286 /* DashboardView.swift */; };
 		16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9829A42B9200FD1286 /* BackgroundView.swift */; };
 		16A724C629A53D7D005E9A24 /* LegacyCompendiumData.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */; };
+		16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */; };
+		16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */; };
+		16A724CC29A55E42005E9A24 /* UniversityOldstyleBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16A724CB29A55E42005E9A24 /* UniversityOldstyleBook.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		16725C9629A42B4100FD1286 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		16725C9829A42B9200FD1286 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LegacyCompendiumData.json; sourceTree = "<group>"; };
+		16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCompendiumModel.swift; sourceTree = "<group>"; };
+		16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCompendiumVIewModel.swift; sourceTree = "<group>"; };
+		16A724CB29A55E42005E9A24 /* UniversityOldstyleBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UniversityOldstyleBook.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				16725C8C29A3FE8100FD1286 /* CrimesOfGrindelwald.otf */,
+				16A724CB29A55E42005E9A24 /* UniversityOldstyleBook.ttf */,
 				16725C8A29A3FCC700FD1286 /* magicalme.ttf */,
 			);
 			path = Fonts;
@@ -107,6 +114,7 @@
 		16725C9029A40A1300FD1286 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */,
+				16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +190,7 @@
 				16A724C629A53D7D005E9A24 /* LegacyCompendiumData.json in Resources */,
 				16725C8D29A3FE8100FD1286 /* CrimesOfGrindelwald.otf in Resources */,
 				16725C8029A3DD1000FD1286 /* Assets.xcassets in Resources */,
+				16A724CC29A55E42005E9A24 /* UniversityOldstyleBook.ttf in Resources */,
 				16725C8B29A3FCC700FD1286 /* magicalme.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,8 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */,
+				16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */,
 				16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */,
 				16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */,
+				16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */,
 				16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */,
 				16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */,
 			);

@@ -19,12 +19,13 @@ struct DashboardView: View {
             
             VStack {
                 HStack {
-                    Text("Home")
-                        .font(.custom("CrimesOfGrindelwald", size: 28))
+                    Text("HOME")
+                        .font(.custom("UniversityOldstyleBook", size: 28))
                         .foregroundColor(Color("Title"))
                         .multilineTextAlignment(.center)
                         .offset(x: animationAfterSlashScreen ? 0 : -400)
                         .scaleEffect(animationAfterSlashScreen ? 1 : 5)
+                        .shadow(color:Color("border"), radius: 5)
                     
                     Spacer()
                 }
@@ -39,10 +40,15 @@ struct DashboardView: View {
                     } label: {
                         VStack {
                             Image(systemName: "wand.and.stars")
-                                .foregroundColor(Color(.gray))
+                                .foregroundColor(Color("Border"))
                                 .font(.system(size: 24, weight: .bold, design: .rounded))
                         }
                         .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 30)
+                                .stroke(Color("Border"), lineWidth: 0.5)
+                                .padding(4)
+                        )
                         .background {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 30, style: .continuous)
@@ -51,15 +57,15 @@ struct DashboardView: View {
                                     .opacity(0.5)
                                 
                                 RoundedRectangle(cornerRadius: 30, style: .continuous)
-                                    .fill(Color("Background"))
+                                    .fill(Color("Buttons"))
                                     .blur(radius: 0)
                                     .opacity(0.85)
                             }
                         }
-                        .cornerRadius(30)
-                        .shadow(color: Color(.gray).opacity(0.2), radius: 5)
+                        .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4))
+                        .cornerRadius(40)
+                        .shadow(color: Color("Title").opacity(0.2), radius: 20)
                     }
-                    .offset(x: animationAfterSlashScreen ? 0 : 2000)
                 }
                 .padding(.bottom, 100)
                 .padding(.horizontal, 20)

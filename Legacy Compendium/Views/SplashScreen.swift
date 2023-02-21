@@ -16,10 +16,26 @@ struct SplashScreen: View {
             VStack {
                 Text("Legacy Compendium")
                     .font(.custom("CrimesOfGrindelwald", size: 42))
-                    .foregroundColor(Color("Title"))
+                    .foregroundColor(Color(.black))
+                    .shadow(color:Color(.black), radius: 1)
                     .multilineTextAlignment(.center)
+                    .overlay(
+                        Text("Legacy Compendium")
+                            .font(.custom("CrimesOfGrindelwald", size: 41))
+                            .foregroundColor(Color("Border"))
+                            .multilineTextAlignment(.center)
+                            .shadow(color:Color("Border"), radius: 1)
+                    )
+                    .overlay(
+                        Text("Legacy Compendium")
+                            .font(.custom("CrimesOfGrindelwald", size: 41))
+                            .foregroundColor(Color("Title"))
+                            .multilineTextAlignment(.center)
+                            .shadow(color:Color(.black), radius: 1)
+                    )
                     .scaleEffect(isScreenAppeared ? 2 : 1)
                     .opacity(isScreenAppeared ? 0 : 1)
+                    .shadow(color:Color(.black), radius: 1)
             }
         }
         .padding()
@@ -31,11 +47,6 @@ struct SplashScreen: View {
                     isScreenAppeared = true
                 }
             }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
-//                withAnimation(.linear(duration: 2)) {
-//                    isScreenAppeared = false
-//                }
-//            }
         }
     }
 }
