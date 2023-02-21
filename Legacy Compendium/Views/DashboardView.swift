@@ -27,27 +27,42 @@ struct DashboardView: View {
                         .scaleEffect(animationAfterSlashScreen ? 1 : 5)
                     
                     Spacer()
+                }
+                
+                Spacer()
+                
+                HStack {
+                    Spacer()
                     
                     Button {
                         //TODO
                     } label: {
                         VStack {
                             Image(systemName: "wand.and.stars")
-                                .foregroundColor(Color("Title"))
+                                .foregroundColor(Color(.gray))
                                 .font(.system(size: 24, weight: .bold, design: .rounded))
-                                .shadow(color: Color(.gray), radius: 10)
                         }
-//                        .padding(5)
-//                        .background(Color("Title"))
-//                        .cornerRadius(20)
-//                        .shadow(color: Color(.gray), radius: 4)
+                        .padding()
+                        .background {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                    .fill(.ultraThinMaterial).blur(radius: 0)
+                                    .blur(radius: 0)
+                                    .opacity(0.5)
+                                
+                                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                    .fill(Color("Background"))
+                                    .blur(radius: 0)
+                                    .opacity(0.85)
+                            }
+                        }
+                        .cornerRadius(30)
+                        .shadow(color: Color(.gray).opacity(0.2), radius: 5)
                     }
                     .offset(x: animationAfterSlashScreen ? 0 : 2000)
                 }
-                
-                Spacer()
-                
-                
+                .padding(.bottom, 100)
+                .padding(.horizontal, 20)
             }
             .padding(.horizontal, 20)
             .padding(.top, 100)

@@ -16,6 +16,7 @@
 		16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9229A40A4D00FD1286 /* SplashScreen.swift */; };
 		16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9629A42B4100FD1286 /* DashboardView.swift */; };
 		16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9829A42B9200FD1286 /* BackgroundView.swift */; };
+		16A724C629A53D7D005E9A24 /* LegacyCompendiumData.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		16725C9229A40A4D00FD1286 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		16725C9629A42B4100FD1286 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		16725C9829A42B9200FD1286 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LegacyCompendiumData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +64,13 @@
 		16725C7A29A3DD0F00FD1286 /* Legacy Compendium */ = {
 			isa = PBXGroup;
 			children = (
+				16725C7D29A3DD0F00FD1286 /* ContentView.swift */,
 				16725C9129A40A2800FD1286 /* Models */,
-				16725C9029A40A1300FD1286 /* ViewModels */,
 				16725C8F29A40A0800FD1286 /* Views */,
+				16725C9029A40A1300FD1286 /* ViewModels */,
+				16725C8929A3FC8400FD1286 /* Fonts */,
 				16725C8E29A3FF1700FD1286 /* Legacy-Compendium-Info.plist */,
 				16725C7B29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift */,
-				16725C7D29A3DD0F00FD1286 /* ContentView.swift */,
-				16725C8929A3FC8400FD1286 /* Fonts */,
 				16725C7F29A3DD1000FD1286 /* Assets.xcassets */,
 				16725C8129A3DD1000FD1286 /* Preview Content */,
 			);
@@ -112,6 +114,7 @@
 		16725C9129A40A2800FD1286 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16725C8329A3DD1000FD1286 /* Preview Assets.xcassets in Resources */,
+				16A724C629A53D7D005E9A24 /* LegacyCompendiumData.json in Resources */,
 				16725C8D29A3FE8100FD1286 /* CrimesOfGrindelwald.otf in Resources */,
 				16725C8029A3DD1000FD1286 /* Assets.xcassets in Resources */,
 				16725C8B29A3FCC700FD1286 /* magicalme.ttf in Resources */,

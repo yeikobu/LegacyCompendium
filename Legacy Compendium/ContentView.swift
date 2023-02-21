@@ -22,8 +22,8 @@ struct ContentView: View {
                 DashboardView(isTransitionActive: $isTransitionActive)
             }
         }
-        .task {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                 withAnimation(.spring(response: 0.7, dampingFraction: 1)) {
                     isTransitionActive = true
                 }
