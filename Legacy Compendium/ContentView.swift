@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isAnimationShowed = false
+    @State private var isTransitionActive = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            BackgroundView()
+            
+            SplashScreen(isScreenAppeared: $isAnimationShowed)
+            
+            if isTransitionActive {
+                DashboardView(isTransitionActive: $isTransitionActive)
+            }
         }
-        .padding()
+        .task {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+                withAnimation(.spring(response: 0.7, dampingFraction: 1)) {
+                    isTransitionActive = true
+                }
+            }
+        }
     }
 }
 
