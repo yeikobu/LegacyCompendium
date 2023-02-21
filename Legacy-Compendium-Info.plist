@@ -5,6 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>CrimesOfGrindelwald.otf</string>
+		<string>magicalme.ttf</string>
+		<string>UniversityOldstyleBook.ttf</string>
 	</array>
 </dict>
 </plist>

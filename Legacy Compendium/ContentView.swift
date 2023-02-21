@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State private var isAnimationShowed = false
     @State private var isTransitionActive = false
+    @StateObject var legacyCompendiumViewModel = LegacyCompendiumViewModel()
     
     var body: some View {
         ZStack {
@@ -27,6 +28,10 @@ struct ContentView: View {
                 withAnimation(.spring(response: 0.7, dampingFraction: 1)) {
                     isTransitionActive = true
                 }
+            }
+            
+            DispatchQueue.main.async {
+                legacyCompendiumViewModel.getData()
             }
         }
     }
