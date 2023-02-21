@@ -1,0 +1,1595 @@
+{
+  "__collections__": {
+    "SpellsAndCharms": {
+      "basic-cast": {
+        "spell-name": "Basic Cast",
+        "type": "DMG",
+        "cooldown": "Instant",
+        "unlock": "Default",
+        "description": "Basic attack than can be pressed rapidly for combo strikes",
+        "upgrades": "Casts reduce cooldowns of other spells, Airborne impacts contribute to Ancient Magic meter",
+        "img": ""
+      },
+      "revelio": {
+        "spell-name": "Revelio",
+        "type": "Essential, Non-combat",
+        "cooldown": "Instant",
+        "unlock": "Main Quest - The Path to Hogwarts",
+        "description": "Press left on the d-pad to reveal interactibles.",
+        "upgrades": "Increases range.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FRevelio.avif?alt=media&token=99c92e55-222a-48e0-ad16-88d1fa5f5e62"
+      },
+      "lumos": {
+        "spell-name": "Lumos",
+        "type": "Utility, Non-combat",
+        "cooldown": "Instant",
+        "unlock": "Main Quest - The Path to Hogwarts",
+        "description": "Flashlight.",
+        "upgrades": "None",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FLumos.avif?alt=media&token=02360787-53cc-4708-ac78-df824d6ea717"
+      },
+      "protego-tupefy": {
+        "spell-name": "Protego & Stupefy",
+        "type": "Essential",
+        "cooldown": "Instant",
+        "unlock": "Main Quest - The Path to Hogwarts",
+        "description": "Press the Counter button once to block an incoming attack (Protego), hold it to activate a stunning spell (Stupefy).",
+        "upgrades": "Various buffs including increased meter gain, the ability to curse enemies, and perfect counters can break enemy shields.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FProtego.avif?alt=media&token=067bef40-d20e-4118-b06f-2cf9ae46eee5"
+      },
+      "levioso": {
+        "spell-name": "Levioso",
+        "type": "Control",
+        "cooldown": "8 seconds",
+        "unlock": "Main Quest - Defence Against the Dark Arts Class",
+        "description": "Lifts enemies and objects into the air.",
+        "upgrades": "Also lifts enemies around target into air.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FLevioso.avif?alt=media&token=f7bd1c6c-0086-4e1a-8b0e-7dc6f61c6dfe"
+      },
+      "accio": {
+        "spell-name": "Accio",
+        "type": "Force",
+        "cooldown": "8 seconds",
+        "unlock": "Main Quest - Charms Class",
+        "description": "Yanks most enemies to you, and pulls them airborne. Used in exploration to grab collectibles.",
+        "upgrades": "Also pulls enemies around target to you.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2Faccio.avif?alt=media&token=0e12d0f8-1db0-4e36-acd6-44499272e023"
+      },
+      "reparo": {
+        "spell-name": "Reparo",
+        "type": "Utility, Non-combat",
+        "cooldown": "Instant",
+        "unlock": "Assignment Side Quest - Professor Ronen’s Assignment",
+        "description": "Rebuild damaged objects. Can rebuild throwables after throwing them.",
+        "upgrades": "None",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FReparo.avif?alt=media&token=511cc300-e6d0-405e-87d3-e80ace753ecc"
+      },
+      "ancient-magic-throw": {
+        "spell-name": "Ancient Magic Throw",
+        "type": "Essential",
+        "cooldown": "Instant",
+        "unlock": "Main Quest - Welcome to Hogsmeade",
+        "description": "Throws objects mid-combat. Does high damage and can break shield charms, no matter the color.",
+        "upgrades": "Can catch and throw disarmed enemy weapons.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2Fancient%20magic%20throw.avif?alt=media&token=c6da1fa5-87cf-4e4a-b151-5f783dc0a2f5"
+      },
+      "ancient-magic": {
+        "spell-name": "Ancient Magic",
+        "type": "Essential",
+        "cooldown": "When Meter Fills",
+        "unlock": "Main Quest - Welcome to Hogsmeade",
+        "description": "Uses a stock of meter for a highly damaging attack. Breaks shield charms and often incapacitates instantly.",
+        "upgrades": "Can contribute more to Ancient Magic meter with various spell talents",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FAncient%20Magic.png?alt=media&token=6af5666b-9502-4be4-828f-1b7f18ac0984"
+      },
+      "expelliarmus": {
+        "spell-name": "Expelliarmus",
+        "type": "DMG",
+        "cooldown": "10 seconds",
+        "unlock": "Assignment Side Quest - Professor Hecat’s Assignment 2",
+        "description": "Long-range attack. Disarms most enemies and damages them.",
+        "upgrades": "Expelliarmus curses enemies.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FExpelliarmus.avif?alt=media&token=34f3e288-da7e-40fc-9f84-af8a087469e5"
+      },
+      "incendio": {
+        "spell-name": "Incendio",
+        "type": "DMG, Fire",
+        "cooldown": "8 seconds",
+        "unlock": "Assignment Side Quest - Professor Hecat’s Assignment 1",
+        "description": "Short-range flamethrower.",
+        "upgrades": "Turns Incendio into a circle AOE around player.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FIncendio.avif?alt=media&token=1116c7d9-410f-42eb-9da9-e8de4c3360a6"
+      },
+      "depulso": {
+        "spell-name": "Depulso",
+        "type": "Force",
+        "cooldown": "10 seconds",
+        "unlock": "Assignment Side Quest - Professor Sharp’s Assignment 1",
+        "description": "Throws enemies and objects. Does no damage on it's own, but enemies and objects can be thrown into surfaces or other enemies.",
+        "upgrades": "Releases additional blast in AOE around player.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDepulso.avif?alt=media&token=df1cc928-207a-4666-bb64-1d94f9ab005c"
+      },
+      "desillusionment": {
+        "spell-name": "Disillusionment",
+        "type": "Utility, Stealth",
+        "cooldown": "Instant",
+        "unlock": "Main Quest - Secrets of the Restricted Section",
+        "description": "Makes you mostly invisible, enters stealth mode.",
+        "upgrades": "Can sprint while stealthed.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDisillusionment.avif?alt=media&token=502fe4f9-2b76-48ea-b81c-ea6178459a59"
+      },
+      "evanesco": {
+        "spell-name": "Evanesco",
+        "type": "Utility, Non-combat",
+        "cooldown": "None",
+        "unlock": "Main Quest - The Room of Requirement",
+        "description": "Vanishes Room of Requirement item, refunds into Moonstone",
+        "upgrades": "None",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FEvanesco.avif?alt=media&token=7c400aab-0a09-44b0-b8d5-5ebf6b250dc6"
+      },
+      "conjurig-spell": {
+        "spell-name": "Conjuring spell",
+        "type": "Utility, Non-combat",
+        "cooldown": "None",
+        "unlock": "Main Quest - The Room of Requirement",
+        "description": "Conjures Room of Requirement Items",
+        "upgrades": "None",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FConjuring%20Spell%20.avif?alt=media&token=ab3bd653-a87f-4429-a2d5-c544d2053a14"
+      },
+      "altering-spell": {
+        "spell-name": "Altering spell",
+        "type": "Utility,",
+        "cooldown": "None",
+        "unlock": "Main Quest - The Room of Requirement",
+        "description": "Alters the form and features of Room of Requirement items",
+        "upgrades": "None",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FAltering%20Spell%20.avif?alt=media&token=a70dfa91-d2ab-4a6c-b2f3-8e455deece22"
+      },
+      "confringo": {
+        "spell-name": "Confringo",
+        "type": "DMG, Fire",
+        "cooldown": "10 Seconds",
+        "unlock": "Main Quest - In the Shadow of the Undercroft",
+        "description": "Long-range fireball. Sets enemy on fire.",
+        "upgrades": "Impacts create bolts of fire that seek out enemies.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FConfringo.avif?alt=media&token=3cf8de3c-0fd4-4eda-83ca-d0cf413e06e7"
+      },
+      "petrificus-totalus": {
+        "spell-name": "Petrificus Totalus",
+        "type": "Essential, Stealth",
+        "cooldown": "None",
+        "unlock": "Main Quest - Percival Rackham's Trial",
+        "description": "This spell petrifies the target's body during stealth. Instantly incapacitates most enemies, but stronger ones can break out after a time.",
+        "upgrades": "Becomes an AOE around target.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FPetrificus%20Totalus.avif?alt=media&token=02877aa9-c9b0-45ed-baca-76967afb2dad"
+      },
+      "diffindo": {
+        "spell-name": "Diffindo",
+        "type": "DMG",
+        "cooldown": "15 seconds",
+        "unlock": "Assignment Side Quest - Professor Sharp’s Assignment 2",
+        "description": "Longe-range attack. Deals considerable damage.",
+        "upgrades": "Slices through target to hit enemies behind them.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDiffindo.avif?alt=media&token=549101a2-8c0e-485e-b80e-6b6112b50dd3"
+      },
+      "wingardium-leviosa": {
+        "spell-name": "Wingardium Leviosa",
+        "type": "Utility, Non-combat",
+        "cooldown": "Instant",
+        "unlock": "Assignment Side Quest - Professor Garlick’s Assignment 1",
+        "description": "A spell that lifts small objects or animals in the air. While this spell does not work on humans, it can make them levitate a few feets up in the air if the spell is cast upon a target's clothes.",
+        "upgrades": "None",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FWingardium%20Leviosa.avif?alt=media&token=1d49fc69-306f-4811-b57f-242b004ccecc"
+      },
+      "alohomora": {
+        "spell-name": "Alohomora",
+        "type": "Essential, Non-combat",
+        "cooldown": "None",
+        "unlock": "Main Quest - The Caretaker’s Lunar Lament",
+        "description": "Unlocks doors. There are various levels you have to unlock by collecting Demiguise Moons.",
+        "upgrades": "None (Unlock Level upgraded by returning Demiguise Moons to Mr. Moon.)",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2Falohomora.avif?alt=media&token=d830557a-0c12-43da-8fad-82bd5dbb929a"
+      },
+      "glacius": {
+        "spell-name": "Glacius",
+        "type": "Control",
+        "cooldown": "10 seconds",
+        "unlock": "Assignment Side Quest - Madam Kogawa’s Assignment 1",
+        "description": "Freezes enemies, increases damage of subsequent attacks.",
+        "upgrades": "Creates damaging ice shards when striking frozen enemy.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FGlacius.avif?alt=media&token=d70e8a37-7087-4e89-af50-183d96aeadaf"
+      },
+      "descendo": {
+        "spell-name": "Descendo",
+        "type": "Force",
+        "cooldown": "10 seconds",
+        "unlock": "Assignment Side Quest - Professor Onai’s Assignment",
+        "description": "Slams enemies into the ground. Does more damage if they're airborne.",
+        "upgrades": "Creates shockwave around target's impact point.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDescendo.avif?alt=media&token=85c53be5-b767-4d82-ab95-5e354208ab87"
+      },
+      "beast-petting-brush": {
+        "spell-name": "Beast Petting Brush",
+        "type": "Utility, Non-combat",
+        "cooldown": "None",
+        "unlock": "Main Quest - Beasts Class",
+        "description": "For taking care of beasts.",
+        "upgrades": "None",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FBeast%20Petting%20Brush.png?alt=media&token=bb3be09f-5248-4a34-9441-8db2a19cd473"
+      },
+      "beast-feed": {
+        "spell-name": "Beast Feed",
+        "type": "Utility, Non-combat",
+        "cooldown": "None",
+        "unlock": "Main Quest - Beasts Class",
+        "description": "For taking care of beasts.",
+        "upgrades": "None",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FBeast%20Feed.png?alt=media&token=6af26eb7-bfa2-4806-9905-0b935a976cfe"
+      },
+      "nab-sack": {
+        "spell-name": "Nab-Sack",
+        "type": "Utility, Non-combat",
+        "cooldown": "None",
+        "unlock": "Main Quest - The Elf, the Nab-Sack, and the Loom",
+        "description": "Captures beasts.",
+        "upgrades": "None",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FNab-Sack.png?alt=media&token=f984bcf6-4fc7-4cbc-948c-fd3dd3ee237e"
+      },
+      "bombarda": {
+        "spell-name": "Bombarda",
+        "type": "DMG",
+        "cooldown": "15 seconds",
+        "unlock": "Assignment Side Quest - Professor Howin's Assignment",
+        "description": "Deals heavy damage and hits surrounding enemies.",
+        "upgrades": "Creates massive AOE around target.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FBombarda.png?alt=media&token=065aee23-5750-4ec2-a29a-61cc4206b155"
+      },
+      "flipendo": {
+        "spell-name": "Flipendo",
+        "type": "Force",
+        "cooldown": "5 seconds",
+        "unlock": "Assignment Side Quest - Professor Garlick’s Assignment 2",
+        "description": "Flips enemies and objects. Your fastest cooldown spell to get the enemy airborne.",
+        "upgrades": "Flipendo curses enemies.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FFlipendo.png?alt=media&token=60dcc4e4-fd2e-42a8-8ab2-213547b44ab9"
+      },
+      "arresto-momentum": {
+        "spell-name": "Arresto Momentum",
+        "type": "Control",
+        "cooldown": "15 seconds",
+        "unlock": "Assignment Side Quest - Madam Kogawa’s Assignment 2",
+        "description": "Slows objects and enemies. Sends enemies airborne.",
+        "upgrades": "Curses enemies.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FArresto%20Momentum%20.avif?alt=media&token=cc75cec2-fea8-4038-a11b-88c397b4a96a"
+      },
+      "transformation": {
+        "spell-name": "Transformation",
+        "type": "Control",
+        "cooldown": "20 seconds",
+        "unlock": "Assignment Side Quest - Professor Weasley's Assignment",
+        "description": "Transforms objects and enemies into alternate forms.",
+        "upgrades": "Transform enemies into explosive objects.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FTransformation.png?alt=media&token=976ffbcf-c337-4dfd-a051-49bad510f2c1"
+      },
+      "crucio": {
+        "spell-name": "Crucio",
+        "type": "Curse",
+        "cooldown": "20 seconds",
+        "unlock": "Companion Quest - Sebastian Sallow's In the Shadow of the Study",
+        "description": "Inflicts damage over time and curses enemies.",
+        "upgrades": "Striking cursed enemy creates cursing projectile.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FCrucio.png?alt=media&token=c289d049-0689-4b7e-a20a-7e4a9d244961"
+      },
+      "imperio": {
+        "spell-name": "Imperio",
+        "type": "Curse",
+        "cooldown": "30 seconds",
+        "unlock": "Companion Quest - Sebastian Sallow's In the Shadow of Time",
+        "description": "Charms and curses enemies.",
+        "upgrades": "Charmed enemies spread Curse through their attacks.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FImperio.png?alt=media&token=3d844b13-460a-48df-8faa-04af95b6067e"
+      },
+      "avada-kedavra": {
+        "spell-name": "Avada Kedavra",
+        "type": "Curse",
+        "cooldown": "90 seconds",
+        "unlock": "Companion Quest - Sebastian Sallow's In the Shadow of the Relic",
+        "description": "Kills enemies instantly.",
+        "upgrades": "Kills all cursed enemies.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FAvada%20Kedavra.png?alt=media&token=ff00c09d-154d-4d77-8ef5-1a613cfd0f5a"
+      }
+    },
+    "Potions": {
+      "wiggenweld-potion": {
+        "potion-name": "Wiggenweld potion",
+        "description": "This potion is used to heal injuries.",
+        "unlock": "First Potions class.",
+        "ingredients": "1x Horklump Juice \n1x Dittany Leaves",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Potions%2FWiggenweld.png?alt=media&token=eac2deed-f373-4421-9052-b17851df30cb"
+      },
+      "edurus": {
+        "potion-name": "Edurus",
+        "description": "This potion transforms whoever drinks it into a stone-like version of themselves. Presumably, this will protect the wizard who drank the potion from upcoming damage during battles.",
+        "unlock": "First Potions class.",
+        "ingredients": "1x Ashwinder Egg \n1x Mongrel Fur",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Potions%2FEdurus.png?alt=media&token=be3d4c08-7ca0-436e-8fa8-ed4904dcac5f"
+      },
+      "focus-potion": {
+        "potion-name": "Focus Potion",
+        "description": "Reduces the drinker's spell cooldown time.",
+        "unlock": "Purchase this recipe at J. Pippins Potions - 800G",
+        "ingredients": "1x Lacewing Flies \n1x Fluxweed Stem \n1x Dugbog Tongue",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Potions%2FFocus.png?alt=media&token=aff465ba-0b66-43d8-b8a5-0f7bab2da509"
+      },
+      "maxima-potion": {
+        "potion-name": "Maxima Potion",
+        "description": "Increases the drinker's spell damage for a limited time.",
+        "unlock": "Purchase this recipe at J. Pippins Potions - 800G",
+        "ingredients": "1x Leech Juice \n1x Spider Fang",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Potions%2FMaxima.png?alt=media&token=fcca1e7f-1581-4950-a9f7-f7ad892dc115"
+      },
+      "invisibility-potion": {
+        "potion-name": "Invisibility Potion",
+        "description": "This potion is used to make whoever drinks it invisible for 1 minute",
+        "unlock": "Purchase this recipe at J. Pippins Potions - 500G",
+        "ingredients": "1x Leaping Toadstool Caps \n1x Knotgrass Sprig \n1x Troll Bogeys",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Potions%2FInvisibility.png?alt=media&token=3aa193d1-29e2-4399-9d25-40bdd1012cb0"
+      },
+      "thunderbrew-potion": {
+        "potion-name": "Thunderbrew Potion",
+        "description": "Creates a storm around the drinker which will stun and damage nearby enemies.",
+        "unlock": "Purchase this recipe at J. Pippins Potions - 1200G",
+        "ingredients": "1x Leech Juice \n1x Shrivelfig Fruit \n1x Stench of the Dead",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Potions%2FThunderbrew.png?alt=media&token=49c00c7e-3adc-479b-bedc-d695ef845eff"
+      }
+    },
+    "Beasts": {
+      "puffskein": {
+        "beast-name": "Puffskein",
+        "description": "Puffskeins are round and fluffy beasts, soft enough to cuddle but tough enough to be thrown around. Puffskeins will eat almost anything, but their favorite meal is bogies. They are common household pets for wizarding families because they are easy to maintain.",
+        "find-it": "These little creatures can be found in the Forbidden Forest and the South Hogwarts Region.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FPuffskein.avif?alt=media&token=aa698702-fd72-4d1e-ab95-d0ce5ae2caf0"
+      },
+      "fwooper": {
+        "beast-name": "Fwooper",
+        "description": "A Fwooper is a colorful bird that has a song known to drive people made.",
+        "find-it": "They can be found in the South Hogwarts Region.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FFwooper.avif?alt=media&token=a6c1223a-fa2e-4f51-b63c-a3df2ca30432"
+      },
+      "jobberknoll": {
+        "beast-name": "Jobberknoll",
+        "description": "A Jobberknoll is a small speckled bluebird, which never makes any noise until the moment of its death.",
+        "find-it": "They can be found in the Forbidden Forest.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FJobberknoll.avif?alt=media&token=1a498464-8243-445a-a0e0-994a16bdfb5c"
+      },
+      "graphorns": {
+        "beast-name": "Graphorns",
+        "description": "Graphorns are large mountain-dwelling beasts that have a tough hide and two sharp horns. The tentacle-like appendages on Graphorns’ faces are used for capturing food and tending to their young. Graphorns are known for their aggressive nature; however, a witch of wizard has been known to befriend one in rare circumstances.",
+        "find-it": "They can be found out in the wild in Clagmar Coast or can be caught during the main quest San Bakar's Trial.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FGraphorns.avif?alt=media&token=6a376789-4b18-495e-aa24-a5aa2e9cc000"
+      },
+      "mooncalf": {
+        "beast-name": "Mooncalf",
+        "description": "The Mooncalf is a small, calf-like beast with enormous eyes and a shy personality. They can be observed dancing when the light of the full moon hits the ground.",
+        "find-it": "Mooncalves can be found in the Forbidden Forest and the South Hogwarts Region. Keep in mind that these beats can only be seen and caught during the night.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FMooncalf.avif?alt=media&token=79b80c40-bcfa-4e66-b9d8-603404a4ff0c"
+      },
+      "niffler": {
+        "beast-name": "Niffler",
+        "description": "The Niffler is a small, furry and mischievous beast that causes mayhem in its pursuit of shiny objects which it stores in its marsupial-like pouch.",
+        "find-it": "They can be found in Hogwarts Valley.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FNiffler.avif?alt=media&token=2005fc68-599c-4736-bf26-2b639b2871d4"
+      },
+      "giant-purple-toad": {
+        "beast-name": "Giant Purple Toad",
+        "description": "A large magical toad with warts that are useful in potion making.",
+        "find-it": "You can find a den of these toads south of the map next to Aranshire and in the Forbidden Forest.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FGiant%20Purple%20Toad.avif?alt=media&token=1f73ea36-5d2f-412b-a9ed-3a1f8a8f2760"
+      },
+      "thestral": {
+        "beast-name": "Thestral",
+        "description": "The Thestral is a haunted, winged equine beast that is only visible to those who have seen death.",
+        "find-it": "You can find a den of these toads south of the map next to Aranshire and in the Forbidden Forest.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FThestral.avif?alt=media&token=98732a82-a686-41cc-95ca-005624c82813"
+      },
+      "hippogriff": {
+        "beast-name": "Hippogriff",
+        "description": "The Hippogriff is a majestic beast with the front half of an eagle and the back half of a horse. The Hippogriff can soar great distances and commands the respect of anyone who dares to approach it.",
+        "find-it": "They can be found in the Forbidden Forest or in The High Keep main quest.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FHippogriff.avif?alt=media&token=406e02cc-9320-40c3-bbdf-3f7c81ca2d57"
+      },
+      "kneazle": {
+        "beast-name": "Kneazle",
+        "description": "Kneazles are cat-like beasts that have large ears and a plumed tail. They can be aggressive, but if they like a witch or wizard, they make exceptional pets. Kneazles are highly intelligent and have an ability to detect suspicious or distrustful people.",
+        "find-it": "They can be found in the South Sea Bog.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FKneazle.avif?alt=media&token=4c1fef21-4f79-490a-b3c4-d3e4333da265"
+      },
+      "diricawl": {
+        "beast-name": "Diricawl",
+        "description": "Diricawls are plump, fluffy birds incapable of flight. They have the unique ability to vanish and reappear to escape danger. Muggles were aware of these birds at one time and called them Dodos. However, Muggles now believe them to be extinct.",
+        "find-it": "Diricawls can be found in the South Hogwarts Region.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FDiricawl.avif?alt=media&token=3f8a921f-3633-4e4f-8b78-c08fa65bf023"
+      },
+      "phoenix": {
+        "beast-name": "Phoenix",
+        "description": "The phoenix is an elegant, rare bird that possesses powerful magic. It is reborn from its ashes after bursting into flames. The loyalty of the phoenix is hard won.",
+        "find-it": "If you want to catch your first Phoenix, then you’ll need the Phoenix Rising quest. Phoenix Rising is another beast-related quest that’ll be given to you by Deek in the Room of Requirement.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Beasts%2FPhoenix.avif?alt=media&token=77187464-d95c-4b96-8b38-8958fe63a409"
+      }
+    },
+    "Enemies": {
+      "Ailsa Travers": {
+        "name": "Ailsa Travers",
+        "description": "Considered to be particularly close friends with Victor Rookwood, Ailsa Travers is all too\ngood at her job as an Ashwinder. Travers has been one of Rookwood's most devoted followers from the beginning and helped Rookwood gain critical footing within Hogsmeade.",
+        "img": ""
+      },
+      "Death's Shadow": {
+        "name": "Death's Shadow",
+        "description": "These agents of Death attack mercilessly but will fall quickly to the power of a particular wand.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FDeath's%20Shadow.png?alt=media&token=60a3b8c1-e5cd-4ef9-8fe6-c699a8851847"
+      },
+      "Stoneback Dugbog": {
+        "name": "Stoneback Dugbog",
+        "description": "These camouflaged beasts will often blend in with the environment to avoid detection until their prey is close enough to attack. Revelio can help you find them when exploring their habitats! While recovering from their attack lunge, they are vulnerable to Force spells that will flip or force their bodies in various directions. When its mouth is wide open, Levioso can be used on its fleshy tongue to hoist it into the air.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FStoneback%20Dugbog.png?alt=media&token=7c499f2d-1d2f-4949-a2c7-af51ec40bb69"
+      },
+      "Great Spined Dugbog": {
+        "name": "Great Spined Dugbog",
+        "description": "These camouflaged beasts will often blend in with the environment to avoid detection until their prey is close enough to attack. Revelio can help you find them when exploring their habitats! While recovering from their attack lunge, they are vulnerable to Force spells that will flip or force their bodies in various directions. When its mouth is wide open, Levioso can be used on its fleshy tongue to hoist it into the air.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FGreat%20Spined%20Dugbog.png?alt=media&token=1606d155-95c6-42f5-8b01-2de98c5ce83b"
+      },
+      "Cottongrass Dugbog": {
+        "name": "Cottongrass Dugbog",
+        "description": "Cottongrass Dugbog - These camouflaged beasts will often blend in with the environment to avoid detection until their pray is close enough to attack. Revelio can help you find them when exploring their habitats! While recovering from their attack lunge, they are vulnerable to Force spells that will flip or force their bodies in various directions. When its mouth is wide open, Levioso can be used on its fleshy tongue to hoist it into the air.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FCottongrass%20Dugbog.png?alt=media&token=16472d8f-4b41-446e-91f3-b006ba71c699"
+      },
+      "Rampant Dugbog": {
+        "name": "Rampant Dugbog",
+        "description": "Unknown to the villagers who trapped it, this Dugbog had been corrupted with some type of magic.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FRampant%20Dugbog.png?alt=media&token=22d8551d-ce80-4deb-b538-28adfc17656f"
+      },
+      "Gwendolyn Zhou": {
+        "name": "Gwendolyn Zhou",
+        "description": "Blackmailed in to compliance, Gwendolyn Zhou was a reluctant Ashwinder informant within the Ministry of Magic. After being found out and fired, Gwendolyn was forced to join Rookwood to protect and provide for her family.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FGwendolyn%20Zhou.png?alt=media&token=1b57481b-4bab-45ec-a167-cd9b398ba8c2"
+      },
+      "Tempeste Thorne": {
+        "name": "Tempeste Thorne",
+        "description": "Clinical and cruel, Tempeste Thorne was trapping and carving up beasts for profit long before she left Hogwarts. One of the first to join Rookwood's criminal empire, under her gaze the poachers have risen from scramblers to a sturdy operation.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FTempeste%20Thorne.png?alt=media&token=09581fd8-e571-421e-a675-5c2fe7e24555"
+      },
+      "Iona Morgan": {
+        "name": "Iona Morgan",
+        "description": "After graduating Hogwarts, Iona Morgan was turned out by her emotionally abusive family. Looking to her old friends from school, she found a new family and home in the Poacher Pack.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FIona%20Morgan.png?alt=media&token=1c91d1e7-89f5-429e-ac18-6e81b3c4a28f"
+      },
+      "Silvanus Selwyn": {
+        "name": "Silvanus Selwyn",
+        "description": "Born to a life of privilege but not born early enough to inherit it, Silvanus Selwyn was known for his expensive and extravagant lifestyle. It was said that he would do anything to destroy the good reputation of his distinguished family. Silvanus was the one who opened doors to influential people for Rookwood.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FSilvanus%20Selwyn.png?alt=media&token=e5054146-15ac-4c6f-8c53-73e019d7cb5f"
+      },
+      "Dunstan Trinity": {
+        "name": "Dunstan Trinity",
+        "description": "A proficient pickpocket, Dunstan has always enjoyed the art of thieving. In fact, it was his light-fingeredness that led him to a friendless existence at Hogwarts.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FDunstan%20Trinity.png?alt=media&token=d166db4b-6bbd-4162-b95a-c361272b0376"
+      },
+      "Catrin Haggarty": {
+        "name": "Catrin Haggarty",
+        "description": "Estranged from her brother Pádraic, a local shopkeeper, Catrin Haggarty turned to a life of petty thievery and tricks years ago. It wasn't until recently that she abandoned small scams for a chance at a bigger fortune with the Ashwinders.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FCatrin%20Haggarty.png?alt=media&token=a185594b-ff1c-4110-ac2b-8993e5d05b47"
+      },
+      "Ashwinder Duellist": {
+        "name": "Ashwinder Duellist",
+        "description": "Among the quicker of Rookwood’s agents, these witches will surprise their opponents with back-to-back attacks. Their powerful Reductor Curse cannot be blocked by Shield Charms, but interrupting that cast with a Severing Charm will spin them to the point of losing control and hitting one of their own gang.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FAshwinder%20Duellist.png?alt=media&token=bab62d94-58f8-4260-b1bd-c00f0c7c9b3b"
+      },
+      "Ashwinder Scout": {
+        "name": "Ashwinder Scout",
+        "description": "These unscrupulous wizards have not mastered Shield Charms, so they are vulnerable to all sorts of attacks.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FAshwinder%20Scout.png?alt=media&token=67886b21-f2cb-40d1-8411-1d64017449d8"
+      },
+      "Ashwinder Assassin": {
+        "name": "Ashwinder Assassin",
+        "description": "Some of the most evil witches alive, these secretive members of Rookwood's organisation have spent years turning the peaceful dead into an army of their own Inferi.They can summon Inferi to do their bidding at a moment's notice, often surprising their foes as the animated corpses emerge. Best to prevent them from calling forth their Inferi at all, but if all else fails, fire will defeat the undead. Interrupting their Reductor Curse with a Banishing Charm will cause them to lose control of their spell cast and hit one of their own gang.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FAshwinder%20Assassin.png?alt=media&token=49a38719-9036-436b-b25a-8860e6be12c7"
+      },
+      "Ashwinder Ranger": {
+        "name": "Ashwinder Ranger",
+        "description": "These witches have mastered the Full Body-Bind Curse in order to capture and terrorise their victims. Since they prefer to avoid the heart of a battle, pulling them close with Accio is an effective way to disrupt their plans. A Stunning Spell is often enough to knock them totally unconscious, but cleverness and skill are required to successfully cast it at them.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FAshwinder%20Ranger.png?alt=media&token=77efcc13-f15a-4840-a1e7-abc5b761985a"
+      },
+      "Ashwinder Soldier": {
+        "name": "Ashwinder Soldier",
+        "description": "These wizards are skilled at deflecting simple attacks, so their Shield Charms must be broken first in order to defeat them. As they warm up their Expulso Curse, levitating them with Levioso will cause them to lose control of the spell and hit one of their own gang.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FAshwinder%20Soldier.png?alt=media&token=4dfa005f-b2ba-458d-8b1e-4a94ea7adc7b"
+      },
+      "Ashwinder Executioner": {
+        "name": "Ashwinder Executioner",
+        "description": "These wizards have mastered the ability to create localised lightning bolts to strike down their opponents. Disarming them with Expelliarmus as they prepare to cast their lightning spell will cause them to lose control of the spell with self-destructive effects. Slowing down these wizards with Arresto Momentum while they are conjuring lightning will keep that lightning striking longer, providing an opportunity to launch enemies into that lightning with shocking results.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FAshwinder%20Executioner.png?alt=media&token=f9bc6665-c6c8-4b39-9d38-9f12dc7607c6"
+      },
+      "Poacher Duellist": {
+        "name": "Poacher Duellist",
+        "description": "Among the quicker agents of Rookwood, these witches will surprise their opponents with back-to-back attacks.Their powerful Reductor Curse cannot be blocked by Shield Charms, but interrupting that cast with a Severing Charm will spin them to the point of losing control and hitting one of their own gang.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPoacher%20Duellist.png?alt=media&token=1e7382bb-de5c-4d38-9058-5eb66c0b8d7e"
+      },
+      "Poacher Tracker": {
+        "name": "Poacher Tracker",
+        "description": "These unscrupulous wizards have not mastered Shield Charms, so they are vulnerable to all sorts of attacks. Watch out for their counterattacks; they can catch you off guard by casting spells as they recover from being knocked down.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPoacher%20Tracker.png?alt=media&token=6cc9928f-262a-4ab7-9a51-3f2a5ecc1318"
+      },
+      "Poacher Animagus": {
+        "name": "Poacher Animagus",
+        "description": "Some poachers in Rookwood’s organization have become Animagi who can transform into the same animal: a ravenous wolf. When in the Animagus form, they must be weakened and forced back into human form before they can be properly defeated. The Transformation spell, however, can catch them off guard and revert them in an instant. Interrupting their Reductor Cause with a Banishing Charm will cause them to lose control of their spell cast and hit one of their own gang.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPoacher%20Animagus.png?alt=media&token=bdaa4fe3-e7a5-4e59-95c2-d8a86f942074"
+      },
+      "Poacher Executioner": {
+        "name": "Poacher Executioner",
+        "description": "These wizards have mastered the ability to conjure huge columns of fire to incinerate threats, but it is as dangerous to their own gang as it is to their opponents. Disarming them with Expelliarmus as they prepare to cast their fire spell will cause them to lose control of the spell with self-destructive effects. Slowing down these wizards with Arresto Momentum while they are conjuring fire will keep that fire raging longer, providing an opportunity to launch enemies into it with devastating results.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPoacher%20Executioner.png?alt=media&token=8e6ba38c-2f19-437f-aae5-c7c09f693268"
+      },
+      "Poacher Ranger": {
+        "name": "Poacher Ranger",
+        "description": "These witches have mastered the Levitation Spell as a means of catching the beasts that they hunt. They use it skilfully in duels and battles against anyone who tries to stop them. Since they prefer to avoid the heart of a battle, pulling them in close with Accio is an effective way to disrupt their plans. A Stunning Spell is often enough to knock them totally unconscious, but cleverness and skill are required to successfully cast it at them.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPoacher%20Ranger.png?alt=media&token=cee2f170-89e5-4211-82c8-f30d2962bf1e"
+      },
+      "Poacher Stalker": {
+        "name": "Poacher Stalker",
+        "description": "These wizards are skilled at deflecting simple attacks, so their Shield Charms must be broken first in order to defeat them. As they warm up their Blasting Curse, freezing them with Glacius will have a devastating effect.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPoacher%20Stalker.png?alt=media&token=8894fb3b-bd30-4f8c-8d68-de08b1033388"
+      },
+      "Loyalist Assassin": {
+        "name": "Loyalist Assassin",
+        "description": "These Ranrok Loyalists have manipulated corrupted ancient magic to grant themselves unnatural speed. Their magical speed enables them to escape combos unless they are slowed down with Arresto Momentum first. These Ranrok Loyalists’ blade dash attacks will penetrate common Shield Charms, so opponents must dodge out of the way and counterattack.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FLoyalist%20Assassin.png?alt=media&token=1ec9e530-c7fd-494a-8000-338b83ce0f86"
+      },
+      "Loyalist Commander": {
+        "name": "Loyalist Commander",
+        "description": "These goblins wield hammers with impressive skill, often attacking in rapid succession. While leaping, they are particularly vulnerable to being slammed with Descendo.They also use ancient magic blasts that smash their targets from afar.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FLoyalist%20Commander.png?alt=media&token=19abe65f-b52d-4f33-92b2-ef6d7339b9b3"
+      },
+      "Loyalist Sentinel": {
+        "name": "Loyalist Sentinel",
+        "description": "Masters of both offensive and defensive magic, these Ranrok Loyalists can go toe-to-toe with the most powerful witches and wizards. These Ranrok Loyalists can use corrupted ancient magic to increase the strength of all nearby goblins. While they are building up magic to imbue into their companions, Bombarda can disrupt and unleash it in a devastating eruption.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FLoyalist%20Sentinel.png?alt=media&token=93bfb466-4978-4adc-9fd2-3f9cb2f70883"
+      },
+      "Loyalist Warrior": {
+        "name": "Loyalist Warrior",
+        "description": "Though heavy goblin weaponry is quite dangerous, Expelliarmus will make quick work of anything they are holding in their hands, leaving them with only their weakest options.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FLoyalist%20Warrior.png?alt=media&token=6cb5dcf4-3dc4-4e56-aeb5-f2be06d96060"
+      },
+      "Loyalist Ranger": {
+        "name": "Loyalist Ranger",
+        "description": "These Ranrok Loyalists try to keep as far away from their targets as possible and use their crossbows to launch bolts imbued with Ancient Magic. While they are preparing to fire, their bolts can be snatched away and launched back with Ancient Magic Throw for a devastating attack.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FLoyalist%20Ranger.png?alt=media&token=8b264bb7-cb1f-4fd7-8bf2-245038af0f0f"
+      },
+      "Inferius": {
+        "name": "Inferius",
+        "description": "Though invulnerable to most types of damage, Inferi cannot abide warmth and light and are therefore susceptible to fire.After an Inferius has been burned, other damaging attacks will have full effect, providing a few more options to destroy these abominations. A burning Inferius's impending attack provides the perfect opportunity to capitalise on the explosive power of Bombarda.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FInferius.png?alt=media&token=8aa72a85-fc10-49a7-89a6-8ccb6d7c2263"
+      },
+      "Pergit": {
+        "name": "Pergit",
+        "description": "Pergit is a goblin rebel who fights under Ranrok's banner. He is notorious for his callousness towards everyone except those he truly fears or admires.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPergit.png?alt=media&token=ff8dba5e-1dd8-41df-917d-5cacf48cc197"
+      },
+      "Belgruff the Bludgeoner": {
+        "name": "Belgruff the Bludgeoner",
+        "description": "Now known for his militant approach to goblin rights, Belgruff the Bludgeoner was once a peaceful member of the goblin rights movement. It is said that the taste of power he got being around Ranrok convinced him to change his ways.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FBelgruff%20the%20Bludgeoner.png?alt=media&token=2e04e201-6b6d-4fc6-8340-78a853a4a3e7"
+      },
+      "Grodbik": {
+        "name": "Grodbik",
+        "description": "A young outspoken goblin, Grodbik rose through the ranks quickly and was a trusted guard of Ranrok's mines.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FGrodbik.png?alt=media&token=462cbcd4-53ec-4289-b321-61b334fb7a8c"
+      },
+      "Ogbert The Odd": {
+        "name": "Ogbert The Odd",
+        "description": "Ogbert the Odd joined Ranrok's Loyalists after a run-in with a security dragon at Gringotts. Some wonder if he provoked the dragon whilst others bemoan the cruelty of keeping dragons chained up under a bank.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FOgbert%20The%20Odd.png?alt=media&token=f28a72fb-5bdc-4687-b0b4-2912a9b23b07"
+      },
+      "Bardolph Beaumont's Corpse": {
+        "name": "Bardolph Beaumont's Corpse",
+        "description": "The reanimated corpse that once was Bardolph Beaumont, brother to Upper Hogsfield's Claire Beaumont. Bardolph had gone missing after allegedly connecting with Rookwood's lot, breaking the hearts of the Beaumont family.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FBardolph%20Beaumont's%20Corpse.png?alt=media&token=c3787620-26a0-42e8-91ef-ecec9dc1b726"
+      },
+      "Lord of the Manor": {
+        "name": "Lord of the Manor",
+        "description": "An Inferius who was rich in life, though now the only indication of wealth is his clothing.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FLord%20of%20the%20Manor.png?alt=media&token=200404ff-2310-4b35-b21e-28e3e11848e6"
+      },
+      "The Absconder": {
+        "name": "The Absconder",
+        "description": "This beast is an aberration, as it is not native to this region. In its short time here, however, this Acromantula possibly mothered a number of other Acromantulas in the area.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThe%20Absconder.png?alt=media&token=318d126c-556f-4949-8056-b81f52edd190"
+      },
+      "The Grim": {
+        "name": "The Grim",
+        "description": "Thought to be an omen of death upon the villagers of Netherwyck, this black wolf was simply a wolf who had been enchanted with some kind of magic. It shared its den with a great white wolf and their kin.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThe%20Grim.png?alt=media&token=5696ea2b-0a50-44c9-86b0-51fe70a7250b"
+      },
+      "The White Wolf": {
+        "name": "The White Wolf",
+        "description": "A ferocious beast with striking white fur.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThe%20White%20Wolf.png?alt=media&token=343c96a0-af8f-453c-a057-a32a4b337b33"
+      },
+      "Acromantula": {
+        "name": "Acromantula",
+        "description": "Though not technically a spider, this beast appears and behaves like other magical arachnids. As it is incredibly aggressive, and its powerful attacks will break Shield Charms, targets should dodge away and strike quickly between attacks. Patience and perseverance just might lead to victory. As it rears up, ripping it downward will catch it off guard.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FAcromantula.png?alt=media&token=54f0e5e4-0f93-4bdb-8bc6-47c7c7607d63"
+      },
+      "Venomous Scurriour": {
+        "name": "Venomous Scurriour",
+        "description": "When these spiders begin to burrow, Flipendo will rip them out of the ground, dealing massive damage. Its venomous attacks will poison the target, dealing damage over time, but Wiggenweld Potion will stop the poison from dealing further damage, allowing you to heal.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FVenomous%20Scurriour.png?alt=media&token=46ec326c-ec4f-4131-a9b0-22b4c8e78b1a"
+      },
+      "Venomous Ambusher": {
+        "name": "Venomous Ambusher",
+        "description": "These spiders try to keep as far away as possible and shoot webs to incapacitate their prey. While airborne, their unprotected bellies are exposed, making them vulnerable to follow-up damage.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FVenomous%20Ambusher.png?alt=media&token=be8f0e11-7b32-44ae-84a9-30aa0605b4ed"
+      },
+      "Venomous Shooter": {
+        "name": "Venomous Shooter",
+        "description": "These spiders prefer to attack from a distance, spitting acidic venom. Striking it with a fire spell as it prepares to attack with acidic venom will ignite the spider. Its venomous attacks will poison the target, dealing damage over time, but Wiggenweld Potion will stop the poison from dealing further damage, allowing you to heal.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FVenomous%20Shooter.png?alt=media&token=04f2e1dc-d427-4b86-9333-696e8a321352"
+      },
+      "Venomous Matriarch": {
+        "name": "Venomous Matriarch",
+        "description": "This monstrosity rears up as it is about to strike its target with a powerful bite that breaks through Shield Charms. The most obvious defence is to dodge out of the way.\nAs it rears up, ripping it downward with Descendo will catch it off guard.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FVenomous%20Matriarch.png?alt=media&token=0a4ac50d-5d01-4e1b-a976-d07982abadf8"
+      },
+      "Venomous Hatchling": {
+        "name": "Venomous Hatchling",
+        "description": "These deal light damage, but that can add up quickly when a swarm of them attack relentlessly. These are easily defeated by almost any attack and will even die when they strike a simple Shield Charm. Its venomous attacks will poison the target, dealing damage over time, but Wiggenweld Potion will stop the poison from dealing further damage, allowing you to heal.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FVenomous%20Hatchling.png?alt=media&token=ad00933e-a260-4b3d-8680-38bad8cb7e10"
+      },
+      "Thornback Scurriour": {
+        "name": "Thornback Scurriour",
+        "description": "All types of magic spiders are quite vulnerable to fire, especially at low health. Fire attacks will the spider while it is low on health, causing it to skitter about frantically before it dies. If it takes further damage before it dies, it will explode, hitting nearby targets. When these spiders begin to burrow, Filipendo will rip them out of the ground, dealing massive damage.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThornback%20Scurriour.png?alt=media&token=620e75d8-f244-4ce2-a42d-eb7c825bf2d9"
+      },
+      "Thornback Hatchling": {
+        "name": "Thornback Hatchling",
+        "description": "These deal light damage, but that can add up quickly when a swarm of them attack relentlessly. These are easily defeated by almost any attack and will even die when they strike a simple Shield Charm.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThornback%20Hatchling.png?alt=media&token=f6f5d35f-82f3-4c33-a144-a164b625d83b"
+      },
+      "Thornback Ambusher": {
+        "name": "Thornback Ambusher",
+        "description": "These spiders try to keep as far away as possible and shoot webs to incapacitate their prey. While they are airborne, their unprotected bellies are exposed, making them vulnerable to follow-up damage.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThornback%20Ambusher.png?alt=media&token=42e90bd4-8b36-4ba0-ada2-b419efe1b4e0"
+      },
+      "Thornback Shooter": {
+        "name": "Thornback Shooter",
+        "description": "These spiders prefer to attack from a distance, spitting acidic venom. Striking it with a fire spell as it prepares to attack with acidic venom will ignite the spider.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThornback%20Shooter.png?alt=media&token=fda0eca6-651e-4ba0-a2e4-cb2012520042"
+      },
+      "Thornback Matriarch": {
+        "name": "Thornback Matriarch",
+        "description": "This monstrosity rears up as it is about to strike its target with a powerful bite that breaks through Shield Charms. The most obvious defence is to dodge out of the way. As it rears up, ripping it downward with Descendo will catch it off guard.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThornback%20Matriarch.png?alt=media&token=ba0267a2-46ca-4386-955c-64e7deb1c3b3"
+      },
+      "Pensieve Guardian": {
+        "name": "Pensieve Guardian",
+        "description": "The ultimate test for those seeking the deepest secrets of Ancient Magic, these sentries can only be defeated through the same magic that powers them. As they summon Ancient Magic into a powerful orb attack, the orb can be exploded to neutralise and repurpose that magic for your own benefit.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPensieve%20Guardian.png?alt=media&token=a4e24ebe-3eb1-4fcd-8095-dac30ea62cb7"
+      },
+      "Pensieve Sentry": {
+        "name": "Pensieve Sentry",
+        "description": "Created to protect the secrets of Ancient Magic, these animated statues strike hard and fast but are vulnerable to a variety of magic. Disarming them is a useful technique, but the Ancient Magic that animates them will also form a new weapon to keep them fighting.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPensieve%20Sentry.png?alt=media&token=f2d533a7-b671-423d-b61c-4f9d420a2c02"
+      },
+      "Pensieve Sentinel": {
+        "name": "Pensieve Sentinel",
+        "description": "Ancient Magic ensures that their weapon will always re-form in their hands after being thrown or disarmed, granting them the ability to attack from afar indefinitely.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPensieve%20Sentinel.png?alt=media&token=9142e6f9-086c-49b6-8e5e-e23deee469ee"
+      },
+      "Pensieve Protector": {
+        "name": "Pensieve Protector",
+        "description": "Use Expelliarmus to disarm these Sentinels as they are more vulnerable once their weapons leave their hands. Hitting a Pensieve Protector with a powerful attack after it has been disarmed will drop it to its knee, making it momentarily vulnerable to further attacks before it regains the strength to summon its weapon.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FPensieve%20Protector.png?alt=media&token=997f251b-3e47-44a2-b53f-f841ab45eb29"
+      },
+      "Armoured Troll": {
+        "name": "Armoured Troll",
+        "description": "The troll’s forehand-backhand club swing pattern attacks will break through common Shield Charms. Dodging is the safest defence. Distance will not protect against an angry troll, as it will tear up chunks of earth and throw them at its targets.After the troll slams its club on the ground with both hands, flipping it upwards with Filipendo will have greater leverage than usual, sending the club into the troll’s face for a powerful blow. Hitting a troll with its own boulder will catch it off guard and make it more vulnerable to follow-up attacks.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FArmoured%20Troll.png?alt=media&token=c262463b-9dda-4ba3-84a4-41b3d91962e6"
+      },
+      "Fighter Troll": {
+        "name": "Fighter Troll",
+        "description": "Watch out for the Fighter Troll's forehand-backhand club swing pattern, as both attacks will break right through common Shield Charms. Dodging is the safest defence from such attacks.Distance will not keep one safe from an angry troll, as they will ferociously charge at their targets.After the troll slams its club on the ground, flipping it upward will have greater leverage than usual, sending the club into the troll's face for a powerful blow. Hitting a troll with its own boulder will catch it off guard and make it more vulnerable to follow-up attacks.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FFighter%20Troll.png?alt=media&token=7038b61c-c56a-493b-bcb3-8407cf8a02a0"
+      },
+      "Fortified Troll": {
+        "name": "Fortified Troll",
+        "description": "The troll's forehand-backhand club swing pattern attacks will break through common Shield Charms. Dodging is the safest defence. Distance will not protect against an angry troll, as it will tear up chunks of earth and throw them at its targets.\nAfter the troll slams its club on the ground with both hands, flipping it upward with Flipendo will have greater leverage than usual, sending the club into the troll's face for a powerful blow. Hitting a troll with its own boulder will catch it off guard and make it more vulnerable to follow-up attacks.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FFortified%20Troll.png?alt=media&token=27f15e16-95bf-44e6-8fbe-1cbcc5992148"
+      },
+      "Death's Troll": {
+        "name": "Death's Troll",
+        "description": "These monstrosities are conjured by Death himself. Only the most powerful magic can overcome them.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FDeath's%20Troll.png?alt=media&token=d5985d75-71e3-4e60-8b4b-f81b7f50c03a"
+      },
+      "Forest Troll": {
+        "name": "Forest Troll",
+        "description": "The troll's forehand-backhand club swing pattern attacks will break through common Shield Charms. Dodging is the safest defence. Distance will not protect against an angry troll, as it will tear up chunks of earth and throw them at its targets.After the troll slams its club on the ground with both hands, flipping it upward with Flipendo will have greater leverage than usual, sending the club into the troll's face for a powerful blow. Hitting a troll with its own boulder will catch it off guard and make it more vulnerable to follow-up attacks.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FForest%20Troll.png?alt=media&token=0c6a11c0-ea94-413e-9b02-3600fbfce4ca"
+      },
+      "Mountain Troll": {
+        "name": "Mountain Troll",
+        "description": "The troll's forehand-backhand club swing pattern attacks will break through common Shield Charms. Dodging is the safest defence. Distance will not protect against an angry troll, as it will tear up chunks of earth and throw them at its targets.After the troll slams its club on the ground with both hands, flipping it upward with Flipendo will have greater leverage than usual, sending the club into the troll's face for a powerful blow. Hitting a troll with its own boulder will catch it off guard and make it more vulnerable to follow-up attacks.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FMountain%20Troll.png?alt=media&token=32d6c24d-5b25-4357-94aa-47cd3074acd0"
+      },
+      "River Troll": {
+        "name": "River Troll",
+        "description": "Distance will not protect against an angry troll, as it will tear up chunks of earth and throw them at its targets.After the troll slams its club on the ground with both hands, flipping it upward with Flipendo will have greater leverage than usual, sending the club into the troll's face for a powerful blow. Hitting a troll with its own boulder will catch it off guard and make it more vulnerable to follow-up attacks.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FRiver%20Troll.png?alt=media&token=cbdecd7d-2f7e-4ab7-a5a5-17246370c847"
+      },
+      "Dark Mongrel": {
+        "name": "Dark Mongrel",
+        "description": "Keeping as much distance as possible from Dark Mongrels will make dealing with them relatively easy. If it gets close, its attack can be repelled with Shield Charms and then a counterattack with any mastered spell. As it begins to charge in from afar, blasting it backwards with Depulso is particularly effective.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FDark%20Mongrel.png?alt=media&token=541b1c81-bfff-4d6f-981a-75dd1672f8c4"
+      },
+      "Death's Dark Mongrel": {
+        "name": "Death's Dark Mongrel",
+        "description": "These murderous beasts obey only Death, leading souls to him at every opportunity.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FDeath's%20Dark%20Mongrel.png?alt=media&token=45dc9f52-a7b2-4f3f-9ea3-40c1d119e9d9"
+      },
+      "The Riparian Troll": {
+        "name": "The Riparian Troll",
+        "description": "Misunderstanding a common wizard gesture, this troll rampaged through a small hamlet east of Hogwarts.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThe%20Riparian%20Troll.png?alt=media&token=f7efbaee-f3e0-4ab9-86e9-f265d4c4cd1e"
+      },
+      "The Insatiable Spider": {
+        "name": "The Insatiable Spider",
+        "description": "A horrific, giant arachnid living underneath Mary Portman's cottage in Aranshire.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FThe%20Insatiable%20Spider.png?alt=media&token=26f891ff-0b5e-42c2-bfbc-1f43e15b941e"
+      },
+      "Quagmire Troll": {
+        "name": "Quagmire Troll",
+        "description": "An especially mean forest troll who seems to enjoy wandering boggy areas.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FQuagmire%20Troll.png?alt=media&token=563c8007-461e-4598-a00a-09abc8fc097b"
+      },
+      "Alexandra's Troll": {
+        "name": "Alexandra's Troll",
+        "description": "With a train tunnel as its cave, this troll is tempting fate. If not killed by those wishing to loot its horde of items, it is likely to be the victim of a passing steam engine.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Enemies%2FAlexandra's%20Troll.png?alt=media&token=6c7c71f1-6bdb-4ec0-a5e3-4758da19ada8"
+      }
+    },
+    "WandHandles": {
+      "Shell - Metallic": {
+        "handle-name": "Shell - Metallic",
+        "description": "A metal handle with stylish groves and marbled shell at its base.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FShell%20-%20Metallic.webp?alt=media&token=5293af1f-d633-49a0-86c7-7df8c48fffc8"
+      },
+      "Swirl - Lilac": {
+        "handle-name": "Swirl - Lilac",
+        "description": "An unconventional, twisted handle design in marbled lilac.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FSwirl%20-%20Lilac%20.webp?alt=media&token=05e2bb88-ce0a-467e-b391-f5a586d93fd5"
+      },
+      "Botanical - Bronze Leaf": {
+        "handle-name": "Botanical - Bronze Leaf",
+        "description": "A carved, floral handle design in light wood with bronze, vined leaves.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FBotanical%20-%20Bronze%20Leaf.webp?alt=media&token=5bf7d3dc-3d69-4ac0-9136-caeefd19428a"
+      },
+      "Regal - Black": {
+        "handle-name": "Regal - Black",
+        "description": "An enchanting, regal handle in shades of black and alabaster.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FRegal%20-%20Black.webp?alt=media&token=c16632a0-f241-4582-85aa-81f69a27ab55"
+      },
+      "Corkscrew - Light and Dark Brown": {
+        "handle-name": "Corkscrew - Light and Dark Brown",
+        "description": "A powerful, corkscrewed handle design in alternating light and dark brown.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FCorkscrew%20-%20Light%20and%20Dark%20Brown.webp?alt=media&token=67feae90-6d2f-4103-bc16-6cdd815d1a69"
+      },
+      "Basketweave - Red": {
+        "handle-name": "Basketweave - Red",
+        "description": "A stone handle with a good weight to it, carved from striking red marble.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FBasketweave%20-%20Red.webp?alt=media&token=5123e61b-7eb5-4cfa-854d-6cea156eda24"
+      },
+      "Avian - Grey": {
+        "handle-name": "Avian - Grey",
+        "description": "A Marvelous, twisting handle design in dark grey, topped with a silver owl.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FAvian%20-%20Grey.webp?alt=media&token=23b9cfda-094d-4019-92af-388594e70000"
+      },
+      "Avian - Brown": {
+        "handle-name": "Avian - Brown",
+        "description": "A marvelous, twisting handle design in light grey, topped with a gold owl.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FAvian%20-%20Brown.webp?alt=media&token=a1364c0b-7f0d-4655-ad32-2768e4bfef75"
+      },
+      "Celestial - Dark Grey": {
+        "handle-name": "Celestial - Dark Grey",
+        "description": "A fantastical, bold handle design in starry white marble and dark grey, topped with a model planet.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FCelestial%20-%20Dark%20Grey.webp?alt=media&token=06ee4c68-a71c-4c31-8622-7b09866b2d77"
+      },
+      "Imperial - Grey and Silver": {
+        "handle-name": "Imperial - Grey and Silver",
+        "description": "A stately, strong handle design in black marble and silver.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FImperial%20-%20Grey%20and%20Silver.webp?alt=media&token=1c82af3e-fc69-45a1-aece-5f4b983f1742"
+      },
+      "Swirl - Dark Grey": {
+        "handle-name": "Swirl - Dark Grey",
+        "description": "An unconventional, twisted handle design in grey and silver.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FSwirl%20-%20Dark%20Grey.webp?alt=media&token=a2db7423-54fc-41b1-8fc8-fea80353ce4b"
+      },
+      "Regal - Blue": {
+        "handle-name": "Regal - Blue",
+        "description": "An enchanting, regal handle in shades of gold and aquamarine.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FRegal%20-%20Blue.webp?alt=media&token=6ed5e06c-c5f9-4fa1-a49b-02486a60b4c2"
+      },
+      "Column - Dark Brown": {
+        "handle-name": "Column - Dark Brown",
+        "description": "A robust wooden handle design with natural, swirling woodgrain.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FColumn%20-%20Dark%20Brown.webp?alt=media&token=5b92e686-f693-4047-947f-1a2c5e6775aa"
+      },
+      "Orbicular - Violet": {
+        "handle-name": "Orbicular - Violet",
+        "description": "An impressive, ringed handle design in violet.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FOrbicular%20-%20Violet.webp?alt=media&token=5c0f95f8-cded-404b-acf4-3d9985b2fdc5"
+      },
+      "Checkerboard - Blue": {
+        "handle-name": "Checkerboard - Blue",
+        "description": "A kingly, checkerboard handle design in light and dark blue, topped with a bronze crown.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FCheckerboard%20-%20Blue.webp?alt=media&token=0a52335b-c1cf-4616-b8bd-1e401aae76b0"
+      },
+      "Arrow - Black": {
+        "handle-name": "Arrow - Black",
+        "description": "A black and golden handle with a commanding point at its base.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/WandHandles%2FArrow%20-%20Black.webp?alt=media&token=86567b47-7baf-4428-bc70-17edec1eb901"
+      }
+    },
+    "Brooms": {
+      "Aeromancer Broom": {
+        "broom-name": "Aeromancer Broom",
+        "location": "Vendor",
+        "cost": "Cost: 3000",
+        "description": "A smooth ride that cuts through the air like a potioneer slicing ingredients.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FAeromancer%20-%20Logo.png?alt=media&token=5de8368e-98ea-4b30-b3c2-ec3087056358",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FAeromancer.png?alt=media&token=af83cf1b-8977-4158-a137-b6af3d7f1c97"
+        }
+      },
+      "Bright Spark Broom": {
+        "broom-name": "Bright Spark Broom",
+        "location": "Challenges",
+        "cost": "You'll have to complete the first three Pop Balloon Challenges under the Exploration tab. After that, you'll have to pop 15 more sets of Balloons (for a total of 32 sets) to finally get ahold of the most elusive ride in the game",
+        "description": "Fly among the stars with a broom that celebrates them.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FBright%20Spark%20-%20Logo.png?alt=media&token=ee780afa-95eb-4d26-9c6d-6169878730d8",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FBright%20Spark.png?alt=media&token=a9fef90f-d719-492e-bb9c-259d862ccf83"
+        }
+      },
+      "Ember Dash Broom": {
+        "broom-name": "Ember Dash Broom",
+        "location": "Vendor",
+        "cost": "Cost: 600",
+        "description": "The perfect broom for those with a fiery temperament.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FEmber%20Dash%20-%20Logo.png?alt=media&token=185d882b-7d3d-4b57-99f9-f0d74ddaa728",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FEmber%20Dash.png?alt=media&token=bf8ee4fc-c542-4f08-9214-0f9b4319173d"
+        }
+      },
+      "Family Antique Broom": {
+        "broom-name": "Family Antique Broom",
+        "location": "Vendor",
+        "cost": "Cost: 2500",
+        "description": "This heirloom broom has been passed down for generations.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FFamily%20Antique%20-%20Logo.png?alt=media&token=221a7bb5-1f1c-407d-b094-fcbc48ab624b",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FFamily%20Antique.png?alt=media&token=8d3ff9ca-a764-4095-86d2-fee5a879b60c"
+        }
+      },
+      "Hogwarts House Broom": {
+        "broom-name": "Hogwarts House Broom",
+        "location": "Vendor",
+        "cost": "Cost: 600",
+        "description": "A broom enchanted to celebrate your particular Hogwarts house pride",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FHogwarts%20House%20-%20Logo.png?alt=media&token=f55c093c-2caa-44fe-8d4b-2d2fd5f391ce",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FHogwarts%20House%20.png?alt=media&token=c9c1958c-763b-4553-86f9-9e8098bd646b"
+        }
+      },
+      "Lickety Swift Broom": {
+        "broom-name": "Lickety Swift Broom",
+        "location": "Challenges",
+        "cost": "Completing the Pop Balloons Challenge is the only way to obtain title",
+        "description": "Designed with aerodynamics in mind, this broom will make travel a breeze",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FLickety%20Swift%20-%20Logo.png?alt=media&token=41d873ca-9332-4660-ac78-2e6b2752372a",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FLickety%20Swift.png?alt=media&token=84d7b59a-2973-4982-a51e-3e3da3a776b0"
+        }
+      },
+      "Moon Trimmer Broom": {
+        "broom-name": "Moon Trimmer Broom",
+        "location": "Vendor",
+        "cost": "Cost: 600",
+        "description": "Finely crafted from ash, this broom is built for stability.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FMoon%20Trimmer%20-%20Logo.png?alt=media&token=9666a71f-b985-42b2-ab4e-207b19b35c83",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FMoon%20Trimmer.png?alt=media&token=3601ed2c-4dea-4f7e-ad20-3557942cf405"
+        }
+      },
+      "Night Dancer Broom": {
+        "broom-name": "Night Dancer Broom",
+        "location": "Challenges",
+        "cost": "Night Dancer Broom is a reward for when you complete the challenge 'Pop 2 sets of Balloons'",
+        "description": "A nimble broom with an impressive style",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FNight%20Dancer%20-%20Logo.png?alt=media&token=87bb2e19-fca8-4359-af9e-36e26a7938f0",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FNight%20Dancer.png?alt=media&token=44c5530b-d313-468c-99eb-e1f6d2b2a21f"
+        }
+      },
+      "Silver Arrow Broom": {
+        "broom-name": "Silver Arrow Broom",
+        "location": "Vendor",
+        "cost": "Cost: 5000",
+        "description": "Designed by the famous broom-maker Leonard Jewkes, this broom is perfect for handling the competition.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FSilver%20Arrow%20-%20Logo.png?alt=media&token=d1fa439d-0551-436d-80f2-afff2aadbbb6",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FSilver%20Arrow.png?alt=media&token=a47bb284-ca21-4897-84c0-c064618e56ac"
+        }
+      },
+      "Sky Scythe Broom": {
+        "broom-name": "Sky Scythe Broom",
+        "location": "Vendor",
+        "cost": "Cost: 5000",
+        "description": "An agile broom for the flyer who wants to look impressive when demonstrating their myriand skills.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FSky%20Scythe%20-%20Logo.png?alt=media&token=25f8282a-e69a-40a7-a76e-3a20e248f6d9",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FSky%20Scythe.png?alt=media&token=429da56c-af18-4d75-99eb-be131ed591b5"
+        }
+      },
+      "Wild Fire Broom": {
+        "broom-name": "Wild Fire Broom",
+        "location": "Challenges",
+        "cost": "Completing the Pop Balloons Challenge is the only way to obtain title.",
+        "description": "A broom that captures an untamed nature with a little spark.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FWild%20Fire%20-%20Logo.png?alt=media&token=3d141b55-dc65-4812-a372-5eaf7d075958",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FWild%20Fire.png?alt=media&token=3c6e35e2-56f4-43f3-a547-6d6c0283ae27"
+        }
+      },
+      "Wind Wisp Broom": {
+        "broom-name": "Wind Wisp Broom",
+        "location": "Vendor",
+        "cost": "Cost: 600",
+        "description": "A stylysh broom with a light touch - quite literally.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FWind%20Wisp%20-%20Logo.png?alt=media&token=61b398f6-5ba9-455d-9936-5d792ea5c65c",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FWind%20Wisp.png?alt=media&token=7fcd7929-2f22-49cb-be03-2aca32a69212"
+        }
+      },
+      "Yew Weaver Broom": {
+        "broom-name": "Yew Weaver Broom",
+        "location": "Vendor",
+        "cost": "Cost: 600",
+        "description": "A comfortable and speedy broom with a unique woven design.",
+        "img": {
+          "broom-logo": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FYew%20Weaver%20-%20Logo.png?alt=media&token=c1b27461-e03c-4b8d-8c9a-c2c6f324a991",
+          "broom-img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FYew%20Weaver.png?alt=media&token=ed23db1b-bfaa-496e-a90e-20fa5d92fb2b"
+        }
+      }
+    },
+    "Companions": {
+      "Natsai Onai": {
+        "name": "Natsai Onai",
+        "house": "Gryffindor",
+        "description": "Natsai Onai was an African witch who attended Hogwarts School of Witchcraft and Wizardry in the 19th century and was sorted into Gryffindor house. Her mother was a professor of Divination.",
+        "biography": "As an only child, she grew up in Matabeleland, Africa, with a tribe, wandering the Matobo Hills with her father who was a giraffe Animagus, and watching her mother use divination to help protect their tribe from less-than-friendly neighbours. Her father was killed protecting her by local bandits when she was nine years old. She and her mother later moved to Uganda where she attended Uagadou. During such time, she learned to be an Animagus, learning to transform into a gazelle. Just before her fourth year, she transferred to Hogwarts when her mother took up a role as professor of Divination. She had to learn how to use a wand at Hogwarts, as hardly anyone at Uagadou used one, and Natsai still found wandless magic to be more instinctive and convenient. \n\nDuring the 1890–1891 school year, she choose to take Ancient Runes as an elective class, although in fact her mother had elected it for her. \n\nOn 2 September 1890, when the new fifth-year student arrived to Charms class, she invited them to sit beside her.",
+        "magical-abilities-and-skills": {
+          "transfiguration": "Transfiguration: Natsai became an Animagus at a young age, and was able to assume the form of a gazelle spontaneously. She could also perform the Boggart-Banishing Spell on a Boggart by transforming it into a cat.",
+          "charms": "Charms: Natsai was able to perform the Summoning Charm quite effortlessly.",
+          "dueling": "Natsai was highly talented in duelling and was capable in taking multiple opponents such as her fellow students in the Crossed Wands Dueling Club as well as the subordinates of Victor Rookwood and Theophilus Harlow.",
+          "wandless-magic": "Natsai was able to perform wandless magic during her years at Uagadou."
+        },
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Companions%2FNatsai_Onai.webp?alt=media&token=3db51bba-de28-4854-a5ce-d74a697209ad"
+      },
+      "Sebastian Sallow": {
+        "name": "Sebastian Sallow",
+        "house": "Slytherin",
+        "description": "Sebastian Sallow was a Scottish wizard and a Slytherin student at Hogwarts School of Witchcraft and Wizardry during the late 19th century. Born to two professors at the school who died when he was young, he and his sister, Anne, were raised by their uncle Solomon Sallow, an ex-Auror. When Anne was cursed by Victor Rookwood, she developed a seemingly incurable illness. He tried everything from Nurse Blainey to St Mungo's to no avail, and eventually became convinced that the Dark Arts was the last hope for her. \n\nFrom an early age, he had a mastery of the Unforgivable Curses, and considered other curses such as Confringo to be among his favourites. His quest to unravel the secrets of Dark Magic, justified by finding his sister's cure, eventually culminated in the murder of his uncle, possibly resulting in Sebastian's expulsion from Hogwarts and trial at the Ministry of Magic.",
+        "biography": "Sebastian was born in 1874 or 1875 alongside a twin sister, Anne. They were raised by two professors who ingrained a thirst for knowledge into them, but also a sense of optimism and open-mindedness, which Sebastian would later hope to emulate. Their parents died when they were young after a lamp in their cellar poisoned them with an undetectable toxin.They were taken in by their uncle Solomon Sallow who lived in a home in Feldcroft. \n\nWhen Sebastian and Anne's parents died, they were taken care of by their uncle, Solomon Sallow. Heading into their fourth year at Hogwarts, their house was raided by Ranrok and his followers, causing Anne to be harmed and cursed. The curse on Anne resulted in a severe and debilitating illness that left her in pain, which resulted in her being unable to return to Hogwarts.",
+        "magical-abilities-and-skills": {
+          "dark arts": "Dark Arts: Sebastian's earliest known awareness of the Dark Arts was when he was a child and learned that his uncle Solomon had cast an Unforgivable Curse during his time as an Auror. By the age of fifteen, he was capable of casting all three Unforgivable Curses himself, even though they required extraordinary willpower and a real desire to commit evil in order to cast. Sebastian's range of spells were notably offensive, favouring spells such as the Blasting Curse, and often jumping to the Unforgivable Curses by mere instinct. Even as a young wizard, he was addicted to dark spell books such as Slytherin's Spellbook, and enthralled by darker tomes such as Magick Moste Evile. Sebastian justified his interest in the Dark Arts by claiming it was to find a cure for his sister Anne; however, not only did Anne not wish to be cured in this way, but Sebastian also seemed to genuinely enjoy the Dark Arts regardless, finding it 'incredible' that he was able to possess Inferi in the catacombs of Feldcroft.",
+          "dueling": "Duelling: The champion of the Crossed Wands Dueling Club and one of the most skilful duellists in Hogwarts, Sebastian was recognised by his fellow students as an accomplished and fearsome combatant.He was capable of personally duelling his uncle Solomon, an accomplished Auror[9] as well as countless battle-hardened goblins.",
+          "charisma and manipulation": "Sebastian was a highly charismatic and confident individual, which not only impressed his fellow students, but allowed him to sway and manipulate his closest friends as well. He was capable of convincing Ominis Gaunt to open Slytherin's Scriptorium, something that initially Ominis was heavily reluctant to do, by appealing to Ominis' desire to learn the truth about his missing aunt. When challenged on his use of the Dark Arts, he repeatedly promised both Ominis and his friend that whatever mission he was doing would be his last venture and then he would stop, before simply continuing to push the boundary further. Solomon Sallow was the only individual that Sebastian was unable to sway, which irritated him greatly.",
+          "love": "Despite his many faults, Sebastian had an enormous devotion to his twin sister, Anne Sallow, to the point that he would willingly sacrifice his own code of morality to attempt to save her. For two years, he gave his full attention to restoring Anne's health, refusing to accept his uncle's claims that she could not be saved."
+        },
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Companions%2FSebastian_Sallow.webp?alt=media&token=1cef34e6-1ba4-43af-9b3c-027f99768491"
+      },
+      "Ominis Gaunt": {
+        "name": "Ominis Gaunt",
+        "house": "Slytherin",
+        "description": "Ominis Gaunt was a pure-blood wizard and a member of the House of Gaunt. He was a Slytherin student at Hogwarts School of Witchcraft and Wizardry from 1885 into the 1890s. Despite being born into a family of dark wizards, he developed a deep distrust towards the Dark Arts, and often found himself in conflicts with his friend Sebastian Sallow over how they should be used.",
+        "biography": "He was a descendant of Salazar Slytherin, born into the pure-blood House of Gaunt to a Mr and Mrs Gaunt, two dark wizards. He was born blind, and no spell was able to reverse it. After this, he took to using his wand, which was 'almost sentient', to navigate his way around. \n\nHis upbringing resulted in trauma that made him pessimistic, distrusting of people, and sarcastic. He disagreed with his family's use of the Dark Arts, which aligned him with his favourite aunt, Noctua Gaunt, who herself wished to change the family's traditions and uncover more about Salazar Slytherin's legacy. Ominis was dismayed to find out that she had died in her attempt to navigate Slytherin's Scriptorium. \n\nWhen he was a child, he refused to perform the Cruciatus Curse, which his older siblings and parents often performed on Muggles 'for sport'. This resulted in his own family using the curse on him, creating a division between him and his family that never healed. When told to cast the curse again, he relented to avoid further anguish to himself, and found it difficult to forgive himself ever since.",
+        "magical-abilities-and-skills": {
+          "dark arts": "Dark Arts: Ominis was once forced into casting the Cruciatus Curse by his family. However unlike his family, he grew to detest the Dark Arts and opposed their practise.",
+          "parseltongue": "Parseltongue: Ominis was a Parselmouth, meaning he could magically talk to snakes, an ability which resided in his family tree.",
+          "defence against the dark arts": "Defence Against the Dark Arts: Despite being blind, Ominis was still capable of defending himself against the Dark Arts, managing to beat off waves of Inferi in the catacombs of Feldcroft. It is unknown exactly how he managed this, but as his wand was described to be 'sentient', his skill may have been linked to that.",
+          "love": "Love: Though certainly not one of Ominis's most obvious qualities, he held a great amount of deep, brotherly care for his close friend, Sebastian Sallow, as well as fear for the dark path that he was going down. Even though he understood Sebastian to be manipulating him, he still felt a duty to try to stop his descent into darkness as the only person that he trusted. Furthermore, after the traumatic experiences of his childhood, he made a genuine and radical attempt to distance himself from his family and their culture of the Dark Arts."
+        },
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Companions%2FOminis_Gaunt_HL.webp?alt=media&token=b6f6db6e-0335-4b25-b0eb-9e132be55c94"
+      },
+      "Poppy Sweeting": {
+        "name": "Poppy Sweeting",
+        "house": "Hufflepuff",
+        "description": "Poppy Sweeting was a witch who attended Hogwarts School of Witchcraft and Wizardry during the late 19th century.",
+        "biography": "Her parents were poachers and grew up in poacher camps. At some point, she became estranged from her parents and lived with her grandmother who she lived with when not at school. \n\nShe attended Hogwarts and was was sorted into Hufflepuff house. By the 1890–1891 school year, she was a fifth-year and attended classes such as Potions with other fifth-years such as Amit Thakkar, Garreth Weasley, Samantha Dale, and the new fifth-year.",
+        "magical-abilities-and-skills": {
+          "magical-beasts": "Poppy had a kind heart and loved all manner of magical beasts. She had extensive knowledge of creatures and was averse to poachers and their associates."
+        },
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Companions%2FPoppy_Sweeting.webp?alt=media&token=f60820a7-eb91-40c2-be35-e6ba2e41329a"
+      }
+    },
+    "Professors": {
+      "Eleazar Fig": {
+        "name": "Eleazar Fig",
+        "description": "A wizard who teaches Magic Theory at Hogwarts. An essential character throughout your journey as he investigates the mystery of Ranrok's rebellion.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FEleazar_Fig.webp?alt=media&token=9af1ad7d-8928-475f-be00-f88c97f3f193"
+      },
+      "Matlida Weasley": {
+        "name": "Matlida Weasley",
+        "description": "A witch who teaches Transfiguration at Hogwarts and eventually becomes the Deputy Headmistress. She will eventually lead you to the Room of Requirement, a crucial aspect of the game.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FMatilda_Weasley.webp?alt=media&token=6287e1c1-58b3-423b-aa53-e9d13b1c1580"
+      },
+      "Phineas Nigellus Black": {
+        "name": "Phineas Nigellus Black",
+        "description": "The Headmaster at Hogwarts. An unpopular figure among his peers due to his disinterest in the position, even canceling Quidditch for the entire school year.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FPhineas_Black.webp?alt=media&token=2b783693-a5f4-4ba7-bc6d-d428062001d0"
+      },
+      "Aesop Sharp": {
+        "name": "Aesop Sharp",
+        "description": "A Potions Master at Hogwarts. A stern and straightforward professor, Sharp became known for his challenging classes and lack of patience with students who didn't want to learn. However, he received immense satisfaction for students that go the extra mile.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FAesop_Sharp.webp?alt=media&token=21cd03b7-f93c-4ae0-8183-cd8f7103d2d0"
+      },
+      "Dinah Hecat": {
+        "name": "Dinah Hecat",
+        "description": "A witch who taught Defence Against the Dark Arts. An authoritative and likable professor, her classes were demanding as her teaching methods were hands-on.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FDinah_Hecat.webp?alt=media&token=ed6a0464-f17d-4b80-ab98-5a75cf63ff39"
+      },
+      "Mirabel Garlick": {
+        "name": "Mirabel Garlick",
+        "description": "The Herbology Professor at Hogwarts. A kind, thoughtful, and caring professor who has an affinity for magical plants.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FMirabel_Garlick.webp?alt=media&token=5ee6903a-c60f-4e7e-a264-bc0c1e3f7118"
+      },
+      "Abraham Ronen": {
+        "name": "Abraham Ronen",
+        "description": "A Charms Master Professor at Hogwarts. An easygoing and enthusiastic professor, he created the Summoning Court to allow students to practice the Summoning Charm. He considers his relationships with students and activities to be equally as important as class itself.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FAbraham_Ronen.webp?alt=media&token=81a81c0a-d028-4af7-8a6e-01541d855c2a"
+      },
+      "Bai Howin": {
+        "name": "Bai Howin",
+        "description": "Teaches Beasts Class at Hogwarts. During her class, you'll encounter a few tamed Beasts that you can interact with.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FBai_Howin.webp?alt=media&token=4df4f49e-c92c-4194-8e96-7471428a1769"
+      },
+      "Chiyo Kogawa": {
+        "name": "Chiyo Kogawa",
+        "description": "Teaches Broom Flight Class. A strict teacher who follows the rules to a tee due to the nature of the class, this is where you'll learn how to fly for the first time.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FChiyo_Kogawa.webp?alt=media&token=df03cd35-7c93-4e41-880e-b2abd1e09386"
+      },
+      "Mudiwa Onai": {
+        "name": "Mudiwa Onai",
+        "description": "The mother of one of your companions, Natsai Onai, Mudiwa teaches Divination at Hogwarts.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FNatsai_Onai.webp?alt=media&token=00476a98-ecac-42e0-8514-2580301fa7f6"
+      },
+      "Gladwin Moon": {
+        "name": "Gladwin Moon",
+        "description": "A caretaker at Hogwarts. He will eventually teach you Alohamora, a spell that allows you to unlock locks.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FGladwin_Moon.webp?alt=media&token=0eb50144-f5a7-4c66-bb81-77cba765c687"
+      }
+    },
+    "Challenges": {
+      "Combat": {
+        "Defeat Dark Wizards": [
+          {
+            "Tiers": 1,
+            "Requirements": "Defeat 10 Dark Wizards",
+            "Rewards": "Gear Appearance - Dragonhide Protector's Cloak"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Defeat 20 Dark Wizards",
+            "Rewards": "Gear Appearance - Protector's Ensemble"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Defeat 40 Dark Wizards",
+            "Rewards": "Gear Trait Recipe - Protego Shielding I"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Defeat 70 Dark Wizards",
+            "Rewards": "Gear Trait Recipe - Protego Shielding II"
+          },
+          {
+            "Tiers": 5,
+            "Requirements": "Defeat 100 Dark Wizards",
+            "Rewards": "Great Trait Recipe - Protego Shielding III"
+          },
+          {
+            "Tiers": 5,
+            "Requirements": "Defeat 100 Dark Wizards",
+            "Rewards": "Great Trait Recipe - Protego Shielding III"
+          }
+        ],
+        "Defeat Dugbogs": [
+          {
+            "Tiers": 1,
+            "Requirements": "Defeat 5 Dugbogs",
+            "Rewards": "Great Trait Recipe - Amphibial Protection I"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Defeat 10 Dugbogs",
+            "Rewards": "Great Trait Recipe - Amphibial Protection II"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Defeat 20 Dugbogs",
+            "Rewards": "Great Trait Recipe - Amphibial Protection III"
+          }
+        ],
+        "Defeat Goblins": [
+          {
+            "Tiers": 1,
+            "Requirements": "Defeat 30 Goblins",
+            "Rewards": "Great Trait Recipe - Goblin Silver Resistance I"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Defeat 60 Goblins",
+            "Rewards": "Great Trait Recipe - Goblin Silver Resistance II"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Defeat 100 Goblins",
+            "Rewards": "Great Trait Recipe - Goblin Silver Resistance III"
+          }
+        ],
+        "Defeat Inferi": [
+          {
+            "Tiers": 1,
+            "Requirements": "Defeat 10 Inferi",
+            "Rewards": "Great Trait Recipe - Necromantic Protection I"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Defeat 20 Inferi",
+            "Rewards": "Great Trait Recipe - Necromantic Protection II"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Defeat 36 Inferi",
+            "Rewards": "Great Trait Recipe - Necromantic Protection III"
+          }
+        ],
+        "Defeat Infamous Foe": [
+          {
+            "Tiers": 1,
+            "Requirements": "Defeat 3 Infamous Foes",
+            "Rewards": "Gear Appearance - Avenging Wolf Mask"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Defeat 6 Infamous Foes",
+            "Rewards": "Gear Appearance - Avenging Owl Mask"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Defeat 12 Infamous Foes",
+            "Rewards": "Gear Appearance - Avenging Raven Mask"
+          }
+        ],
+        "Defeat Spiders": [
+          {
+            "Tiers": 1,
+            "Requirements": "Defeat 10 Spiders",
+            "Rewards": "Gear Appearance - Spider Slayor Armour"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Defeat 20 Spiders",
+            "Rewards": "Gear Appearance - Spider Slayer Helmet"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Defeat 40 Spiders",
+            "Rewards": "Great Trait Recipe - Anti-Venom I"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Defeat 70 Spiders",
+            "Rewards": "Great Trait Recipe - Anti-Venom II"
+          },
+          {
+            "Tiers": 5,
+            "Requirements": "Defeat 100 Spiders",
+            "Rewards": "Great Trait Recipe - Anti Venom III"
+          }
+        ],
+        "Defeat Trolls": [
+          {
+            "Tiers": 1,
+            "Requirements": "Defeat 5 Trolls",
+            "Rewards": "Great Trait Recipe - Cushioning I"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Defeat 10 Trolls",
+            "Rewards": "Great Trait Recipe - Cushioning II"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Defeat 15 Trolls",
+            "Rewards": "Great Trait Recipe - Cushioning III"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Defeat 70 Spiders",
+            "Rewards": "Great Trait Recipe - Anti-Venom II"
+          },
+          {
+            "Tiers": 5,
+            "Requirements": "Defeat 100 Spiders",
+            "Rewards": "Great Trait Recipe - Anti Venom III"
+          }
+        ],
+        "Defeat Mongrels": [
+          {
+            "Tiers": 1,
+            "Requirements": "Defeat 10 Mongrels",
+            "Rewards": "Great Trait Recipe - Lupus Protection I"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Defeat 20 Mongrels",
+            "Rewards": "Great Trait Recipe - Lupus Protection II"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Defeat 30 Mongrels",
+            "Rewards": "Great Trait Recipe - Lupus Protection III"
+          }
+        ],
+        "Complete Duelling Feats": [
+          {
+            "Tiers": 1,
+            "Requirements": "Complete 5 Duelling Feats",
+            "Rewards": "Gear Appearance - Officer's Uniform"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Complete 10 Duelling Feats",
+            "Rewards": "Gear Appearance - Officer's Hat"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Complete 20 Duelling Feats",
+            "Rewards": "Gear Appearance - Halloween Pumpkin Mask"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Complete 32 Duelling Feats",
+            "Rewards": "Gear Appearance - Autumn Festival Coat"
+          },
+          {
+            "Tiers": 5,
+            "Requirements": "Complete 42 Duelling Feats",
+            "Rewards": "Gear Appearance - Demiguise Mask"
+          }
+        ]
+      },
+      "Quests": {
+        "Complete Assignments": [
+          {
+            "Tiers": 1,
+            "Requirements": "Complete 2 Assignments",
+            "Rewards": "Gear Appearance - Top of the Class Scarf"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Complete 4 Assignments",
+            "Rewards": "Gear Appearance - Top of the Class Ensemble"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Complete 6 Assignments",
+            "Rewards": "Gear Appearance - Top of the Class Cloak"
+          }
+        ],
+        "Complete Main Quests": [
+          {
+            "Tiers": 1,
+            "Requirements": "Complete 2 Main Story Quests",
+            "Rewards": "Gear Appearance - Legendary Gloves"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Complete 4 Main Story Quests",
+            "Rewards": "Gear Appearance - Legendary Cape"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Complete 6 Main Story Quests",
+            "Rewards": "Gear Appearance - Legendary Armoured Attire"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Complete 8 Main Story Quests",
+            "Rewards": "Gear Appearance - Legendary Mask"
+          },
+          {
+            "Tiers": 5,
+            "Requirements": "Complete 14 Main Story Quests",
+            "Rewards": "Gear Appearance - Stone Necklace"
+          }
+        ],
+        "Complete Side/Relationship Quests": [
+          {
+            "Tiers": 1,
+            "Requirements": "Complete 3 Side\/Relationship Quests",
+            "Rewards": "Gear Appearance - Booking Half-Rim Spectacles"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Complete 6 Side\/Relationship Quests",
+            "Rewards": "Gear Appearance - Lucky Leprechaun Gloves"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Complete 10 Side\/Relationship Quests",
+            "Rewards": "Gear Appearance - Lucky Leprechaun Hat"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Complete 18 Side\/Relationship Quests",
+            "Rewards": "Gear Appearance - Lucky Leprechaun Ensemble"
+          },
+          {
+            "Tiers": 5,
+            "Requirements": "Complete 32 Side\/Relationship Quests",
+            "Rewards": "Gear Appearance - Lucky Leprechaun Overcoat"
+          }
+        ]
+      },
+      "Exploration": {
+        "Collect Ancient Magic Trees": [
+          {
+            "Tiers": 1,
+            "Requirements": "Collect All Traces From 2 Ancient Magic Hotspots",
+            "Rewards": "Ancient Magic Power - Additional capacity added to your Ancient Magic Meter"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Collect All Traces From 6 Ancient Magic Hotspots",
+            "Rewards": "Ancient Power Magic - Additional capacity added to your Ancient Magic Meter"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Collect All Traces From 12 Ancient Magic Hotspots",
+            "Rewards": "Ancient Power Magic - Additional capacity added to your Ancient Magic Meter"
+          }
+        ],
+        "Pop Balloons": [
+          {
+            "Tiers": 1,
+            "Requirements": "Pop 2 Sets of Ballons While on Your Broom",
+            "Rewards": "Broom Appearance - Night Dancer Broom"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Pop 5 Sets of Balloons While on Your Broom",
+            "Rewards": "Broom Appearance - Lickety Swift Broom"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Pop 10 Sets of Balloons While on Your Broom",
+            "Rewards": "Broom Appearance - Wild Fire Broom"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Pop 15 Sets of Balloons While on Your Broom",
+            "Rewards": "Broom Appearance - Bright Spark Broom"
+          }
+        ],
+        "Landing Platforms": [
+          {
+            "Tiers": 1,
+            "Requirements": "Complete 2 Landing Platforms",
+            "Rewards": "Gear Appearance - Quidditch Captain's Uniform"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Complete 4 Landing Platforms",
+            "Rewards": "Gear Appearance - Quidditch Captain's Helmet"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Complete 6 Landing Platforms",
+            "Rewards": "Gear Appearance - Quidditch Captain's Gloves"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Complete 8Landing Platforms",
+            "Rewards": "Gear Appearance - Quidditch Captain's Cape"
+          }
+        ],
+        "Complete Merlin Trials": [
+          {
+            "Tiers": 1,
+            "Requirements": "Solve 2 Merlin Trials",
+            "Rewards": "Inventory Expansion - Increased Storage for Gear"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Solve 6 Merlin Trials",
+            "Rewards": "Increased Storage for Gear"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Solve 10 Merlin Trials",
+            "Rewards": "Increased Storage for Gear"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Solve 14 Merlin Trials",
+            "Rewards": "Increased Storage for Gear"
+          },
+          {
+            "Tiers": 5,
+            "Requirements": "Solve 20 Merlin Trials",
+            "Rewards": "Increased Storage for Gear"
+          }
+        ],
+        "Find Astronomy Tables": [
+          {
+            "Tiers": 1,
+            "Requirements": "View Constellations from 5 Unique Astronomy Tables",
+            "Rewards": "Starry-Eyed Seer's Scard"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "View Constellations from 5 Unique Astronomy Tables",
+            "Rewards": "Starry-Eyed Seer's Ensemble"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "View Constellations from 5 Unique Astronomy Tables",
+            "Rewards": "Starry-Eyed Seer's Cape"
+          }
+        ],
+        "Solve Hogwarts Secrets": [
+          {
+            "Tiers": 1,
+            "Requirements": "Solve 1 Hogwarts Secret",
+            "Rewards": "Gear Appearance - Secret Solver's Bathing Costume"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Solve 1Hogwarts Secret",
+            "Rewards": "Gear Appearance - Tailored Tailcoat"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Solve 1 Hogwarts Secret",
+            "Rewards": "Gear Appearance - Fashionable Dress Robes"
+          }
+        ]
+      },
+      "Field Guide Pages": {
+        "Collect Field Guide Pages in Hogsmeade": [
+          {
+            "Tiers": 1,
+            "Requirements": "Collect 2 Field Guide Pages in Hogsmeade",
+            "Rewards": "Gear Appearance - Zonko's Chief Prankster Spectacles"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Collect 8 Field Guide Pages in Hogsmeade",
+            "Rewards": "Gear Appearance - Zonko's Chief Prankster Hat"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Collect 15 Field Guide Pages in Hogsmeade",
+            "Rewards": "Gear Appearance - Zonko's Chief Prankster Coat"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Collect 25 Field Guide Pages in Hogsmeade",
+            "Rewards": "Gear Appearance - Zonko's Chief Prankster Ensemble"
+          }
+        ],
+        "Collect Field Guide Pages in Hogwart": [
+          {
+            "Tiers": 1,
+            "Requirements": "Collect 2 Field Guide Pages in Hogwarts",
+            "Rewards": "Gear Appearance - Hogwarts Regalia Spectacles"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Collect 2 Field Guide Pages in Hogwarts",
+            "Rewards": "Gear Appearance - Hogwarts Regalia Gloves"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Collect 2 Field Guide Pages in Hogwarts",
+            "Rewards": "Gear Appearance - Hogwarts Regalia Hat"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Collect 2 Field Guide Pages in Hogwarts",
+            "Rewards": "Gear Appearance - Hogwarts Regalia Ensemble"
+          },
+          {
+            "Tiers": 5,
+            "Requirements": "Collect 2 Field Guide Pages in Hogwarts",
+            "Rewards": "Gear Appearance - Hogwarts Regalia Robe"
+          }
+        ],
+        "Collect Field Guide Pages in the Highlands": [
+          {
+            "Tiers": 1,
+            "Requirements": "Collect 2 Field Guide Pages in the Highlands",
+            "Rewards": "Gear Appearance - Highland Explorer Cap"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Collect 4 Field Guide Pages in the Highlands",
+            "Rewards": "Gear Appearance - Highland Explorer Garb"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Collect 8 Field Guide Pages in the Highlands",
+            "Rewards": "Gear Appearance - Highland Explorer Cloak"
+          },
+          {
+            "Tiers": 4,
+            "Requirements": "Collect 16 Field Guide Pages in the Highlands",
+            "Rewards": "Gear Appearance - Highland Explorer Gloves"
+          }
+        ]
+      },
+      "Room of Requirement": {
+        "Breed Unique Beasts": [
+          {
+            "Tiers": 1,
+            "Requirements": "Breed 10 Unique Beasts",
+            "Rewards": "Gear Appearance - Legendary Masquerade Mask"
+          }
+        ],
+        "Rescue Beasts": [
+          {
+            "Tiers": 1,
+            "Requirements": "Rescue 10 Beasts",
+            "Rewards": "Conjuration Spellcraft - Billywig Hive Spellcraft"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Rescue 20 Beasts",
+            "Rewards": "Conjuration Spellcraft - Magic Chime Spellcraft"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Rescue 30 Beasts",
+            "Rewards": "Conjuration Spellcraft - Phoenix Statue Spellcraft"
+          }
+        ],
+        "Upgrade Your Gear": [
+          {
+            "Tiers": 1,
+            "Requirements": "Upgrade Your Gear 5 Times",
+            "Rewards": "Grear Trait Recipe - Ancient Magic I"
+          },
+          {
+            "Tiers": 2,
+            "Requirements": "Upgrade Your Gear 10 Times",
+            "Rewards": "Gear Trait Recipe - Ancient Magic II"
+          },
+          {
+            "Tiers": 3,
+            "Requirements": "Upgrade Your Gear 15 Times",
+            "Rewards": "Gear Trait Recipe - Ancient Magic III"
+          }
+        ]
+      }
+    }
+  }
+}
