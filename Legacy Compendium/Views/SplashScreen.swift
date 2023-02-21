@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct SplashScreen: View {
-    @State private var isScreenAppeared = false
+    
+    @Binding var isScreenAppeared: Bool
+    
     var body: some View {
         VStack {
             VStack {
@@ -40,6 +42,6 @@ struct SplashScreen: View {
 
 struct SplashScreen_Previews: PreviewProvider {
     static var previews: some View {
-        SplashScreen()
+        SplashScreen(isScreenAppeared: .constant(false))
     }
 }

@@ -14,7 +14,8 @@
 		16725C8B29A3FCC700FD1286 /* magicalme.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16725C8A29A3FCC700FD1286 /* magicalme.ttf */; };
 		16725C8D29A3FE8100FD1286 /* CrimesOfGrindelwald.otf in Resources */ = {isa = PBXBuildFile; fileRef = 16725C8C29A3FE8100FD1286 /* CrimesOfGrindelwald.otf */; };
 		16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9229A40A4D00FD1286 /* SplashScreen.swift */; };
-		16725C9529A40D6A00FD1286 /* HarryPotterTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9429A40D6A00FD1286 /* HarryPotterTransition.swift */; };
+		16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9629A42B4100FD1286 /* DashboardView.swift */; };
+		16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9829A42B9200FD1286 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		16725C8C29A3FE8100FD1286 /* CrimesOfGrindelwald.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CrimesOfGrindelwald.otf; sourceTree = "<group>"; };
 		16725C8E29A3FF1700FD1286 /* Legacy-Compendium-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Legacy-Compendium-Info.plist"; sourceTree = SOURCE_ROOT; };
 		16725C9229A40A4D00FD1286 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
-		16725C9429A40D6A00FD1286 /* HarryPotterTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterTransition.swift; sourceTree = "<group>"; };
+		16725C9629A42B4100FD1286 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		16725C9829A42B9200FD1286 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				16725C9229A40A4D00FD1286 /* SplashScreen.swift */,
-				16725C9429A40D6A00FD1286 /* HarryPotterTransition.swift */,
+				16725C9629A42B4100FD1286 /* DashboardView.swift */,
+				16725C9829A42B9200FD1286 /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,8 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */,
 				16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */,
-				16725C9529A40D6A00FD1286 /* HarryPotterTransition.swift in Sources */,
+				16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */,
 				16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */,
 				16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */,
 			);
@@ -341,7 +345,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -377,7 +381,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

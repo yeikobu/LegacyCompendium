@@ -9,16 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var isAnimationShowd = false
+    @State private var isAnimationShowed = false
+    @State private var isTransitionActive = false
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .fill(Color("Background"))
-                .ignoresSafeArea()
+            BackgroundView()
             
+            SplashScreen(isScreenAppeared: $isAnimationShowed)
             
-            SplashScreen()
+            if isTransitionActive {
+                DashboardView(isTransitionActive: $isTransitionActive)
+            }
+        }
+        .task {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+                withAnimation(.spring(response: 0.7, dampingFraction: 1)) {
+                    isTransitionActive = true
+                }
+            }
         }
     }
 }
