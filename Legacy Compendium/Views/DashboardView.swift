@@ -15,6 +15,7 @@ struct DashboardView: View {
     @State private var menuFontSize: CGFloat = 22
     @State private var offsetTransition: CGFloat = 400
     @State private var animationAfterSplashScreen = false
+    @State private var isOptionTapped = false
     
     var body: some View {
         ZStack {
@@ -26,7 +27,7 @@ struct DashboardView: View {
                             if legacyCompendiumViewModel.selectedOption == option {
                                 SelectedOptionView(animation: animation)
                                     .padding(.top, 10)
-                                    .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 800)
+                                    .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 2000)
                                     .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                             }
                             
@@ -103,7 +104,7 @@ struct DashboardView: View {
                                 }
                                 .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4))
                                 .cornerRadius(40)
-                                .shadow(color: Color("Title").opacity(0.2), radius: 20)
+                                .shadow(color: legacyCompendiumViewModel.isShowMenuButtonTapped ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: legacyCompendiumViewModel.isShowMenuButtonTapped ? 10 : 20)
                             }
                             .offset(x: animationAfterSplashScreen ? 0 : 4000)
                         }
