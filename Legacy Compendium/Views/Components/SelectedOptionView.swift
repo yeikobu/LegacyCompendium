@@ -22,6 +22,11 @@ struct SelectedOptionView: View {
                 .fill(Color("Background"))
                 .blur(radius: 0)
                 .opacity(0.85)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color("SelectedOptionBorder"), lineWidth: 3)
+                )
+                .shadow(color: Color("Title").opacity(0.1), radius: 20)
         }
         .frame(maxHeight: 60)
         .padding(.horizontal, 30)
@@ -34,5 +39,6 @@ struct SelectedOptionView_Previews: PreviewProvider {
     
     static var previews: some View {
         SelectedOptionView(animation: animation)
+            .preferredColorScheme(.dark)
     }
 }
