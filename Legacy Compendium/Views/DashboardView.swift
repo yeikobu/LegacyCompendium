@@ -9,37 +9,67 @@ import SwiftUI
 
 struct DashboardView: View {
     
+    @StateObject var legacyCompendiumViewModel = LegacyCompendiumViewModel()
     @Binding var isTransitionActive: Bool
-    @State private var animationAfterSlashScreen = false
     @Namespace var animation
+    @State private var menuFontSize: CGFloat = 22
+    @State private var offsetTransition: CGFloat = 400
+    @State private var animationAfterSplashScreen = false
     
     var body: some View {
         ZStack {
-            BackgroundView()
+            VStack {
+                if legacyCompendiumViewModel.isShowMenuButtonTapped {
+                    ForEach(legacyCompendiumViewModel.menuOptions, id: \.self) { option in
+                        ZStack(alignment: .center) {
+                            if legacyCompendiumViewModel.selectedOption == option {
+                                SelectedOptionView(animation: animation)
+                                    .padding(.top, 10)
+                                    .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 600)
+                            }
+                            
+                            TextStyleView(text: option, textSize: $menuFontSize)
+                                .padding(.horizontal, 20)
+                                .padding(.top, 20)
+                                .matchedGeometryEffect(id: "\(option)", in: animation)
+                                .onTapGesture {
+                                    withAnimation(.spring(response: 0.7, dampingFraction: 1)) {
+                                        legacyCompendiumViewModel.selectedOption = option
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+            .padding(.top, -80)
             
             VStack {
-                HStack {
-                    Text("HOME")
-                        .font(.custom("UniversityOldstyleBook", size: 28))
-                        .foregroundColor(Color("Title"))
-                        .multilineTextAlignment(.center)
-                        .offset(x: animationAfterSlashScreen ? 0 : -400)
-                        .scaleEffect(animationAfterSlashScreen ? 1 : 5)
-                        .shadow(color:Color("border"), radius: 5)
-                    
-                    Spacer()
-                }
-                
                 Spacer()
                 
                 HStack {
                     Spacer()
+                    if !legacyCompendiumViewModel.isShowMenuButtonTapped {
+                        ForEach(legacyCompendiumViewModel.menuOptions, id: \.self) { option in
+                            ZStack {
+                                if legacyCompendiumViewModel.selectedOption == option {
+                                    SelectedOptionView(animation: animation)
+                                        .padding(.top, 10)
+                                        .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 600)
+                                }
+                                
+                                TextStyleView(text: option, textSize: $menuFontSize)
+                                    .frame(width: 0, height: 0)
+                                    .matchedGeometryEffect(id: "\(option)", in: animation)
+                            }
+                        }
+                    }
                     
+                    //MARK: showMenuButton
                     Button {
-                        //TODO
+                        legacyCompendiumViewModel.changeMenuButtonState()
                     } label: {
                         VStack {
-                            Image(systemName: "wand.and.stars")
+                            Image(systemName: !legacyCompendiumViewModel.isShowMenuButtonTapped ? "wand.and.stars" : "xmark")
                                 .foregroundColor(Color("Border"))
                                 .font(.system(size: 24, weight: .bold, design: .rounded))
                         }
@@ -66,6 +96,7 @@ struct DashboardView: View {
                         .cornerRadius(40)
                         .shadow(color: Color("Title").opacity(0.2), radius: 20)
                     }
+                    .offset(x: animationAfterSplashScreen ? 0 : 4000)
                 }
                 .padding(.bottom, 100)
                 .padding(.horizontal, 20)
@@ -75,10 +106,8 @@ struct DashboardView: View {
             .onAppear {
                 if isTransitionActive {
                     withAnimation(.spring(response: 1, dampingFraction: 1)){
-                        animationAfterSlashScreen = true
+                        animationAfterSplashScreen = true
                     }
-                    
-                    print(animationAfterSlashScreen)
                 }
             }
         }

@@ -20,6 +20,8 @@
 		16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */; };
 		16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */; };
 		16A724CC29A55E42005E9A24 /* UniversityOldstyleBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16A724CB29A55E42005E9A24 /* UniversityOldstyleBook.ttf */; };
+		16A724CF29A578B4005E9A24 /* TextStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724CE29A578B4005E9A24 /* TextStyleView.swift */; };
+		16A724D129A5AEF9005E9A24 /* SelectedOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724D029A5AEF9005E9A24 /* SelectedOptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCompendiumModel.swift; sourceTree = "<group>"; };
 		16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCompendiumVIewModel.swift; sourceTree = "<group>"; };
 		16A724CB29A55E42005E9A24 /* UniversityOldstyleBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UniversityOldstyleBook.ttf; sourceTree = "<group>"; };
+		16A724CE29A578B4005E9A24 /* TextStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleView.swift; sourceTree = "<group>"; };
+		16A724D029A5AEF9005E9A24 /* SelectedOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedOptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		16725C8F29A40A0800FD1286 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				16A724CD29A5789A005E9A24 /* Components */,
 				16725C9229A40A4D00FD1286 /* SplashScreen.swift */,
 				16725C9629A42B4100FD1286 /* DashboardView.swift */,
 				16725C9829A42B9200FD1286 /* BackgroundView.swift */,
@@ -126,6 +131,15 @@
 				16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		16A724CD29A5789A005E9A24 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				16A724CE29A578B4005E9A24 /* TextStyleView.swift */,
+				16A724D029A5AEF9005E9A24 /* SelectedOptionView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,11 +218,13 @@
 			files = (
 				16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */,
 				16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */,
+				16A724D129A5AEF9005E9A24 /* SelectedOptionView.swift in Sources */,
 				16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */,
 				16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */,
 				16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */,
 				16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */,
 				16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */,
+				16A724CF29A578B4005E9A24 /* TextStyleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

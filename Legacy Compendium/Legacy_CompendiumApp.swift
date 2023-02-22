@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 @main
 struct Legacy_CompendiumApp: App {
     var body: some Scene {
