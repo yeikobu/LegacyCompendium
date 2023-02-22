@@ -19,13 +19,14 @@ struct DashboardView: View {
     var body: some View {
         ZStack {
             VStack {
+                //MARK: If button tapped shows the menu
                 if legacyCompendiumViewModel.isShowMenuButtonTapped {
                     ForEach(legacyCompendiumViewModel.menuOptions, id: \.self) { option in
                         ZStack(alignment: .center) {
                             if legacyCompendiumViewModel.selectedOption == option {
                                 SelectedOptionView(animation: animation)
                                     .padding(.top, 10)
-//                                    .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 600)
+                                    .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 800)
                                     .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                             }
                             
@@ -51,6 +52,7 @@ struct DashboardView: View {
                     Spacer()
                     
                     ZStack {
+                        //MARK: If button menu not tapped, hide the menu bihind the button
                         if !legacyCompendiumViewModel.isShowMenuButtonTapped {
                             ForEach(legacyCompendiumViewModel.menuOptions, id: \.self) { option in
                                 ZStack {
