@@ -31,18 +31,18 @@ class LegacyCompendiumViewModel: ObservableObject {
     
     //MARK: - change the state in order to show the navigation menu
     func changeMenuButtonState() {
-        withAnimation(.easeOut) {
+        withAnimation(.easeOut(duration: 0.3)) {
             self.isShowMenuButtonTapped.toggle()
         }
         
         if self.isShowMenuButtonTapped {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                withAnimation(.easeOut) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                withAnimation(.easeOut(duration: 0.3)) {
                     self.selectedOptionBackgroundTransition = true
                 }
             }
         } else {
-            withAnimation(.easeOut) {
+            withAnimation(.easeOut(duration: 0.3)) {
                 self.selectedOptionBackgroundTransition = false
             }
         }

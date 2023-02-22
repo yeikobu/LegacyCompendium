@@ -25,7 +25,8 @@ struct DashboardView: View {
                             if legacyCompendiumViewModel.selectedOption == option {
                                 SelectedOptionView(animation: animation)
                                     .padding(.top, 10)
-                                    .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 600)
+//                                    .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 600)
+                                    .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                             }
                             
                             TextStyleView(text: option, textSize: $menuFontSize)
@@ -33,7 +34,7 @@ struct DashboardView: View {
                                 .padding(.top, 20)
                                 .matchedGeometryEffect(id: "\(option)", in: animation)
                                 .onTapGesture {
-                                    withAnimation(.spring(response: 0.7, dampingFraction: 1)) {
+                                    withAnimation(.spring(response: 0.4, dampingFraction: 1)) {
                                         legacyCompendiumViewModel.selectedOption = option
                                     }
                                 }
@@ -48,55 +49,64 @@ struct DashboardView: View {
                 
                 HStack {
                     Spacer()
-                    if !legacyCompendiumViewModel.isShowMenuButtonTapped {
-                        ForEach(legacyCompendiumViewModel.menuOptions, id: \.self) { option in
-                            ZStack {
-                                if legacyCompendiumViewModel.selectedOption == option {
-                                    SelectedOptionView(animation: animation)
-                                        .padding(.top, 10)
-                                        .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 600)
-                                }
-                                
-                                TextStyleView(text: option, textSize: $menuFontSize)
-                                    .frame(width: 0, height: 0)
-                                    .matchedGeometryEffect(id: "\(option)", in: animation)
-                            }
-                        }
-                    }
                     
-                    //MARK: showMenuButton
-                    Button {
-                        legacyCompendiumViewModel.changeMenuButtonState()
-                    } label: {
-                        VStack {
-                            Image(systemName: !legacyCompendiumViewModel.isShowMenuButtonTapped ? "wand.and.stars" : "xmark")
-                                .foregroundColor(Color("Border"))
-                                .font(.system(size: 24, weight: .bold, design: .rounded))
-                        }
-                        .padding()
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 30)
-                                .stroke(Color("Border"), lineWidth: 0.5)
-                                .padding(4)
-                        )
-                        .background {
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 30, style: .continuous)
-                                    .fill(.ultraThinMaterial).blur(radius: 0)
-                                    .blur(radius: 0)
-                                    .opacity(0.5)
-                                
-                                RoundedRectangle(cornerRadius: 30, style: .continuous)
-                                    .fill(Color("Buttons"))
-                                    .blur(radius: 0)
-                                    .opacity(0.85)
+                    ZStack {
+                        if !legacyCompendiumViewModel.isShowMenuButtonTapped {
+                            ForEach(legacyCompendiumViewModel.menuOptions, id: \.self) { option in
+                                ZStack {
+                                    if legacyCompendiumViewModel.selectedOption == option {
+                                        SelectedOptionView(animation: animation)
+                                            .padding(.top, 10)
+                                            .opacity(0)
+                                            .frame(width: 0, height: 0)
+                                            .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
+                                    }
+                                    
+                                    TextStyleView(text: option, textSize: $menuFontSize)
+                                        .frame(width: 0, height: 0)
+                                        .matchedGeometryEffect(id: "\(option)", in: animation)
+                                }
+                                .frame(maxWidth: .infinity, alignment: .trailing)
                             }
                         }
-                        .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4))
-                        .cornerRadius(40)
-                        .shadow(color: Color("Title").opacity(0.2), radius: 20)
+                        
+                        //MARK: showMenuButton
+                        VStack {
+                            Button {
+                                legacyCompendiumViewModel.changeMenuButtonState()
+                            } label: {
+                                VStack {
+                                    Image(systemName: !legacyCompendiumViewModel.isShowMenuButtonTapped ? "wand.and.stars" : "xmark")
+                                        .foregroundColor(Color("Border"))
+                                        .font(.system(size: 24, weight: .bold, design: .rounded))
+                                }
+                                .padding()
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 30)
+                                        .stroke(Color("Border"), lineWidth: 0.5)
+                                        .padding(4)
+                                )
+                                .background {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                            .fill(.ultraThinMaterial).blur(radius: 0)
+                                            .blur(radius: 0)
+                                            .opacity(0.5)
+                                        
+                                        RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                            .fill(Color("Buttons"))
+                                            .blur(radius: 0)
+                                            .opacity(0.85)
+                                    }
+                                }
+                                .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4))
+                                .cornerRadius(40)
+                                .shadow(color: Color("Title").opacity(0.2), radius: 20)
+                            }
+                            .offset(x: animationAfterSplashScreen ? 0 : 4000)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .trailing)
                     }
-                    .offset(x: animationAfterSplashScreen ? 0 : 4000)
                 }
                 .padding(.bottom, 100)
                 .padding(.horizontal, 20)
@@ -105,7 +115,7 @@ struct DashboardView: View {
             .padding(.top, 100)
             .onAppear {
                 if isTransitionActive {
-                    withAnimation(.spring(response: 1, dampingFraction: 1)){
+                    withAnimation(.spring(response: 0.5, dampingFraction: 1)){
                         animationAfterSplashScreen = true
                     }
                 }

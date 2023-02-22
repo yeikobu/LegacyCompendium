@@ -22,7 +22,7 @@ struct TextStyleView: View {
                 .multilineTextAlignment(.center)
                 .overlay(
                     Text(text)
-                        .font(.custom("CrimesOfGrindelwald", size: textSize - 1))
+                        .font(.custom("CrimesOfGrindelwald", size: textSize - 0.5))
                         .foregroundColor(Color("Title"))
                         .multilineTextAlignment(.center)
                         .shadow(color:Color(.black), radius: 1)
