@@ -49,56 +49,64 @@ struct DashboardView: View {
             .padding(.top, -80)
             
             VStack {
-                if legacyCompendiumViewModel.showSelectedOptionView {
-                    if legacyCompendiumViewModel.selectedOption == "Home" {
-                        Text("Home View")
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    if legacyCompendiumViewModel.selectedOption == "Spells" {
-                        Text("Spells View")
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    if legacyCompendiumViewModel.selectedOption == "Beasts" {
-                        Text("Beasts View")
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    if legacyCompendiumViewModel.selectedOption == "Brooms" {
-                        Text("Brooms View")
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    if legacyCompendiumViewModel.selectedOption == "Wand Handles" {
-                        Text("Wand Handles")
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    if legacyCompendiumViewModel.selectedOption == "Potions" {
-                        Text("Potions View")
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    if legacyCompendiumViewModel.selectedOption == "Companions" {
-                        Text("Companions View")
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    if legacyCompendiumViewModel.selectedOption == "Professors" {
-                        Text("Professors View")
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    if legacyCompendiumViewModel.selectedOption == "Challenges" {
-                        Text("Challenges View")
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    if legacyCompendiumViewModel.selectedOption == "Enemies" {
-                        Text("Enemies View")
-                            .foregroundColor(Color.white)
-                    }
+                if legacyCompendiumViewModel.selectedOption == "Home" {
+                    Text("Home View")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if legacyCompendiumViewModel.selectedOption == "Spells" {
+                    Text("Spells View")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if legacyCompendiumViewModel.selectedOption == "Beasts" {
+                    Text("Beasts View")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if legacyCompendiumViewModel.selectedOption == "Brooms" {
+                    Text("Brooms View")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if legacyCompendiumViewModel.selectedOption == "Wand Handles" {
+                    Text("Wand Handles")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if legacyCompendiumViewModel.selectedOption == "Potions" {
+                    Text("Potions View")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if legacyCompendiumViewModel.selectedOption == "Companions" {
+                    Text("Companions View")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if legacyCompendiumViewModel.selectedOption == "Professors" {
+                    Text("Professors View")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if legacyCompendiumViewModel.selectedOption == "Challenges" {
+                    Text("Challenges View")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if legacyCompendiumViewModel.selectedOption == "Enemies" {
+                    Text("Enemies View")
+                        .foregroundColor(Color.white)
+                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
             }
             
