@@ -17,6 +17,7 @@ class LegacyCompendiumViewModel: ObservableObject {
     @Published var selectedOption = "Home"
     @Published var isOptionSelected = false
     
+    //MARK: - Get data from local JSON
     func getData() {
         guard let url = Bundle.main.url(forResource: "LegacyCompendiumData", withExtension: "json") else {
             print("Json not found")
@@ -37,12 +38,12 @@ class LegacyCompendiumViewModel: ObservableObject {
         
         if self.isShowMenuButtonTapped {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                withAnimation(.easeOut(duration: 0.3)) {
+                withAnimation(.easeOut(duration: 0.5)) {
                     self.selectedOptionBackgroundTransition = true
                 }
             }
         } else {
-            withAnimation(.easeOut(duration: 0.3)) {
+            withAnimation(.easeOut(duration: 0.5)) {
                 self.selectedOptionBackgroundTransition = false
             }
         }
