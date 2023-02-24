@@ -36,7 +36,7 @@ struct DashboardView: View {
                                 .padding(.top, 20)
                                 .matchedGeometryEffect(id: "\(option)", in: animation)
                                 .onTapGesture {
-                                    withAnimation(.spring(response: 0.4, dampingFraction: 1)) {
+                                    withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
                                         legacyCompendiumViewModel.selectedOption = option
                                     }
                                     

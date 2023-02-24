@@ -73,7 +73,7 @@ class LegacyCompendiumViewModel: ObservableObject {
 //        }
         
         if self.selectedOptionBackgroundTransition {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 withAnimation(.easeOut(duration: 0.3)) {
                     self.isShowMenuButtonTapped.toggle()
                 }
