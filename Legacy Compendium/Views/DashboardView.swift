@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DashboardView: View {
     
-    @StateObject var legacyCompendiumViewModel = LegacyCompendiumViewModel()
+    @StateObject var dashboardViewModel = DashboardViewModel()
     @Binding var isTransitionActive: Bool
     @Namespace var animation
     @State private var menuFontSize: CGFloat = 22
@@ -21,13 +21,13 @@ struct DashboardView: View {
         ZStack {
             VStack {
                 //MARK: If button tapped shows the menu
-                if legacyCompendiumViewModel.isShowMenuButtonTapped {
-                    ForEach(legacyCompendiumViewModel.menuOptions, id: \.self) { option in
+                if dashboardViewModel.isShowMenuButtonTapped {
+                    ForEach(dashboardViewModel.menuOptions, id: \.self) { option in
                         ZStack(alignment: .center) {
-                            if legacyCompendiumViewModel.selectedOption == option {
+                            if dashboardViewModel.selectedOption == option {
                                 SelectedOptionView(animation: animation)
                                     .padding(.top, 10)
-                                    .offset(x: legacyCompendiumViewModel.selectedOptionBackgroundTransition ? 0 : 2000)
+                                    .offset(x: dashboardViewModel.selectedOptionBackgroundTransition ? 0 : 2000)
                                     .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                             }
                             
@@ -37,10 +37,10 @@ struct DashboardView: View {
                                 .matchedGeometryEffect(id: "\(option)", in: animation)
                                 .onTapGesture {
                                     withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
-                                        legacyCompendiumViewModel.selectedOption = option
+                                        dashboardViewModel.selectedOption = option
                                     }
                                     
-                                    legacyCompendiumViewModel.hideMenuWhenOptionIsSelected()
+                                    dashboardViewModel.hideMenuWhenOptionIsSelected()
                                 }
                         }
                     }
@@ -49,64 +49,64 @@ struct DashboardView: View {
             .padding(.top, -80)
             
             VStack {
-                if legacyCompendiumViewModel.selectedOption == "Home" {
+                if dashboardViewModel.selectedOption == "Home" {
                     Text("Home View")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
-                if legacyCompendiumViewModel.selectedOption == "Spells" {
+                if dashboardViewModel.selectedOption == "Spells" {
                     Text("Spells View")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
-                if legacyCompendiumViewModel.selectedOption == "Beasts" {
+                if dashboardViewModel.selectedOption == "Beasts" {
                     Text("Beasts View")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
-                if legacyCompendiumViewModel.selectedOption == "Brooms" {
+                if dashboardViewModel.selectedOption == "Brooms" {
                     Text("Brooms View")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
-                if legacyCompendiumViewModel.selectedOption == "Wand Handles" {
+                if dashboardViewModel.selectedOption == "Wand Handles" {
                     Text("Wand Handles")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
-                if legacyCompendiumViewModel.selectedOption == "Potions" {
+                if dashboardViewModel.selectedOption == "Potions" {
                     Text("Potions View")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
-                if legacyCompendiumViewModel.selectedOption == "Companions" {
+                if dashboardViewModel.selectedOption == "Companions" {
                     Text("Companions View")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
-                if legacyCompendiumViewModel.selectedOption == "Professors" {
+                if dashboardViewModel.selectedOption == "Professors" {
                     Text("Professors View")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
-                if legacyCompendiumViewModel.selectedOption == "Challenges" {
+                if dashboardViewModel.selectedOption == "Challenges" {
                     Text("Challenges View")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
-                if legacyCompendiumViewModel.selectedOption == "Enemies" {
+                if dashboardViewModel.selectedOption == "Enemies" {
                     Text("Enemies View")
                         .foregroundColor(Color.white)
-                        .opacity(legacyCompendiumViewModel.isShowMenuButtonTapped ? 0 : 1)
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
             }
             
@@ -119,10 +119,10 @@ struct DashboardView: View {
                     
                     ZStack {
                         //MARK: If button menu not tapped, hide the menu bihind the button
-                        if !legacyCompendiumViewModel.isShowMenuButtonTapped {
-                            ForEach(legacyCompendiumViewModel.menuOptions, id: \.self) { option in
+                        if !dashboardViewModel.isShowMenuButtonTapped {
+                            ForEach(dashboardViewModel.menuOptions, id: \.self) { option in
                                 ZStack {
-                                    if legacyCompendiumViewModel.selectedOption == option {
+                                    if dashboardViewModel.selectedOption == option {
                                         SelectedOptionView(animation: animation)
                                             .padding(.top, 10)
                                             .opacity(0)
@@ -141,10 +141,10 @@ struct DashboardView: View {
                         //MARK: showMenuButton
                         VStack {
                             Button {
-                                legacyCompendiumViewModel.showOrHideMenuWhenButtonIsTapped()
+                                dashboardViewModel.showOrHideMenuWhenButtonIsTapped()
                             } label: {
                                 VStack {
-                                    Image(systemName: !legacyCompendiumViewModel.isShowMenuButtonTapped ? "wand.and.stars" : "xmark")
+                                    Image(systemName: !dashboardViewModel.isShowMenuButtonTapped ? "wand.and.stars" : "xmark")
                                         .foregroundColor(Color("Border"))
                                         .font(.system(size: 24, weight: .bold, design: .rounded))
                                 }
@@ -169,7 +169,7 @@ struct DashboardView: View {
                                 }
                                 .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4))
                                 .cornerRadius(40)
-                                .shadow(color: legacyCompendiumViewModel.isShowMenuButtonTapped ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: legacyCompendiumViewModel.isShowMenuButtonTapped ? 10 : 20)
+                                .shadow(color: dashboardViewModel.isShowMenuButtonTapped ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: dashboardViewModel.isShowMenuButtonTapped ? 10 : 20)
                             }
                             .offset(x: animationAfterSplashScreen ? 0 : 4000)
                         }

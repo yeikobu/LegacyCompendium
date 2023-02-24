@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TextStyleView: View {
     
-    @StateObject var legacyCompendiumViewModel = LegacyCompendiumViewModel()
     @State var text: String
     @Binding var textSize: CGFloat
     
