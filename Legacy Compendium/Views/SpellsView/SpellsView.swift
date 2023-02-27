@@ -33,10 +33,7 @@ struct SpellsView: View {
             } content: {
                 LazyVGrid(columns: gridForm, spacing: 30) {
                     ForEach(legacyCompendiumViewModel.legacyCompendiumModel.collections.spellsAndCharms, id: \.self) { spells in
-                        SpellCardView()
-                            .task {
-                                print(index)
-                            }
+                        SpellCardView(imgUrl: spells.img, spellName: spells.spellName, spellType: spells.type, coolDown: spells.cooldown, description: spells.description)
                     }
                 }
             }
@@ -50,7 +47,7 @@ struct SpellsView: View {
                 Spacer()
             }
             .padding(.horizontal, 20)
-            .padding(.top, 100)
+            .padding(.top, isOffsetableScrollViewDraggedUp ? 50 : 100)
         }
         .onAppear {
             legacyCompendiumViewModel.getData()
