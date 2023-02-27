@@ -9,7 +9,7 @@ import Foundation
 
 class LegacyCompendiumViewModel: ObservableObject {
     
-    @Published var legacyCompendiumModel: LegacyCompendiumModel?
+    @Published var legacyCompendiumModel: LegacyCompendiumModel = LegacyCompendiumModel(collections: Collections(spellsAndCharms: [], potions: [], beasts: [], enemies: [], wandHandles: [], brooms: [], companions: [], professors: [], challenges: Challenges(combat: Combat(defeatDarkWizards: [], defeatDugbogs: [], defeatGoblins: [], defeatInferi: [], defeatInfamousFoe: [], defeatSpiders: [], defeatTrolls: [], defeatMongrels: [], completeDuellingFeats: []), quests: Quests(completeAssignments: [], completeMainQuests: [], completeSideRelationshipQuests: []), exploration: Exploration(collectAncientMagicTrees: [], popBalloons: [], landingPlatforms: [], completeMerlinTrials: [], findAstronomyTables: [], solveHogwartsSecrets: []), fieldGuidePages: FieldGuidePages(collectFieldGuidePagesInHogsmeade: [], collectFieldGuidePagesInHogwart: [], collectFieldGuidePagesInTheHighlands: []), roomOfRequirement: RoomOfRequirement(breedUniqueBeasts: [], rescueBeasts: [], upgradeYourGear: []))))
     
     //MARK: - Get data from local JSON
     func getData() {
@@ -20,8 +20,7 @@ class LegacyCompendiumViewModel: ObservableObject {
         
         let data = try? Data(contentsOf: url)
         let documents = try? JSONDecoder().decode(LegacyCompendiumModel.self, from: data!)
-        self.legacyCompendiumModel = documents
-        print(self.legacyCompendiumModel!)
+        self.legacyCompendiumModel = documents!
     }
     
 }

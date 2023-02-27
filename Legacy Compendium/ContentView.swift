@@ -29,10 +29,6 @@ struct ContentView: View {
                     isTransitionActive = true
                 }
             }
-            
-            DispatchQueue.main.async {
-                legacyCompendiumViewModel.getData()
-            }
         }
     }
 }

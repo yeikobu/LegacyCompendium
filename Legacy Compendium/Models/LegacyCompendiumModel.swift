@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - PlaylistItemsModel
-struct LegacyCompendiumModel: Codable {
+// MARK: - LegacyCompendiumModel
+struct LegacyCompendiumModel: Codable, Hashable {
     let collections: Collections
 
     enum CodingKeys: String, CodingKey {
@@ -17,16 +17,16 @@ struct LegacyCompendiumModel: Codable {
 }
 
 // MARK: - Collections
-struct Collections: Codable {
-    let spellsAndCharms: [String: SpellsAndCharm]
-    let potions: Potions
-    let beasts: [String: Beast]
-    let enemies: [String: Enemy]
-    let wandHandles: [String: WandHandle]
-    let brooms: [String: Broom]
-    let companions: Companions
-    let professors: [String: Enemy]
-    let challenges: Challenges
+struct Collections: Codable, Hashable {
+    let spellsAndCharms: [SpellsAndCharm]
+    let potions: [Potion]?
+    let beasts: [Beast]?
+    let enemies: [Enemy]?
+    let wandHandles: [WandHandle]?
+    let brooms: [Broom]?
+    let companions: [Companion]?
+    let professors: [Enemy]?
+    let challenges: Challenges?
 
     enum CodingKeys: String, CodingKey {
         case spellsAndCharms = "SpellsAndCharms"
@@ -42,34 +42,37 @@ struct Collections: Codable {
 }
 
 // MARK: - Beast
-struct Beast: Codable {
-    let beastName, description, findIt: String
-    let img: String
+struct Beast: Codable, Hashable {
+    let beastName, description, findIt: String?
+    let img: String?
 
     enum CodingKeys: String, CodingKey {
         case beastName = "beast-name"
-        case description
+        case description = "description"
         case findIt = "find-it"
-        case img
+        case img = "img"
     }
 }
 
 // MARK: - Broom
-struct Broom: Codable {
-    let broomName: String
-    let location: Location
-    let cost, description: String
-    let img: Img
+struct Broom: Codable, Hashable {
+    let broomName: String?
+    let location: Location?
+    let cost, description: String?
+    let img: Img?
 
     enum CodingKeys: String, CodingKey {
         case broomName = "broom-name"
-        case location, cost, description, img
+        case location = "location"
+        case cost = "cost"
+        case description = "description"
+        case img = "img"
     }
 }
 
 // MARK: - Img
-struct Img: Codable {
-    let broomLogo, broomImg: String
+struct Img: Codable, Hashable {
+    let broomLogo, broomImg: String?
 
     enum CodingKeys: String, CodingKey {
         case broomLogo = "broom-logo"
@@ -83,12 +86,12 @@ enum Location: String, Codable {
 }
 
 // MARK: - Challenges
-struct Challenges: Codable {
-    let combat: Combat
-    let quests: Quests
-    let exploration: Exploration
-    let fieldGuidePages: FieldGuidePages
-    let roomOfRequirement: RoomOfRequirement
+struct Challenges: Codable, Hashable {
+    let combat: Combat?
+    let quests: Quests?
+    let exploration: Exploration?
+    let fieldGuidePages: FieldGuidePages?
+    let roomOfRequirement: RoomOfRequirement?
 
     enum CodingKeys: String, CodingKey {
         case combat = "Combat"
@@ -100,9 +103,9 @@ struct Challenges: Codable {
 }
 
 // MARK: - Combat
-struct Combat: Codable {
-    let defeatDarkWizards, defeatDugbogs, defeatGoblins, defeatInferi: [CompleteDuellingFeat]
-    let defeatInfamousFoe, defeatSpiders, defeatTrolls, defeatMongrels: [CompleteDuellingFeat]
+struct Combat: Codable, Hashable {
+    let defeatDarkWizards, defeatDugbogs, defeatGoblins, defeatInferi: [CompleteDuellingFeat]?
+    let defeatInfamousFoe, defeatSpiders, defeatTrolls, defeatMongrels: [CompleteDuellingFeat]?
     let completeDuellingFeats: [CompleteDuellingFeat]
 
     enum CodingKeys: String, CodingKey {
@@ -119,9 +122,9 @@ struct Combat: Codable {
 }
 
 // MARK: - CompleteDuellingFeat
-struct CompleteDuellingFeat: Codable {
-    let tiers: Int
-    let requirements, rewards: String
+struct CompleteDuellingFeat: Codable, Hashable {
+    let tiers: Int?
+    let requirements, rewards: String?
 
     enum CodingKeys: String, CodingKey {
         case tiers = "Tiers"
@@ -131,9 +134,9 @@ struct CompleteDuellingFeat: Codable {
 }
 
 // MARK: - Exploration
-struct Exploration: Codable {
-    let collectAncientMagicTrees, popBalloons, landingPlatforms, completeMerlinTrials: [CompleteDuellingFeat]
-    let findAstronomyTables, solveHogwartsSecrets: [CompleteDuellingFeat]
+struct Exploration: Codable, Hashable {
+    let collectAncientMagicTrees, popBalloons, landingPlatforms, completeMerlinTrials: [CompleteDuellingFeat]?
+    let findAstronomyTables, solveHogwartsSecrets: [CompleteDuellingFeat]?
 
     enum CodingKeys: String, CodingKey {
         case collectAncientMagicTrees = "Collect Ancient Magic Trees"
@@ -146,8 +149,8 @@ struct Exploration: Codable {
 }
 
 // MARK: - FieldGuidePages
-struct FieldGuidePages: Codable {
-    let collectFieldGuidePagesInHogsmeade, collectFieldGuidePagesInHogwart, collectFieldGuidePagesInTheHighlands: [CompleteDuellingFeat]
+struct FieldGuidePages: Codable, Hashable {
+    let collectFieldGuidePagesInHogsmeade, collectFieldGuidePagesInHogwart, collectFieldGuidePagesInTheHighlands: [CompleteDuellingFeat]?
 
     enum CodingKeys: String, CodingKey {
         case collectFieldGuidePagesInHogsmeade = "Collect Field Guide Pages in Hogsmeade"
@@ -157,8 +160,8 @@ struct FieldGuidePages: Codable {
 }
 
 // MARK: - Quests
-struct Quests: Codable {
-    let completeAssignments, completeMainQuests, completeSideRelationshipQuests: [CompleteDuellingFeat]
+struct Quests: Codable, Hashable {
+    let completeAssignments, completeMainQuests, completeSideRelationshipQuests: [CompleteDuellingFeat]?
 
     enum CodingKeys: String, CodingKey {
         case completeAssignments = "Complete Assignments"
@@ -168,8 +171,8 @@ struct Quests: Codable {
 }
 
 // MARK: - RoomOfRequirement
-struct RoomOfRequirement: Codable {
-    let breedUniqueBeasts, rescueBeasts, upgradeYourGear: [CompleteDuellingFeat]
+struct RoomOfRequirement: Codable, Hashable {
+    let breedUniqueBeasts, rescueBeasts, upgradeYourGear: [CompleteDuellingFeat]?
 
     enum CodingKeys: String, CodingKey {
         case breedUniqueBeasts = "Breed Unique Beasts"
@@ -178,168 +181,85 @@ struct RoomOfRequirement: Codable {
     }
 }
 
-// MARK: - Companions
-struct Companions: Codable {
-    let natsaiOnai: NatsaiOnai
-    let sebastianSallow: SebastianSallow
-    let ominisGaunt: OminisGaunt
-    let poppySweeting: PoppySweeting
+// MARK: - Companion
+struct Companion: Codable, Hashable {
+    let name, house, description, biography: String?
+    let magicalAbilitiesAndSkills: MagicalAbilitiesAndSkills?
+    let img: String?
 
     enum CodingKeys: String, CodingKey {
-        case natsaiOnai = "Natsai Onai"
-        case sebastianSallow = "Sebastian Sallow"
-        case ominisGaunt = "Ominis Gaunt"
-        case poppySweeting = "Poppy Sweeting"
-    }
-}
-
-// MARK: - NatsaiOnai
-struct NatsaiOnai: Codable {
-    let name, house, description, biography: String
-    let magicalAbilitiesAndSkills: NatsaiOnaiMagicalAbilitiesAndSkills
-    let img: String
-
-    enum CodingKeys: String, CodingKey {
-        case name, house, description, biography
+        case name = "name"
+        case house = "house"
+        case description = "description"
+        case biography = "biography"
         case magicalAbilitiesAndSkills = "magical-abilities-and-skills"
-        case img
+        case img = "img"
     }
 }
 
-// MARK: - NatsaiOnaiMagicalAbilitiesAndSkills
-struct NatsaiOnaiMagicalAbilitiesAndSkills: Codable {
-    let transfiguration, charms, dueling, wandlessMagic: String
+// MARK: - MagicalAbilitiesAndSkills
+struct MagicalAbilitiesAndSkills: Codable, Hashable {
+    let transfiguration, charms, dueling, wandlessMagic: String?
+    let darkArts, charismaAndManipulation, love, parseltongue: String?
+    let defenceAgainstTheDarkArts, magicalBeasts: String?
 
     enum CodingKeys: String, CodingKey {
         case transfiguration, charms, dueling
         case wandlessMagic = "wandless-magic"
-    }
-}
-
-// MARK: - OminisGaunt
-struct OminisGaunt: Codable {
-    let name, house, description, biography: String
-    let magicalAbilitiesAndSkills: OminisGauntMagicalAbilitiesAndSkills
-    let img: String
-
-    enum CodingKeys: String, CodingKey {
-        case name, house, description, biography
-        case magicalAbilitiesAndSkills = "magical-abilities-and-skills"
-        case img
-    }
-}
-
-// MARK: - OminisGauntMagicalAbilitiesAndSkills
-struct OminisGauntMagicalAbilitiesAndSkills: Codable {
-    let darkArts, parseltongue, defenceAgainstTheDarkArts, love: String
-
-    enum CodingKeys: String, CodingKey {
         case darkArts = "dark arts"
-        case parseltongue
+        case charismaAndManipulation = "charisma and manipulation"
+        case love = "love"
+        case parseltongue = "parseltongue"
         case defenceAgainstTheDarkArts = "defence against the dark arts"
-        case love
-    }
-}
-
-// MARK: - PoppySweeting
-struct PoppySweeting: Codable {
-    let name, house, description, biography: String
-    let magicalAbilitiesAndSkills: PoppySweetingMagicalAbilitiesAndSkills
-    let img: String
-
-    enum CodingKeys: String, CodingKey {
-        case name, house, description, biography
-        case magicalAbilitiesAndSkills = "magical-abilities-and-skills"
-        case img
-    }
-}
-
-// MARK: - PoppySweetingMagicalAbilitiesAndSkills
-struct PoppySweetingMagicalAbilitiesAndSkills: Codable {
-    let magicalBeasts: String
-
-    enum CodingKeys: String, CodingKey {
         case magicalBeasts = "magical-beasts"
     }
 }
 
-// MARK: - SebastianSallow
-struct SebastianSallow: Codable {
-    let name, house, description, biography: String
-    let magicalAbilitiesAndSkills: SebastianSallowMagicalAbilitiesAndSkills
-    let img: String
-
-    enum CodingKeys: String, CodingKey {
-        case name, house, description, biography
-        case magicalAbilitiesAndSkills = "magical-abilities-and-skills"
-        case img
-    }
-}
-
-// MARK: - SebastianSallowMagicalAbilitiesAndSkills
-struct SebastianSallowMagicalAbilitiesAndSkills: Codable {
-    let darkArts, dueling, charismaAndManipulation, love: String
-
-    enum CodingKeys: String, CodingKey {
-        case darkArts = "dark arts"
-        case dueling
-        case charismaAndManipulation = "charisma and manipulation"
-        case love
-    }
-}
-
 // MARK: - Enemy
-struct Enemy: Codable {
-    let name, description: String
-    let img: String
+struct Enemy: Codable, Hashable {
+    let name, description: String?
+    let img: String?
 }
 
-// MARK: - Potions
-struct Potions: Codable {
-    let wiggenweldPotion, edurus, focusPotion, maximaPotion: Edurus
-    let invisibilityPotion, thunderbrewPotion: Edurus
-
-    enum CodingKeys: String, CodingKey {
-        case wiggenweldPotion = "wiggenweld-potion"
-        case edurus
-        case focusPotion = "focus-potion"
-        case maximaPotion = "maxima-potion"
-        case invisibilityPotion = "invisibility-potion"
-        case thunderbrewPotion = "thunderbrew-potion"
-    }
-}
-
-// MARK: - Edurus
-struct Edurus: Codable {
-    let potionName, description, unlock, ingredients: String
-    let img: String
+// MARK: - Potion
+struct Potion: Codable, Hashable {
+    let potionName, description, unlock, ingredients: String?
+    let img: String?
 
     enum CodingKeys: String, CodingKey {
         case potionName = "potion-name"
-        case description, unlock, ingredients, img
+        case description = "description"
+        case unlock = "unlock"
+        case ingredients = "ingredients"
+        case img = "img"
     }
 }
 
 // MARK: - SpellsAndCharm
-struct SpellsAndCharm: Codable {
+struct SpellsAndCharm: Codable, Hashable {
     let spellName, type, cooldown, unlock: String
     let description, upgrades: String
     let img: String
 
     enum CodingKeys: String, CodingKey {
         case spellName = "spell-name"
-        case type, cooldown, unlock, description, upgrades, img
+        case type = "type"
+        case cooldown = "cooldown"
+        case unlock = "unlock"
+        case description = "description"
+        case upgrades = "upgrades"
+        case img = "img"
     }
 }
 
 // MARK: - WandHandle
-struct WandHandle: Codable {
-    let handleName, description: String
-    let img: String
+struct WandHandle: Codable, Hashable {
+    let handleName, description: String?
+    let img: String?
 
     enum CodingKeys: String, CodingKey {
         case handleName = "handle-name"
-        case description, img
+        case description = "description"
+        case img = "img"
     }
 }
-

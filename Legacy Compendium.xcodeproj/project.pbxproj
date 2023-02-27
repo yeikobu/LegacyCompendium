@@ -25,6 +25,8 @@
 		16C022A329A9195500F964BF /* OffsetableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C022A229A9195500F964BF /* OffsetableScrollView.swift */; };
 		16C022A629A91A2F00F964BF /* SpellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C022A529A91A2F00F964BF /* SpellsView.swift */; };
 		16C022A829A9499F00F964BF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C022A729A9499F00F964BF /* DashboardViewModel.swift */; };
+		16C022AB29A95B9A00F964BF /* SpellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C022AA29A95B9A00F964BF /* SpellCardView.swift */; };
+		16C022AD29A95F9B00F964BF /* CardBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C022AC29A95F9B00F964BF /* CardBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		16C022A229A9195500F964BF /* OffsetableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetableScrollView.swift; sourceTree = "<group>"; };
 		16C022A529A91A2F00F964BF /* SpellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsView.swift; sourceTree = "<group>"; };
 		16C022A729A9499F00F964BF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		16C022AA29A95B9A00F964BF /* SpellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCardView.swift; sourceTree = "<group>"; };
+		16C022AC29A95F9B00F964BF /* CardBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				16A724CD29A5789A005E9A24 /* Components */,
-				16C022A429A9197B00F964BF /* HomeView */,
+				16C022A429A9197B00F964BF /* SpellsView */,
 				16725C9229A40A4D00FD1286 /* SplashScreen.swift */,
 				16725C9629A42B4100FD1286 /* DashboardView.swift */,
 				16725C9829A42B9200FD1286 /* BackgroundView.swift */,
@@ -147,16 +151,26 @@
 				16A724CE29A578B4005E9A24 /* TextStyleView.swift */,
 				16A724D029A5AEF9005E9A24 /* SelectedOptionView.swift */,
 				16C022A229A9195500F964BF /* OffsetableScrollView.swift */,
+				16C022AC29A95F9B00F964BF /* CardBackgroundView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		16C022A429A9197B00F964BF /* HomeView */ = {
+		16C022A429A9197B00F964BF /* SpellsView */ = {
 			isa = PBXGroup;
 			children = (
+				16C022A929A95B7200F964BF /* Components */,
 				16C022A529A91A2F00F964BF /* SpellsView.swift */,
 			);
-			path = HomeView;
+			path = SpellsView;
+			sourceTree = "<group>";
+		};
+		16C022A929A95B7200F964BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				16C022AA29A95B9A00F964BF /* SpellCardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C022AD29A95F9B00F964BF /* CardBackgroundView.swift in Sources */,
 				16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */,
 				16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */,
+				16C022AB29A95B9A00F964BF /* SpellCardView.swift in Sources */,
 				16C022A329A9195500F964BF /* OffsetableScrollView.swift in Sources */,
 				16C022A829A9499F00F964BF /* DashboardViewModel.swift in Sources */,
 				16A724D129A5AEF9005E9A24 /* SelectedOptionView.swift in Sources */,
