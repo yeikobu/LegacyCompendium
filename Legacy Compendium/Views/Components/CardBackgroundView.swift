@@ -20,6 +20,10 @@ struct CardBackgroundView: View {
                 .blur(radius: 0)
                 .opacity(0.80)
         }
+        .overlay(
+            RoundedRectangle(cornerRadius: 30)
+                .stroke(Color("SelectedOptionBorder"), lineWidth: 2)
+        )
     }
 }
 
