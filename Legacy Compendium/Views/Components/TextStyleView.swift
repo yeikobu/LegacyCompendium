@@ -28,7 +28,6 @@ struct TextStyleView: View {
                 )
                 .padding(.leading, 20)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
