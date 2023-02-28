@@ -16,6 +16,7 @@ struct DashboardView: View {
     @State private var offsetTransition: CGFloat = 400
     @State private var animationAfterSplashScreen = false
     @State private var isOptionTapped = false
+    @State private var textSizeChanged = false
     
     var body: some View {
         ZStack {
@@ -31,7 +32,7 @@ struct DashboardView: View {
                                     .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                             }
                             
-                            TextStyleView(text: option, textSize: $menuFontSize)
+                            TextStyleView(text: option, isOffsetableScrollViewDraggedUp: $textSizeChanged)
                                 .padding(.horizontal, 20)
                                 .padding(.top, 20)
                                 .matchedGeometryEffect(id: "\(option)", in: animation)
@@ -129,7 +130,7 @@ struct DashboardView: View {
                                             .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                                     }
                                     
-                                    TextStyleView(text: option, textSize: $menuFontSize)
+                                    TextStyleView(text: option, isOffsetableScrollViewDraggedUp: $textSizeChanged)
                                         .frame(width: 0, height: 0)
                                         .matchedGeometryEffect(id: "\(option)", in: animation)
                                 }

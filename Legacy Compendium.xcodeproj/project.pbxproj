@@ -28,6 +28,7 @@
 		16C022AB29A95B9A00F964BF /* SpellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C022AA29A95B9A00F964BF /* SpellCardView.swift */; };
 		16C022AD29A95F9B00F964BF /* CardBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C022AC29A95F9B00F964BF /* CardBackgroundView.swift */; };
 		16CA829F29AD55B000D10C2A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 16CA829E29AD55B000D10C2A /* Kingfisher */; };
+		16CA82A129AD8DB700D10C2A /* NavBarBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CA82A029AD8DB700D10C2A /* NavBarBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		16C022A729A9499F00F964BF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		16C022AA29A95B9A00F964BF /* SpellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCardView.swift; sourceTree = "<group>"; };
 		16C022AC29A95F9B00F964BF /* CardBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackgroundView.swift; sourceTree = "<group>"; };
+		16CA82A029AD8DB700D10C2A /* NavBarBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				16A724D029A5AEF9005E9A24 /* SelectedOptionView.swift */,
 				16C022A229A9195500F964BF /* OffsetableScrollView.swift */,
 				16C022AC29A95F9B00F964BF /* CardBackgroundView.swift */,
+				16CA82A029AD8DB700D10C2A /* NavBarBackgroundView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				16C022A629A91A2F00F964BF /* SpellsView.swift in Sources */,
 				16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */,
 				16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */,
+				16CA82A129AD8DB700D10C2A /* NavBarBackgroundView.swift in Sources */,
 				16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */,
 				16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */,
 				16A724CF29A578B4005E9A24 /* TextStyleView.swift in Sources */,

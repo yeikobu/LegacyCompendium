@@ -40,14 +40,20 @@ struct SpellsView: View {
             
             VStack {
                 HStack {
-                    TextStyleView(text: "Spells", textSize: $titleSize)
+                    TextStyleView(text: "Spells", isOffsetableScrollViewDraggedUp: $isOffsetableScrollViewDraggedUp)
+                        .padding(.horizontal, 20)
+                        .padding(.bottom, 20)
+                        .background(
+                            NavBarBackgroundView(isOffsetableScrollViewDraggedUp: $isOffsetableScrollViewDraggedUp)
+                        )
                     
                     Spacer()
                 }
+                
                 Spacer()
             }
-            .padding(.horizontal, 20)
-            .padding(.top, isOffsetableScrollViewDraggedUp ? 50 : 100)
+            .padding(.top, isOffsetableScrollViewDraggedUp ? 20 : 100)
+//            .ignoresSafeArea()
         }
         .onAppear {
             legacyCompendiumViewModel.getData()
