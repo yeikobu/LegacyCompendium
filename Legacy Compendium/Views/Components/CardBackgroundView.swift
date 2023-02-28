@@ -24,6 +24,7 @@ struct CardBackgroundView: View {
             RoundedRectangle(cornerRadius: 30)
                 .stroke(Color("SelectedOptionBorder"), lineWidth: 2)
         )
+        .shadow(color: Color(.black).opacity(0.8), radius: 5, x: -2 ,y: 5)
     }
 }
 

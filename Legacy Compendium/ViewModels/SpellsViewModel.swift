@@ -8,21 +8,17 @@
 import Foundation
 
 class SpellsViewModel: LegacyCompendiumViewModel {
-    @Published var essentialSpells = [SpellsAndCharm]()
     @Published var damageSpells = [SpellsAndCharm]()
     @Published var controlSpells = [SpellsAndCharm]()
     @Published var forceSpells = [SpellsAndCharm]()
     @Published var utilitySpells = [SpellsAndCharm]()
     @Published var curseSpells = [SpellsAndCharm]()
+    @Published var essentialSpells = [SpellsAndCharm]()
     
     func getSpellsByType() {
         getData()
         
         legacyCompendiumModel.collections.spellsAndCharms.forEach { spell in
-            if spell.type.contains("Essential") {
-                essentialSpells.append(spell)
-            }
-            
             if spell.type.contains("Damage") {
                 damageSpells.append(spell)
             }
@@ -36,11 +32,15 @@ class SpellsViewModel: LegacyCompendiumViewModel {
             }
             
             if spell.type.contains("Utility") {
-                forceSpells.append(spell)
+                utilitySpells.append(spell)
             }
             
             if spell.type.contains("Curse") {
                 curseSpells.append(spell)
+            }
+            
+            if spell.type.contains("Essential") {
+                essentialSpells.append(spell)
             }
         }
     }

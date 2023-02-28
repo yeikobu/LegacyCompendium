@@ -35,37 +35,46 @@ struct SpellCardView: View {
             
             VStack {
                 Text(spellName)
-                    .font(.system(size: 25, weight: .heavy, design: .rounded))
-                    .foregroundColor(.white)
-                    .padding(.top, 20)
+                    .font(.custom("CrimesOfGrindelwald", size: 20))
+//                    .font(.system(size: 20, weight: .heavy, design: .rounded))
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color("SelectedOptionBorder"))
+                    .padding(.top, 22)
+                    .padding(.horizontal, 5)
                 
                 VStack {
                     HStack(spacing: 5)  {
                         Text("Type")
-                            .font(.system(size: 14, weight: .medium, design: .rounded))
+                            .font(.custom("UniversityOldstyleBook", size: 14))
+//                            .font(.system(size: 14, weight: .medium, design: .rounded))
                             .foregroundColor(.gray)
                         
                         Text(spellType)
-                            .font(.system(size: 14, weight: .bold, design: .rounded))
+                            .font(.custom("UniversityOldstyleBook", size: 14))
+//                            .font(.system(size: 14, weight: .semibold, design: .rounded))
                             .foregroundColor(.purple)
                             .multilineTextAlignment(.leading)
                     }
                     
                     HStack(spacing: 5) {
                         Text("Cooldown")
-                            .font(.system(size: 14, weight: .medium, design: .rounded))
+                            .font(.custom("UniversityOldstyleBook", size: 14))
+//                            .font(.system(size: 14, weight: .medium, design: .rounded))
                             .foregroundColor(.gray)
                         
                         Text(coolDown)
-                            .font(.system(size: 14, weight: .bold, design: .rounded))
+                            .font(.custom("UniversityOldstyleBook", size: 14))
+//                            .font(.system(size: 14, weight: .semibold, design: .rounded))
                             .foregroundColor(.white)
                     }
                 }
                 .padding(.top, 5)
+                .padding(.horizontal, 5)
                 
                 Text(description)
-                    .font(.system(size: 14, weight: .semibold, design: .rounded))
-                    .foregroundColor(.white)
+                    .font(.custom("UniversityOldstyleBook", size: 14))
+//                    .font(.system(size: 14, weight: .regular, design: .rounded))
+                    .foregroundColor(Color("SelectedOptionBorder"))
                     .padding(.horizontal, 5)
                     .padding(.top, 10)
                 
@@ -74,8 +83,8 @@ struct SpellCardView: View {
             .padding(10)
             .padding(.top, 10)
         }
-        .padding(10)
-        .frame(height: 250)
+        .padding(.vertical, 10)
+        .frame(width: 220, height: 250)
     }
 }
 

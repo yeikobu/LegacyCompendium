@@ -50,12 +50,6 @@ struct DashboardView: View {
             .padding(.top, -80)
             
             VStack {
-                if dashboardViewModel.selectedOption == "Home" {
-                    Text("Home View")
-                        .foregroundColor(Color.white)
-                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
-                }
-                
                 if dashboardViewModel.selectedOption == "Spells" {
                    SpellsView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
