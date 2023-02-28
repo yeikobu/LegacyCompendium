@@ -15,13 +15,13 @@ struct TextStyleView: View {
     var body: some View {
         ZStack {
             Text(text)
-                .font(.custom("CrimesOfGrindelwald", size: isOffsetableScrollViewDraggedUp ? 18 : 32))
+                .font(.custom("CrimesOfGrindelwald", size: isOffsetableScrollViewDraggedUp ? 18 : 30))
                 .foregroundColor(Color("Title"))
                 .shadow(color:Color(.gray), radius: 1)
                 .multilineTextAlignment(.center)
                 .overlay(
                     Text(text)
-                        .font(.custom("CrimesOfGrindelwald", size: isOffsetableScrollViewDraggedUp ? 17.5 : 31.5))
+                        .font(.custom("CrimesOfGrindelwald", size: isOffsetableScrollViewDraggedUp ? 17.5 : 29.5))
                         .foregroundColor(Color("Title"))
                         .multilineTextAlignment(.center)
                         .shadow(color:Color(.black), radius: 1)
