@@ -3,7 +3,7 @@
     "SpellsAndCharms": [
       {
         "spell-name": "Basic Cast",
-        "type": "DMG",
+        "type": "Damage",
         "cooldown": "Instant",
         "unlock": "Default",
         "description": "Basic attack than can be pressed rapidly for combo strikes",
@@ -84,7 +84,7 @@
       },
       {
         "spell-name": "Expelliarmus",
-        "type": "DMG",
+        "type": "Damage",
         "cooldown": "10 seconds",
         "unlock": "Assignment Side Quest - Professor Hecat’s Assignment 2",
         "description": "Long-range attack. Disarms most enemies and damages them.",
@@ -93,7 +93,7 @@
       },
       {
         "spell-name": "Incendio",
-        "type": "DMG, Fire",
+        "type": "Damage, Fire",
         "cooldown": "8 seconds",
         "unlock": "Assignment Side Quest - Professor Hecat’s Assignment 1",
         "description": "Short-range flamethrower.",
@@ -147,7 +147,7 @@
       },
       {
         "spell-name": "Confringo",
-        "type": "DMG, Fire",
+        "type": "Damage, Fire",
         "cooldown": "10 Seconds",
         "unlock": "Main Quest - In the Shadow of the Undercroft",
         "description": "Long-range fireball. Sets enemy on fire.",
@@ -165,7 +165,7 @@
       },
       {
         "spell-name": "Diffindo",
-        "type": "DMG",
+        "type": "Damage",
         "cooldown": "15 seconds",
         "unlock": "Assignment Side Quest - Professor Sharp’s Assignment 2",
         "description": "Longe-range attack. Deals considerable damage.",
@@ -237,7 +237,7 @@
       },
       {
         "spell-name": "Bombarda",
-        "type": "DMG",
+        "type": "Damage",
         "cooldown": "15 seconds",
         "unlock": "Assignment Side Quest - Professor Howin's Assignment",
         "description": "Deals heavy damage and hits surrounding enemies.",

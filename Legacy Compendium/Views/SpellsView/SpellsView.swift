@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct SpellsView: View {
-    @StateObject private var legacyCompendiumViewModel = LegacyCompendiumViewModel()
+    @StateObject private var spellsViewModel = SpellsViewModel()
     @State private var titleSize: CGFloat = 32
     @State private var isOffsetableScrollViewDraggedUp = false
-    @State private var spellsCount = 0
     private let gridForm = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -32,7 +31,7 @@ struct SpellsView: View {
                 }
             } content: {
                 LazyVGrid(columns: gridForm, spacing: 30) {
-                    ForEach(legacyCompendiumViewModel.legacyCompendiumModel.collections.spellsAndCharms, id: \.self) { spells in
+                    ForEach(spellsViewModel.legacyCompendiumModel.collections.spellsAndCharms, id: \.self) { spells in
                         SpellCardView(imgUrl: spells.img, spellName: spells.spellName, spellType: spells.type, coolDown: spells.cooldown, description: spells.description)
                     }
                 }
@@ -41,8 +40,9 @@ struct SpellsView: View {
             VStack {
                 HStack {
                     TextStyleView(text: "Spells", isOffsetableScrollViewDraggedUp: $isOffsetableScrollViewDraggedUp)
-                        .padding(.horizontal, 20)
+//                        .padding(.horizontal, 20)
                         .padding(.bottom, 20)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .background(
                             NavBarBackgroundView(isOffsetableScrollViewDraggedUp: $isOffsetableScrollViewDraggedUp)
                         )
@@ -56,8 +56,8 @@ struct SpellsView: View {
 //            .ignoresSafeArea()
         }
         .onAppear {
-            legacyCompendiumViewModel.getData()
-            spellsCount = legacyCompendiumViewModel.legacyCompendiumModel.collections.spellsAndCharms.count
+//            legacyCompendiumViewModel.getData()
+            spellsViewModel.getSpellsByType()
         }
     }
 }
