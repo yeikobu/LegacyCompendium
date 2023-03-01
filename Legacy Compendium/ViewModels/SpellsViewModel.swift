@@ -14,7 +14,6 @@ class SpellsViewModel: LegacyCompendiumViewModel {
     @Published var utilitySpells = [SpellsAndCharm]()
     @Published var curseSpells = [SpellsAndCharm]()
     @Published var essentialSpells = [SpellsAndCharm]()
-    @Published var isSpellCardTapped = false
     @Published var tappedCardModel = SpellsAndCharm(spellName: "", type: "", cooldown: "", unlock: "", description: "", upgrades: "", img: "")
     
     func getSpellsByType() {
