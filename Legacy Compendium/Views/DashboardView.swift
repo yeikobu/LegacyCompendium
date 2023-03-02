@@ -27,15 +27,15 @@ struct DashboardView: View {
                         ZStack(alignment: .center) {
                             if dashboardViewModel.selectedOption == option {
                                 SelectedOptionView(animation: animation)
+                                    .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                                     .padding(.top, 10)
                                     .offset(x: dashboardViewModel.selectedOptionBackgroundTransition ? 0 : 2000)
-                                    .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                             }
                             
                             TextStyleView(text: option, isOffsetableScrollViewDraggedUp: $textSizeChanged)
+                                .matchedGeometryEffect(id: "\(option)", in: animation)
                                 .padding(.horizontal, 20)
                                 .padding(.top, 20)
-                                .matchedGeometryEffect(id: "\(option)", in: animation)
                                 .onTapGesture {
                                     withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
                                         dashboardViewModel.selectedOption = option
@@ -118,15 +118,15 @@ struct DashboardView: View {
                                 ZStack {
                                     if dashboardViewModel.selectedOption == option {
                                         SelectedOptionView(animation: animation)
+                                            .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                                             .padding(.top, 10)
                                             .opacity(0)
                                             .frame(width: 0, height: 0)
-                                            .matchedGeometryEffect(id: "selectedOptionBackground", in: animation)
                                     }
                                     
                                     TextStyleView(text: option, isOffsetableScrollViewDraggedUp: $textSizeChanged)
-                                        .frame(width: 0, height: 0)
                                         .matchedGeometryEffect(id: "\(option)", in: animation)
+                                        .frame(width: 0, height: 0)
                                 }
                                 .frame(maxWidth: .infinity, alignment: .trailing)
                             }
