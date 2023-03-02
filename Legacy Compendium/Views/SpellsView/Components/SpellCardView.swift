@@ -17,7 +17,6 @@ struct SpellCardView: View {
         ZStack(alignment: .top) {
             CardBackgroundView()
                 .shadow(color: Color(.black).opacity(0.2), radius: 5)
-//                .matchedGeometryEffect(id: "background\(spellModel.spellName)", in: animation)
             
             KFImage(URL(string: spellModel.img))
                 .resizable()

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SpellsView: View {
     @StateObject private var spellsViewModel = SpellsViewModel()
-    @State private var currentYAxis:CGFloat = 0
+    @State private var currentYAxis: CGFloat = 0
     @State private var isOffsetableScrollViewDraggedUp = false
     @State private var currentIndex = 0
     @State private var isSpellCardTapped = false
@@ -22,7 +22,6 @@ struct SpellsView: View {
         ZStack {
             BackgroundView()
             
-            if !isSpellCardTapped {
                 OffsettableScrollView(showsIndicator: false) { point in
                     if point.y < -20 {
                         withAnimation(.easeOut(duration: 0.3)) {
@@ -36,133 +35,134 @@ struct SpellsView: View {
                         }
                     }
                 } content: {
-                    if !isSpellCardTapped {
-                        VStack(spacing: 40) {
-                            //MARK: - Damage type
-                            VStack {
-                                CategoryTitleView(categoryName: "Damage Spells")
-                                    .padding(.top, isOffsetableScrollViewDraggedUp ? 199 : 200)
-                                
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    LazyHGrid(rows: gridForm, spacing: 30) {
-                                        ForEach(spellsViewModel.damageSpells, id: \.spellName) { damageSpell in
-                                            SpellCardView(spellModel: damageSpell, animation: animation)
-                                                .padding(.top, 20)
-                                                .onTapGesture {
+                    VStack(spacing: 40) {
+                        //MARK: - Damage type
+                        VStack {
+                            CategoryTitleView(categoryName: "Damage Spells")
+                                .padding(.top, isOffsetableScrollViewDraggedUp ? 199 : 200)
+                            
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 20) {
+                                    ForEach(spellsViewModel.damageSpells, id: \.spellName) { damageSpell in
+                                        SpellCardView(spellModel: damageSpell, animation: animation)
+                                            .transition(.offset(x: 1, y: 1))
+                                            .onTapGesture {
+                                                DispatchQueue.main.async {
                                                     withAnimation(.easeInOut(duration: 0.3)) {
                                                         spellsViewModel.tappedCardModel = damageSpell
                                                         isSpellCardTapped = true
                                                     }
                                                 }
-                                        }
+                                            }
                                     }
-                                    .padding(.leading, 10)
                                 }
+                                .frame(maxHeight: isSpellCardTapped ? .infinity : 400)
+                                .padding(.horizontal, 20)
                             }
+                        }
+                        
+                        //MARK: - Control type
+                        VStack {
+                            CategoryTitleView(categoryName: "Control Spells")
                             
-                            //MARK: - Control type
-                            VStack {
-                                CategoryTitleView(categoryName: "Control Spells")
-                                
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    LazyHGrid(rows: gridForm, spacing: 30) {
-                                        ForEach(spellsViewModel.controlSpells, id: \.spellName) { controlSpell in
-                                            SpellCardView(spellModel: controlSpell, animation: animation)
-                                                .padding(.top, 20)
-                                                .onTapGesture {
-                                                    withAnimation(.easeInOut(duration: 0.3)) {
-                                                        spellsViewModel.tappedCardModel = controlSpell
-                                                        isSpellCardTapped = true
-                                                    }
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 20) {
+                                    ForEach(spellsViewModel.controlSpells, id: \.spellName) { controlSpell in
+                                        SpellCardView(spellModel: controlSpell, animation: animation)
+                                            .onTapGesture {
+                                                withAnimation(.easeInOut(duration: 0.3)) {
+                                                    spellsViewModel.tappedCardModel = controlSpell
+                                                    isSpellCardTapped = true
                                                 }
-                                        }
+                                            }
                                     }
-                                    .padding(.leading, 10)
                                 }
+                                .frame(maxHeight: isSpellCardTapped ? .infinity : 400)
+                                .padding(.horizontal, 20)
                             }
+                        }
+                        
+                        //MARK: - Force type
+                        VStack {
+                            CategoryTitleView(categoryName: "Force Spells")
                             
-                            //MARK: - Force type
-                            VStack {
-                                CategoryTitleView(categoryName: "Force Spells")
-                                
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    LazyHGrid(rows: gridForm, spacing: 30) {
-                                        ForEach(spellsViewModel.forceSpells, id: \.spellName) { forceSpell in
-                                            SpellCardView(spellModel: forceSpell, animation: animation)
-                                                .padding(.top, 20)
-                                                .onTapGesture {
-                                                    withAnimation(.easeInOut(duration: 0.3)) {
-                                                        spellsViewModel.tappedCardModel = forceSpell
-                                                        isSpellCardTapped = true
-                                                    }
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 20) {
+                                    ForEach(spellsViewModel.forceSpells, id: \.spellName) { forceSpell in
+                                        SpellCardView(spellModel: forceSpell, animation: animation)
+                                            .onTapGesture {
+                                                withAnimation(.easeInOut(duration: 0.3)) {
+                                                    spellsViewModel.tappedCardModel = forceSpell
+                                                    isSpellCardTapped = true
                                                 }
-                                        }
+                                            }
                                     }
-                                    .padding(.leading, 10)
                                 }
+                                .frame(maxHeight: isSpellCardTapped ? .infinity : 400)
+                                .padding(.horizontal, 20)
                             }
+                        }
+                        
+                        //MARK: - Utility type
+                        VStack {
+                            CategoryTitleView(categoryName: "Utility Spells")
                             
-                            //MARK: - Utility type
-                            VStack {
-                                CategoryTitleView(categoryName: "Utility Spells")
-                                
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    LazyHGrid(rows: gridForm, spacing: 30) {
-                                        ForEach(spellsViewModel.utilitySpells, id: \.spellName) { utilitySpell in
-                                            SpellCardView(spellModel: utilitySpell, animation: animation)
-                                                .padding(.top, 20)
-                                                .onTapGesture {
-                                                    withAnimation(.easeInOut(duration: 0.3)) {
-                                                        spellsViewModel.tappedCardModel = utilitySpell
-                                                        isSpellCardTapped = true
-                                                    }
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 20) {
+                                    ForEach(spellsViewModel.utilitySpells, id: \.spellName) { utilitySpell in
+                                        SpellCardView(spellModel: utilitySpell, animation: animation)
+                                            .onTapGesture {
+                                                withAnimation(.easeInOut(duration: 0.3)) {
+                                                    spellsViewModel.tappedCardModel = utilitySpell
+                                                    isSpellCardTapped = true
                                                 }
-                                        }
+                                            }
                                     }
-                                    .padding(.leading, 10)
                                 }
+                                .frame(maxHeight: isSpellCardTapped ? .infinity : 400)
+                                .padding(.horizontal, 20)
                             }
+                        }
+                        
+                        //MARK: - Curse type
+                        VStack {
+                            CategoryTitleView(categoryName: "Unforgivable Curses")
                             
-                            //MARK: - Curse type
-                            VStack {
-                                CategoryTitleView(categoryName: "Unforgivable Curses")
-                                
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    LazyHGrid(rows: gridForm, spacing: 30) {
-                                        ForEach(spellsViewModel.curseSpells, id: \.spellName) { curseSpell in
-                                            SpellCardView(spellModel: curseSpell, animation: animation)
-                                                .padding(.top, 20)
-                                                .onTapGesture {
-                                                    withAnimation(.easeInOut(duration: 0.3)) {
-                                                        spellsViewModel.tappedCardModel = curseSpell
-                                                        isSpellCardTapped = true
-                                                    }
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 20) {
+                                    ForEach(spellsViewModel.curseSpells, id: \.spellName) { curseSpell in
+                                        SpellCardView(spellModel: curseSpell, animation: animation)
+                                            .onTapGesture {
+                                                withAnimation(.easeInOut(duration: 0.3)) {
+                                                    spellsViewModel.tappedCardModel = curseSpell
+                                                    isSpellCardTapped = true
                                                 }
-                                        }
+                                            }
                                     }
-                                    .padding(.leading, 10)
                                 }
+                                .frame(maxHeight: isSpellCardTapped ? .infinity : 400)
+                                .padding(.horizontal, 20)
                             }
+                        }
+                        
+                        //MARK: - Essential type
+                        VStack {
+                            CategoryTitleView(categoryName: "Essential Spells")
                             
-                            //MARK: - Essential type
-                            VStack {
-                                CategoryTitleView(categoryName: "Essential Spells")
-                                
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    LazyHGrid(rows: gridForm, spacing: 30) {
-                                        ForEach(spellsViewModel.essentialSpells, id: \.spellName) { essentialSpell in
-                                            SpellCardView(spellModel: essentialSpell, animation: animation)
-                                                .padding(.top, 20)
-                                                .onTapGesture {
-                                                    withAnimation(.easeInOut(duration: 0.3)) {
-                                                        spellsViewModel.tappedCardModel = essentialSpell
-                                                        isSpellCardTapped = true
-                                                    }
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 20) {
+                                    ForEach(spellsViewModel.essentialSpells, id: \.spellName) { essentialSpell in
+                                        SpellCardView(spellModel: essentialSpell, animation: animation)
+                                            .onTapGesture {
+                                                withAnimation(.easeInOut(duration: 0.3)) {
+                                                    spellsViewModel.tappedCardModel = essentialSpell
+                                                    isSpellCardTapped = true
                                                 }
-                                        }
+                                            }
                                     }
-                                    .padding(.leading, 10)
                                 }
+                                .frame(maxHeight: isSpellCardTapped ? .infinity : 400)
+                                .padding(.horizontal, 20)
                             }
                         }
                     }
@@ -181,11 +181,13 @@ struct SpellsView: View {
                     Spacer()
                 }
                 .padding(.top, isOffsetableScrollViewDraggedUp ? 20 : 100)
-            }
+           
         }
         .overlay(alignment: .center) {
             if isSpellCardTapped {
-                VStack {
+                ZStack {
+                    Color("Background").opacity(isSpellCardTapped ? 1 : 0)
+                    
                     SpellExtendedCardVIew(spellModel: spellsViewModel.tappedCardModel, showContent: $showContent, animation: animation)
                         .onTapGesture {
                             withAnimation(.easeInOut(duration: 0.3).delay(0.05)) {
@@ -201,14 +203,14 @@ struct SpellsView: View {
                             }
                         }
                 }
+                .transition(.offset(x: 1, y: 1))
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                .background(Color("Background").opacity(showSpellContent ? 1 : 0))
-                .transition(.asymmetric(insertion: .identity, removal: .offset(x: 0.5)))
                 .onAppear {
                     withAnimation(.easeOut(duration: 0.3)) {
                         showSpellContent = true
                     }
                 }
+                .ignoresSafeArea()
             }
         }
         .onAppear {
