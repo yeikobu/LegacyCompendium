@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1634060529AE80DF0047D1E3 /* CategoryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */; };
 		1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */; };
+		1634061229B26CF10047D1E3 /* PotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061129B26CF10047D1E3 /* PotionsView.swift */; };
+		1634061429B285A70047D1E3 /* PotionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061329B285A70047D1E3 /* PotionsViewModel.swift */; };
+		1634061629B288BF0047D1E3 /* PotionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061529B288BF0047D1E3 /* PotionCardView.swift */; };
 		16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C7B29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift */; };
 		16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C7D29A3DD0F00FD1286 /* ContentView.swift */; };
 		16725C8029A3DD1000FD1286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16725C7F29A3DD1000FD1286 /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 /* Begin PBXFileReference section */
 		1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleView.swift; sourceTree = "<group>"; };
 		1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellExtendedCardVIew.swift; sourceTree = "<group>"; };
+		1634061129B26CF10047D1E3 /* PotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsView.swift; sourceTree = "<group>"; };
+		1634061329B285A70047D1E3 /* PotionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsViewModel.swift; sourceTree = "<group>"; };
+		1634061529B288BF0047D1E3 /* PotionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionCardView.swift; sourceTree = "<group>"; };
 		16725C7829A3DD0F00FD1286 /* Legacy Compendium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Legacy Compendium.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16725C7B29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy_CompendiumApp.swift; sourceTree = "<group>"; };
 		16725C7D29A3DD0F00FD1286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1634060F29B26C8D0047D1E3 /* Potions */ = {
+			isa = PBXGroup;
+			children = (
+				1634061029B26C980047D1E3 /* Components */,
+				1634061129B26CF10047D1E3 /* PotionsView.swift */,
+			);
+			path = Potions;
+			sourceTree = "<group>";
+		};
+		1634061029B26C980047D1E3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1634061529B288BF0047D1E3 /* PotionCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		16725C6F29A3DD0F00FD1286 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +151,8 @@
 		16725C8F29A40A0800FD1286 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				16A724CD29A5789A005E9A24 /* Components */,
+				16A724CD29A5789A005E9A24 /* Global View Components */,
+				1634060F29B26C8D0047D1E3 /* Potions */,
 				16C022A429A9197B00F964BF /* SpellsView */,
 				16725C9229A40A4D00FD1286 /* SplashScreen.swift */,
 				16725C9629A42B4100FD1286 /* DashboardView.swift */,
@@ -143,6 +167,7 @@
 				16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */,
 				16C022A729A9499F00F964BF /* DashboardViewModel.swift */,
 				16CA82A229AD97E600D10C2A /* SpellsViewModel.swift */,
+				1634061329B285A70047D1E3 /* PotionsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -156,7 +181,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		16A724CD29A5789A005E9A24 /* Components */ = {
+		16A724CD29A5789A005E9A24 /* Global View Components */ = {
 			isa = PBXGroup;
 			children = (
 				16A724CE29A578B4005E9A24 /* TextStyleView.swift */,
@@ -166,14 +191,14 @@
 				16CA82A029AD8DB700D10C2A /* NavBarBackgroundView.swift */,
 				1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */,
 			);
-			path = Components;
+			path = "Global View Components";
 			sourceTree = "<group>";
 		};
 		16C022A429A9197B00F964BF /* SpellsView */ = {
 			isa = PBXGroup;
 			children = (
-				16C022A929A95B7200F964BF /* Components */,
 				16C022A529A91A2F00F964BF /* SpellsView.swift */,
+				16C022A929A95B7200F964BF /* Components */,
 			);
 			path = SpellsView;
 			sourceTree = "<group>";
@@ -268,11 +293,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				16C022AD29A95F9B00F964BF /* CardBackgroundView.swift in Sources */,
+				1634061429B285A70047D1E3 /* PotionsViewModel.swift in Sources */,
 				16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */,
 				16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */,
 				16C022AB29A95B9A00F964BF /* SpellCardView.swift in Sources */,
+				1634061629B288BF0047D1E3 /* PotionCardView.swift in Sources */,
 				16C022A329A9195500F964BF /* OffsetableScrollView.swift in Sources */,
 				16C022A829A9499F00F964BF /* DashboardViewModel.swift in Sources */,
+				1634061229B26CF10047D1E3 /* PotionsView.swift in Sources */,
 				16A724D129A5AEF9005E9A24 /* SelectedOptionView.swift in Sources */,
 				16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */,
 				1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */,

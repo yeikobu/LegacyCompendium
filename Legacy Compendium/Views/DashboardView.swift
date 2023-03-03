@@ -74,8 +74,7 @@ struct DashboardView: View {
                 }
                 
                 if dashboardViewModel.selectedOption == "Potions" {
-                    Text("Potions View")
-                        .foregroundColor(Color.white)
+                    PotionsView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
