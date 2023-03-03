@@ -9,14 +9,14 @@ import SwiftUI
 
 struct SpellsView: View {
     @StateObject private var spellsViewModel = SpellsViewModel()
-    @State private var currentYAxis: CGFloat = 0
+    @GestureState private var dragOffset: CGFloat = 0
+    @State private var offset: CGFloat = 0
     @State private var isOffsetableScrollViewDraggedUp = false
-    @State private var currentIndex = 0
     @State private var isSpellCardTapped = false
     @State private var showSpellContent = false
     @State private var showContent = false
-    private let gridForm = [GridItem(.flexible())]
     @Namespace private var animation
+    private let gridForm = [GridItem(.flexible())]
     
     var body: some View {
         ZStack {
@@ -187,21 +187,54 @@ struct SpellsView: View {
             if isSpellCardTapped {
                 ZStack {
                     Color("Background").opacity(isSpellCardTapped ? 1 : 0)
-                    
-                    SpellExtendedCardVIew(spellModel: spellsViewModel.tappedCardModel, showContent: $showContent, animation: animation)
                         .onTapGesture {
                             withAnimation(.easeInOut(duration: 0.3).delay(0.05)) {
                                 isSpellCardTapped = false
                             }
-                            
+
                             withAnimation(.interactiveSpring(response: 0.3, dampingFraction: 0.85)) {
                                 showSpellContent = false
                             }
-                            
+
                             withAnimation(.easeInOut(duration: 0.1)) {
                                 showContent = false
                             }
                         }
+                    
+                    SpellExtendedCardVIew(spellModel: spellsViewModel.tappedCardModel, showContent: $showContent, animation: animation)
+                        .offset(y: offset + dragOffset)
+                        .gesture(
+                            DragGesture()
+                                .updating($dragOffset) { value, state, _ in
+                                    state = value.translation.height
+                                }
+                                .onEnded { value in
+                                    let screenHeight = UIScreen.main.bounds.height
+                                    let swipeThreshold = screenHeight * 0.10
+                                    
+                                    if value.translation.height > swipeThreshold {
+                                        withAnimation(.easeInOut(duration: 0.3).delay(0.05)) {
+                                            isSpellCardTapped = false
+                                        }
+                                        
+                                        withAnimation(.interactiveSpring(response: 0.3, dampingFraction: 0.85)) {
+                                            showSpellContent = false
+                                        }
+                                        
+                                        withAnimation(.easeInOut(duration: 0.3)) {
+                                            showContent = false
+                                        }
+                                        
+                                        withAnimation {
+                                            offset = screenHeight
+                                        }
+                                    } else {
+                                        withAnimation {
+                                            offset = 0
+                                        }
+                                    }
+                                }
+                        )
                 }
                 .transition(.offset(x: 1, y: 1))
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
@@ -209,6 +242,9 @@ struct SpellsView: View {
                     withAnimation(.easeOut(duration: 0.3)) {
                         showSpellContent = true
                     }
+                }
+                .onDisappear {
+                    offset = 0
                 }
                 .ignoresSafeArea()
             }
