@@ -13,7 +13,6 @@ struct SpellsView: View {
     @State private var offset: CGFloat = 0
     @State private var isOffsetableScrollViewDraggedUp = false
     @State private var isSpellCardTapped = false
-    @State private var showSpellContent = false
     @State private var showContent = false
     @Namespace private var animation
     private let gridForm = [GridItem(.flexible())]
@@ -188,12 +187,8 @@ struct SpellsView: View {
                 ZStack {
                     Color("Background").opacity(isSpellCardTapped ? 1 : 0)
                         .onTapGesture {
-                            withAnimation(.easeInOut(duration: 0.3).delay(0.05)) {
+                            withAnimation(.easeInOut(duration: 0.3)) {
                                 isSpellCardTapped = false
-                            }
-
-                            withAnimation(.interactiveSpring(response: 0.3, dampingFraction: 0.85)) {
-                                showSpellContent = false
                             }
 
                             withAnimation(.easeInOut(duration: 0.1)) {
@@ -213,15 +208,11 @@ struct SpellsView: View {
                                     let swipeThreshold = screenHeight * 0.10
                                     
                                     if value.translation.height > swipeThreshold {
-                                        withAnimation(.easeInOut(duration: 0.3).delay(0.05)) {
+                                        withAnimation(.easeInOut(duration: 0.3)) {
                                             isSpellCardTapped = false
                                         }
                                         
-                                        withAnimation(.interactiveSpring(response: 0.3, dampingFraction: 0.85)) {
-                                            showSpellContent = false
-                                        }
-                                        
-                                        withAnimation(.easeInOut(duration: 0.3)) {
+                                        withAnimation(.easeInOut(duration: 0.1)) {
                                             showContent = false
                                         }
                                         
@@ -238,11 +229,6 @@ struct SpellsView: View {
                 }
                 .transition(.offset(x: 1, y: 1))
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                .onAppear {
-                    withAnimation(.easeOut(duration: 0.3)) {
-                        showSpellContent = true
-                    }
-                }
                 .onDisappear {
                     offset = 0
                 }

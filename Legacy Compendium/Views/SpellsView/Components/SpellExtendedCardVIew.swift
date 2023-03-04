@@ -126,7 +126,7 @@ struct SpellExtendedCardVIew: View {
             .matchedGeometryEffect(id: "allView\(spellModel.spellName)", in: animation)
             .frame(width: 320, height: 480)
             .onAppear {
-                withAnimation(.easeInOut(duration: 0.35).delay(0.2)){
+                withAnimation(.easeInOut(duration: 0.4)){
                     showContent = true
                 }
             }
