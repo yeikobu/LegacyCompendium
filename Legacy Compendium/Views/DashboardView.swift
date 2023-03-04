@@ -56,8 +56,7 @@ struct DashboardView: View {
                 }
                 
                 if dashboardViewModel.selectedOption == "Beasts" {
-                    Text("Beasts View")
-                        .foregroundColor(Color.white)
+                    BeastsScreenView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
@@ -128,6 +127,7 @@ struct DashboardView: View {
                                         .frame(width: 0, height: 0)
                                 }
                                 .frame(maxWidth: .infinity, alignment: .trailing)
+                                .padding(.trailing, 20)
                             }
                         }
                         

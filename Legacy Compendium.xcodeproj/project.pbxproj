@@ -13,6 +13,9 @@
 		1634061429B285A70047D1E3 /* PotionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061329B285A70047D1E3 /* PotionsViewModel.swift */; };
 		1634061629B288BF0047D1E3 /* PotionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061529B288BF0047D1E3 /* PotionCardView.swift */; };
 		1634061829B2B8AA0047D1E3 /* PotionExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061729B2B8AA0047D1E3 /* PotionExtendedCardView.swift */; };
+		1634061B29B3AC8F0047D1E3 /* BeastsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061A29B3AC8F0047D1E3 /* BeastsScreenView.swift */; };
+		1634061D29B3EA000047D1E3 /* BeastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061C29B3EA000047D1E3 /* BeastViewModel.swift */; };
+		1634062029B3EB660047D1E3 /* BeastCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061F29B3EB660047D1E3 /* BeastCardView.swift */; };
 		16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C7B29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift */; };
 		16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C7D29A3DD0F00FD1286 /* ContentView.swift */; };
 		16725C8029A3DD1000FD1286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16725C7F29A3DD1000FD1286 /* Assets.xcassets */; };
@@ -22,6 +25,7 @@
 		16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9229A40A4D00FD1286 /* SplashScreen.swift */; };
 		16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9629A42B4100FD1286 /* DashboardView.swift */; };
 		16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9829A42B9200FD1286 /* BackgroundView.swift */; };
+		167E4D2129B3EFF000456CCB /* BeastExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E4D2029B3EFF000456CCB /* BeastExtendedCardView.swift */; };
 		16A724C629A53D7D005E9A24 /* LegacyCompendiumData.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */; };
 		16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */; };
 		16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */; };
@@ -45,6 +49,9 @@
 		1634061329B285A70047D1E3 /* PotionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsViewModel.swift; sourceTree = "<group>"; };
 		1634061529B288BF0047D1E3 /* PotionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionCardView.swift; sourceTree = "<group>"; };
 		1634061729B2B8AA0047D1E3 /* PotionExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionExtendedCardView.swift; sourceTree = "<group>"; };
+		1634061A29B3AC8F0047D1E3 /* BeastsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastsScreenView.swift; sourceTree = "<group>"; };
+		1634061C29B3EA000047D1E3 /* BeastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastViewModel.swift; sourceTree = "<group>"; };
+		1634061F29B3EB660047D1E3 /* BeastCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastCardView.swift; sourceTree = "<group>"; };
 		16725C7829A3DD0F00FD1286 /* Legacy Compendium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Legacy Compendium.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16725C7B29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy_CompendiumApp.swift; sourceTree = "<group>"; };
 		16725C7D29A3DD0F00FD1286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +63,7 @@
 		16725C9229A40A4D00FD1286 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		16725C9629A42B4100FD1286 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		16725C9829A42B9200FD1286 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		167E4D2029B3EFF000456CCB /* BeastExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastExtendedCardView.swift; sourceTree = "<group>"; };
 		16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LegacyCompendiumData.json; sourceTree = "<group>"; };
 		16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCompendiumModel.swift; sourceTree = "<group>"; };
 		16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCompendiumVIewModel.swift; sourceTree = "<group>"; };
@@ -83,13 +91,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1634060F29B26C8D0047D1E3 /* Potions */ = {
+		1634060F29B26C8D0047D1E3 /* PotionsViews */ = {
 			isa = PBXGroup;
 			children = (
 				1634061029B26C980047D1E3 /* Components */,
 				1634061129B26CF10047D1E3 /* PotionsView.swift */,
 			);
-			path = Potions;
+			path = PotionsViews;
 			sourceTree = "<group>";
 		};
 		1634061029B26C980047D1E3 /* Components */ = {
@@ -97,6 +105,24 @@
 			children = (
 				1634061529B288BF0047D1E3 /* PotionCardView.swift */,
 				1634061729B2B8AA0047D1E3 /* PotionExtendedCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1634061929B3AC420047D1E3 /* BeastViews */ = {
+			isa = PBXGroup;
+			children = (
+				1634061E29B3EB4B0047D1E3 /* Components */,
+				1634061A29B3AC8F0047D1E3 /* BeastsScreenView.swift */,
+			);
+			path = BeastViews;
+			sourceTree = "<group>";
+		};
+		1634061E29B3EB4B0047D1E3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1634061F29B3EB660047D1E3 /* BeastCardView.swift */,
+				167E4D2029B3EFF000456CCB /* BeastExtendedCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -155,8 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				16A724CD29A5789A005E9A24 /* Global View Components */,
-				1634060F29B26C8D0047D1E3 /* Potions */,
-				16C022A429A9197B00F964BF /* SpellsView */,
+				1634061929B3AC420047D1E3 /* BeastViews */,
+				1634060F29B26C8D0047D1E3 /* PotionsViews */,
+				16C022A429A9197B00F964BF /* SpellsViews */,
 				16725C9229A40A4D00FD1286 /* SplashScreen.swift */,
 				16725C9629A42B4100FD1286 /* DashboardView.swift */,
 				16725C9829A42B9200FD1286 /* BackgroundView.swift */,
@@ -171,6 +198,7 @@
 				16C022A729A9499F00F964BF /* DashboardViewModel.swift */,
 				16CA82A229AD97E600D10C2A /* SpellsViewModel.swift */,
 				1634061329B285A70047D1E3 /* PotionsViewModel.swift */,
+				1634061C29B3EA000047D1E3 /* BeastViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -197,13 +225,13 @@
 			path = "Global View Components";
 			sourceTree = "<group>";
 		};
-		16C022A429A9197B00F964BF /* SpellsView */ = {
+		16C022A429A9197B00F964BF /* SpellsViews */ = {
 			isa = PBXGroup;
 			children = (
 				16C022A529A91A2F00F964BF /* SpellsView.swift */,
 				16C022A929A95B7200F964BF /* Components */,
 			);
-			path = SpellsView;
+			path = SpellsViews;
 			sourceTree = "<group>";
 		};
 		16C022A929A95B7200F964BF /* Components */ = {
@@ -304,6 +332,7 @@
 				16C022A329A9195500F964BF /* OffsetableScrollView.swift in Sources */,
 				16C022A829A9499F00F964BF /* DashboardViewModel.swift in Sources */,
 				1634061229B26CF10047D1E3 /* PotionsView.swift in Sources */,
+				1634062029B3EB660047D1E3 /* BeastCardView.swift in Sources */,
 				16A724D129A5AEF9005E9A24 /* SelectedOptionView.swift in Sources */,
 				16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */,
 				1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */,
@@ -312,11 +341,14 @@
 				16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */,
 				16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */,
 				1634061829B2B8AA0047D1E3 /* PotionExtendedCardView.swift in Sources */,
+				1634061B29B3AC8F0047D1E3 /* BeastsScreenView.swift in Sources */,
+				1634061D29B3EA000047D1E3 /* BeastViewModel.swift in Sources */,
 				16CA82A129AD8DB700D10C2A /* NavBarBackgroundView.swift in Sources */,
 				16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */,
 				16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */,
 				16A724CF29A578B4005E9A24 /* TextStyleView.swift in Sources */,
 				16CA82A329AD97E600D10C2A /* SpellsViewModel.swift in Sources */,
+				167E4D2129B3EFF000456CCB /* BeastExtendedCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
