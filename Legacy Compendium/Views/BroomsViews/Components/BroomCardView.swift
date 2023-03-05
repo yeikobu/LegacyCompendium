@@ -28,7 +28,7 @@ struct BroomCardView: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color("SelectedOptionBorder"), lineWidth: 2)
-                        .matchedGeometryEffect(id: "image\(String(describing: broomModel.broomName))", in: animation)
+                        .matchedGeometryEffect(id: "image\(String(describing: broomModel.broomName))border", in: animation)
                         .offset(y: -30)
                 )
             

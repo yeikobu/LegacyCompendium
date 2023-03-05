@@ -14,7 +14,7 @@ struct BroomsScreenView: View {
     @GestureState private var dragOffset: CGFloat = 0
     @State private var offset: CGFloat = 0
     @State private var isOffsetableScrollViewDraggedUp = false
-    @State private var isBeastSelected = false
+    @State private var isBroomSelected = false
     @State private var showContent = false
     @Namespace private var animation
     private let gridForm = [GridItem(.flexible()), GridItem(.flexible())]
@@ -44,7 +44,7 @@ struct BroomsScreenView: View {
                                     broomsViewModel.selectedBroom = broom
 
                                     withAnimation(.easeInOut(duration: 0.3)) {
-                                        isBeastSelected = true
+                                        isBroomSelected = true
                                     }
                                 }
                         }
@@ -67,6 +67,60 @@ struct BroomsScreenView: View {
                 Spacer()
             }
             .padding(.top, isOffsetableScrollViewDraggedUp ? 20 : 100)
+        }
+        .overlay(alignment: .center) {
+            if isBroomSelected {
+                ZStack {
+                    Color("Background").opacity(isBroomSelected ? 1 : 0)
+                        .onTapGesture {
+                            withAnimation(.easeInOut(duration: 0.3)) {
+                                isBroomSelected = false
+                            }
+                            
+                            withAnimation(.easeInOut(duration: 0.1)) {
+                                showContent = false
+                            }
+                        }
+                    
+                    BroomExtendedCardView(broomModel: broomsViewModel.selectedBroom, showContent: $showContent, animation: animation)
+                        .offset(y: offset + dragOffset)
+                        .gesture(
+                            DragGesture()
+                                .updating($dragOffset) { value, state, _ in
+                                    state = value.translation.height
+                                }
+                                .onEnded { value in
+                                    let screenHeight = UIScreen.main.bounds.height
+                                    let swipeThreshold = screenHeight * 0.10
+                                    
+                                    if value.translation.height > swipeThreshold {
+                                        withAnimation(.easeInOut(duration: 0.3)) {
+                                            isBroomSelected = false
+                                        }
+                                        
+                                        
+                                        withAnimation(.easeInOut(duration: 0.1)) {
+                                            showContent = false
+                                        }
+                                        
+                                        withAnimation {
+                                            offset = screenHeight
+                                        }
+                                    } else {
+                                        withAnimation {
+                                            offset = 0
+                                        }
+                                    }
+                                }
+                        )
+                }
+                .transition(.offset(x: 1, y: 1))
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                .onDisappear {
+                    offset = 0
+                }
+                .ignoresSafeArea()
+            }
         }
         .onAppear {
             broomsViewModel.getBroom()
