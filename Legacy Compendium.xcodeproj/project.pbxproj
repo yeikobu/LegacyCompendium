@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1608A48E29B5273100806C55 /* BroomExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A48D29B5273100806C55 /* BroomExtendedCardView.swift */; };
 		1634060529AE80DF0047D1E3 /* CategoryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */; };
 		1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */; };
 		1634061229B26CF10047D1E3 /* PotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061129B26CF10047D1E3 /* PotionsView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1608A48D29B5273100806C55 /* BroomExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroomExtendedCardView.swift; sourceTree = "<group>"; };
 		1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleView.swift; sourceTree = "<group>"; };
 		1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellExtendedCardVIew.swift; sourceTree = "<group>"; };
 		1634061129B26CF10047D1E3 /* PotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsView.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				167E4D2A29B4282D00456CCB /* BroomCardView.swift */,
+				1608A48D29B5273100806C55 /* BroomExtendedCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */,
 				1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */,
 				16C022A629A91A2F00F964BF /* SpellsView.swift in Sources */,
+				1608A48E29B5273100806C55 /* BroomExtendedCardView.swift in Sources */,
 				1634060529AE80DF0047D1E3 /* CategoryTitleView.swift in Sources */,
 				16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */,
 				16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */,
