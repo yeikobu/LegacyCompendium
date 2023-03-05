@@ -57,7 +57,7 @@ struct Beast: Codable, Hashable {
 // MARK: - Broom
 struct Broom: Codable, Hashable {
     let broomName: String?
-    let location: Location?
+    let location: String?
     let cost, description: String?
     let img: Img?
 
@@ -80,10 +80,10 @@ struct Img: Codable, Hashable {
     }
 }
 
-enum Location: String, Codable {
-    case challenges = "Challenges"
-    case vendor = "Vendor"
-}
+//enum Locations: String, Codable {
+//    case challenges = "Challenges"
+//    case vendor = "Vendor"
+//}
 
 // MARK: - Challenges
 struct Challenges: Codable, Hashable {

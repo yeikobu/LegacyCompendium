@@ -61,8 +61,7 @@ struct DashboardView: View {
                 }
                 
                 if dashboardViewModel.selectedOption == "Brooms" {
-                    Text("Brooms View")
-                        .foregroundColor(Color.white)
+                    BroomsScreenView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
