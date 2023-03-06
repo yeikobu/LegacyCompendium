@@ -108,6 +108,7 @@ struct BroomExtendedCardView_Previews: PreviewProvider {
     @State static private var broomModel = Broom(broomName: "Aeromancer Broom", location: "Vendor", cost: "Cost: 3000", description: "A smooth ride that cuts through the air like a potioneer slicing ingredients.", img: Img(broomLogo: "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FAeromancer%20-%20Logo.png?alt=media&token=5de8368e-98ea-4b30-b3c2-ec3087056358", broomImg: "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Brooms%2FAeromancer.png?alt=media&token=af83cf1b-8977-4158-a137-b6af3d7f1c97"))
     
     static var previews: some View {
-        BroomExtendedCardView(broomModel: broomModel, showContent: .constant(true), animation: animation)
+//        BroomExtendedCardView(broomModel: broomModel, showContent: .constant(true), animation: animation)
+        DashboardView(isTransitionActive: .constant(false))
     }
 }

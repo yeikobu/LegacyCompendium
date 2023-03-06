@@ -66,8 +66,7 @@ struct DashboardView: View {
                 }
                 
                 if dashboardViewModel.selectedOption == "Wand Handles" {
-                    Text("Wand Handles")
-                        .foregroundColor(Color.white)
+                    WandHandlesScreenView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
