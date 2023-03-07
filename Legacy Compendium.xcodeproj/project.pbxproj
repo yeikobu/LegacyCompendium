@@ -11,6 +11,11 @@
 		1608A49129B55A4800806C55 /* WandHandlesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49029B55A4800806C55 /* WandHandlesScreenView.swift */; };
 		1608A49429B55C3000806C55 /* WandHandleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49329B55C3000806C55 /* WandHandleCardView.swift */; };
 		1608A49629B55CAF00806C55 /* WandHandlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49529B55CAF00806C55 /* WandHandlesViewModel.swift */; };
+		1608A49929B658C100806C55 /* CompanionsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49829B658C100806C55 /* CompanionsScreenView.swift */; };
+		1608A49B29B659BB00806C55 /* CompanionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49A29B659BB00806C55 /* CompanionsViewModel.swift */; };
+		1608A49E29B65C5200806C55 /* CompanionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49D29B65C5200806C55 /* CompanionCardView.swift */; };
+		1608A4A029B6864700806C55 /* CompanionExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49F29B6864700806C55 /* CompanionExtendedCardView.swift */; };
+		1608A4A329B68ACC00806C55 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4A229B68ACC00806C55 /* ViewExtensions.swift */; };
 		1634060529AE80DF0047D1E3 /* CategoryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */; };
 		1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */; };
 		1634061229B26CF10047D1E3 /* PotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061129B26CF10047D1E3 /* PotionsView.swift */; };
@@ -54,6 +59,11 @@
 		1608A49029B55A4800806C55 /* WandHandlesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandHandlesScreenView.swift; sourceTree = "<group>"; };
 		1608A49329B55C3000806C55 /* WandHandleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandHandleCardView.swift; sourceTree = "<group>"; };
 		1608A49529B55CAF00806C55 /* WandHandlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandHandlesViewModel.swift; sourceTree = "<group>"; };
+		1608A49829B658C100806C55 /* CompanionsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionsScreenView.swift; sourceTree = "<group>"; };
+		1608A49A29B659BB00806C55 /* CompanionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionsViewModel.swift; sourceTree = "<group>"; };
+		1608A49D29B65C5200806C55 /* CompanionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionCardView.swift; sourceTree = "<group>"; };
+		1608A49F29B6864700806C55 /* CompanionExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionExtendedCardView.swift; sourceTree = "<group>"; };
+		1608A4A229B68ACC00806C55 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleView.swift; sourceTree = "<group>"; };
 		1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellExtendedCardVIew.swift; sourceTree = "<group>"; };
 		1634061129B26CF10047D1E3 /* PotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsView.swift; sourceTree = "<group>"; };
@@ -105,13 +115,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1608A48F29B55A2200806C55 /* WandHandlesView */ = {
+		1608A48F29B55A2200806C55 /* WandHandlesViews */ = {
 			isa = PBXGroup;
 			children = (
 				1608A49229B55C1800806C55 /* Components */,
 				1608A49029B55A4800806C55 /* WandHandlesScreenView.swift */,
 			);
-			path = WandHandlesView;
+			path = WandHandlesViews;
 			sourceTree = "<group>";
 		};
 		1608A49229B55C1800806C55 /* Components */ = {
@@ -120,6 +130,32 @@
 				1608A49329B55C3000806C55 /* WandHandleCardView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1608A49729B6589700806C55 /* CompanionsViews */ = {
+			isa = PBXGroup;
+			children = (
+				1608A49C29B65C3E00806C55 /* Components */,
+				1608A49829B658C100806C55 /* CompanionsScreenView.swift */,
+			);
+			path = CompanionsViews;
+			sourceTree = "<group>";
+		};
+		1608A49C29B65C3E00806C55 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1608A49D29B65C5200806C55 /* CompanionCardView.swift */,
+				1608A49F29B6864700806C55 /* CompanionExtendedCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1608A4A129B68AA900806C55 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1608A4A229B68ACC00806C55 /* ViewExtensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		1634060F29B26C8D0047D1E3 /* PotionsViews */ = {
@@ -177,6 +213,7 @@
 		16725C7A29A3DD0F00FD1286 /* Legacy Compendium */ = {
 			isa = PBXGroup;
 			children = (
+				1608A4A129B68AA900806C55 /* Helpers */,
 				16725C7D29A3DD0F00FD1286 /* ContentView.swift */,
 				16725C9129A40A2800FD1286 /* Models */,
 				16725C8F29A40A0800FD1286 /* Views */,
@@ -211,7 +248,8 @@
 		16725C8F29A40A0800FD1286 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1608A48F29B55A2200806C55 /* WandHandlesView */,
+				1608A49729B6589700806C55 /* CompanionsViews */,
+				1608A48F29B55A2200806C55 /* WandHandlesViews */,
 				167E4D2229B4249900456CCB /* BroomsViews */,
 				1634061929B3AC420047D1E3 /* BeastsViews */,
 				1634060F29B26C8D0047D1E3 /* PotionsViews */,
@@ -234,6 +272,7 @@
 				1634061C29B3EA000047D1E3 /* BeastViewModel.swift */,
 				167E4D2629B4260700456CCB /* BroomsViewModel.swift */,
 				1608A49529B55CAF00806C55 /* WandHandlesViewModel.swift */,
+				1608A49A29B659BB00806C55 /* CompanionsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -379,18 +418,22 @@
 				1608A49629B55CAF00806C55 /* WandHandlesViewModel.swift in Sources */,
 				1608A49129B55A4800806C55 /* WandHandlesScreenView.swift in Sources */,
 				16C022AD29A95F9B00F964BF /* CardBackgroundView.swift in Sources */,
+				1608A49E29B65C5200806C55 /* CompanionCardView.swift in Sources */,
 				1634061429B285A70047D1E3 /* PotionsViewModel.swift in Sources */,
 				167E4D2729B4260700456CCB /* BroomsViewModel.swift in Sources */,
 				16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */,
 				16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */,
 				16C022AB29A95B9A00F964BF /* SpellCardView.swift in Sources */,
 				1634061629B288BF0047D1E3 /* PotionCardView.swift in Sources */,
+				1608A4A029B6864700806C55 /* CompanionExtendedCardView.swift in Sources */,
 				16C022A329A9195500F964BF /* OffsetableScrollView.swift in Sources */,
 				16C022A829A9499F00F964BF /* DashboardViewModel.swift in Sources */,
+				1608A49929B658C100806C55 /* CompanionsScreenView.swift in Sources */,
 				1634061229B26CF10047D1E3 /* PotionsView.swift in Sources */,
 				1634062029B3EB660047D1E3 /* BeastCardView.swift in Sources */,
 				16A724D129A5AEF9005E9A24 /* SelectedOptionView.swift in Sources */,
 				16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */,
+				1608A4A329B68ACC00806C55 /* ViewExtensions.swift in Sources */,
 				1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */,
 				16C022A629A91A2F00F964BF /* SpellsView.swift in Sources */,
 				1608A48E29B5273100806C55 /* BroomExtendedCardView.swift in Sources */,
@@ -400,6 +443,7 @@
 				167E4D2429B4250800456CCB /* BroomsScreenView.swift in Sources */,
 				1634061829B2B8AA0047D1E3 /* PotionExtendedCardView.swift in Sources */,
 				1634061B29B3AC8F0047D1E3 /* BeastsScreenView.swift in Sources */,
+				1608A49B29B659BB00806C55 /* CompanionsViewModel.swift in Sources */,
 				1634061D29B3EA000047D1E3 /* BeastViewModel.swift in Sources */,
 				16CA82A129AD8DB700D10C2A /* NavBarBackgroundView.swift in Sources */,
 				16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */,
