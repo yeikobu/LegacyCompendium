@@ -76,8 +76,7 @@ struct DashboardView: View {
                 }
                 
                 if dashboardViewModel.selectedOption == "Companions" {
-                    Text("Companions View")
-                        .foregroundColor(Color.white)
+                    CompanionsScreenView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
