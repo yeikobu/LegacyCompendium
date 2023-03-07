@@ -16,6 +16,9 @@
 		1608A49E29B65C5200806C55 /* CompanionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49D29B65C5200806C55 /* CompanionCardView.swift */; };
 		1608A4A029B6864700806C55 /* CompanionExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49F29B6864700806C55 /* CompanionExtendedCardView.swift */; };
 		1608A4A329B68ACC00806C55 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4A229B68ACC00806C55 /* ViewExtensions.swift */; };
+		1608A4A529B7CF5900806C55 /* ProfessorsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4A429B7CF5900806C55 /* ProfessorsScreenView.swift */; };
+		1608A4A729B7CFA900806C55 /* ProfessorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4A629B7CFA900806C55 /* ProfessorsViewModel.swift */; };
+		1608A4AC29B7D16B00806C55 /* ProfessorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4AB29B7D16B00806C55 /* ProfessorCardView.swift */; };
 		1634060529AE80DF0047D1E3 /* CategoryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */; };
 		1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */; };
 		1634061229B26CF10047D1E3 /* PotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061129B26CF10047D1E3 /* PotionsView.swift */; };
@@ -64,6 +67,9 @@
 		1608A49D29B65C5200806C55 /* CompanionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionCardView.swift; sourceTree = "<group>"; };
 		1608A49F29B6864700806C55 /* CompanionExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionExtendedCardView.swift; sourceTree = "<group>"; };
 		1608A4A229B68ACC00806C55 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		1608A4A429B7CF5900806C55 /* ProfessorsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorsScreenView.swift; sourceTree = "<group>"; };
+		1608A4A629B7CFA900806C55 /* ProfessorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorsViewModel.swift; sourceTree = "<group>"; };
+		1608A4AB29B7D16B00806C55 /* ProfessorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorCardView.swift; sourceTree = "<group>"; };
 		1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleView.swift; sourceTree = "<group>"; };
 		1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellExtendedCardVIew.swift; sourceTree = "<group>"; };
 		1634061129B26CF10047D1E3 /* PotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsView.swift; sourceTree = "<group>"; };
@@ -158,6 +164,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		1608A4A829B7D12600806C55 /* ProfessorsViews */ = {
+			isa = PBXGroup;
+			children = (
+				1608A4A929B7D14200806C55 /* Components */,
+				1608A4A429B7CF5900806C55 /* ProfessorsScreenView.swift */,
+			);
+			path = ProfessorsViews;
+			sourceTree = "<group>";
+		};
+		1608A4A929B7D14200806C55 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1608A4AB29B7D16B00806C55 /* ProfessorCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1634060F29B26C8D0047D1E3 /* PotionsViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +271,7 @@
 		16725C8F29A40A0800FD1286 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1608A4A829B7D12600806C55 /* ProfessorsViews */,
 				1608A49729B6589700806C55 /* CompanionsViews */,
 				1608A48F29B55A2200806C55 /* WandHandlesViews */,
 				167E4D2229B4249900456CCB /* BroomsViews */,
@@ -257,7 +281,6 @@
 				16A724CD29A5789A005E9A24 /* Global View Components */,
 				16725C9229A40A4D00FD1286 /* SplashScreen.swift */,
 				16725C9629A42B4100FD1286 /* DashboardView.swift */,
-				16725C9829A42B9200FD1286 /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,6 +296,7 @@
 				167E4D2629B4260700456CCB /* BroomsViewModel.swift */,
 				1608A49529B55CAF00806C55 /* WandHandlesViewModel.swift */,
 				1608A49A29B659BB00806C55 /* CompanionsViewModel.swift */,
+				1608A4A629B7CFA900806C55 /* ProfessorsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -307,6 +331,7 @@
 		16A724CD29A5789A005E9A24 /* Global View Components */ = {
 			isa = PBXGroup;
 			children = (
+				16725C9829A42B9200FD1286 /* BackgroundView.swift */,
 				16A724CE29A578B4005E9A24 /* TextStyleView.swift */,
 				16A724D029A5AEF9005E9A24 /* SelectedOptionView.swift */,
 				16C022A229A9195500F964BF /* OffsetableScrollView.swift */,
@@ -423,6 +448,7 @@
 				167E4D2729B4260700456CCB /* BroomsViewModel.swift in Sources */,
 				16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */,
 				16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */,
+				1608A4AC29B7D16B00806C55 /* ProfessorCardView.swift in Sources */,
 				16C022AB29A95B9A00F964BF /* SpellCardView.swift in Sources */,
 				1634061629B288BF0047D1E3 /* PotionCardView.swift in Sources */,
 				1608A4A029B6864700806C55 /* CompanionExtendedCardView.swift in Sources */,
@@ -445,7 +471,9 @@
 				1634061B29B3AC8F0047D1E3 /* BeastsScreenView.swift in Sources */,
 				1608A49B29B659BB00806C55 /* CompanionsViewModel.swift in Sources */,
 				1634061D29B3EA000047D1E3 /* BeastViewModel.swift in Sources */,
+				1608A4A729B7CFA900806C55 /* ProfessorsViewModel.swift in Sources */,
 				16CA82A129AD8DB700D10C2A /* NavBarBackgroundView.swift in Sources */,
+				1608A4A529B7CF5900806C55 /* ProfessorsScreenView.swift in Sources */,
 				16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */,
 				167E4D2B29B4282D00456CCB /* BroomCardView.swift in Sources */,
 				16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */,

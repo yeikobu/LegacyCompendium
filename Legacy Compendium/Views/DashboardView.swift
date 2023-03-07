@@ -81,19 +81,18 @@ struct DashboardView: View {
                 }
                 
                 if dashboardViewModel.selectedOption == "Professors" {
-                    Text("Professors View")
+                    ProfessorsScreenView()
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if dashboardViewModel.selectedOption == "Enemies" {
+                    Text("Enemies View")
                         .foregroundColor(Color.white)
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
                 if dashboardViewModel.selectedOption == "Challenges" {
                     Text("Challenges View")
-                        .foregroundColor(Color.white)
-                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
-                }
-                
-                if dashboardViewModel.selectedOption == "Enemies" {
-                    Text("Enemies View")
                         .foregroundColor(Color.white)
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }

@@ -25,7 +25,7 @@ struct Collections: Codable, Hashable {
     let wandHandles: [WandHandle]?
     let brooms: [Broom]?
     let companions: [Companion]?
-    let professors: [Enemy]?
+    let professors: [Professor]?
     let challenges: Challenges?
 
     enum CodingKeys: String, CodingKey {
@@ -79,11 +79,6 @@ struct Img: Codable, Hashable {
         case broomImg = "broom-img"
     }
 }
-
-//enum Locations: String, Codable {
-//    case challenges = "Challenges"
-//    case vendor = "Vendor"
-//}
 
 // MARK: - Challenges
 struct Challenges: Codable, Hashable {
@@ -217,6 +212,12 @@ struct MagicalAbilitiesAndSkills: Codable, Hashable {
 
 // MARK: - Enemy
 struct Enemy: Codable, Hashable {
+    let name, description: String?
+    let img: String?
+}
+
+// MARK: - Professor
+struct Professor: Codable, Hashable {
     let name, description: String?
     let img: String?
 }
