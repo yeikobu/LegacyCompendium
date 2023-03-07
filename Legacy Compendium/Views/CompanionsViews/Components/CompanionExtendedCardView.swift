@@ -29,8 +29,8 @@ struct CompanionExtendedCardView: View {
             .overlay(alignment: .top) {
                 HeaderView()
                 
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color("SelectedOptionBorder"), lineWidth: 0)
+//                RoundedRectangle(cornerRadius: 10)
+//                    .stroke(Color("SelectedOptionBorder"), lineWidth: 0)
             }
         }
         .background(Color("Card"))
