@@ -86,8 +86,7 @@ struct DashboardView: View {
                 }
                 
                 if dashboardViewModel.selectedOption == "Enemies" {
-                    Text("Enemies View")
-                        .foregroundColor(Color.white)
+                    EnemiesScreenView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
                 
