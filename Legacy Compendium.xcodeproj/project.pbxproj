@@ -19,6 +19,10 @@
 		1608A4A529B7CF5900806C55 /* ProfessorsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4A429B7CF5900806C55 /* ProfessorsScreenView.swift */; };
 		1608A4A729B7CFA900806C55 /* ProfessorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4A629B7CFA900806C55 /* ProfessorsViewModel.swift */; };
 		1608A4AC29B7D16B00806C55 /* ProfessorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4AB29B7D16B00806C55 /* ProfessorCardView.swift */; };
+		1608A4AF29B92DF300806C55 /* EnemiesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4AE29B92DF200806C55 /* EnemiesScreenView.swift */; };
+		1608A4B229B92E0D00806C55 /* EnemyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4B129B92E0D00806C55 /* EnemyCardView.swift */; };
+		1608A4B629B9301700806C55 /* EnemiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4B529B9301700806C55 /* EnemiesViewModel.swift */; };
+		1608A4B829B931AE00806C55 /* EnemyExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4B729B931AE00806C55 /* EnemyExtendedCardView.swift */; };
 		1634060529AE80DF0047D1E3 /* CategoryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */; };
 		1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */; };
 		1634061229B26CF10047D1E3 /* PotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061129B26CF10047D1E3 /* PotionsView.swift */; };
@@ -70,6 +74,10 @@
 		1608A4A429B7CF5900806C55 /* ProfessorsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorsScreenView.swift; sourceTree = "<group>"; };
 		1608A4A629B7CFA900806C55 /* ProfessorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorsViewModel.swift; sourceTree = "<group>"; };
 		1608A4AB29B7D16B00806C55 /* ProfessorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorCardView.swift; sourceTree = "<group>"; };
+		1608A4AE29B92DF200806C55 /* EnemiesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemiesScreenView.swift; sourceTree = "<group>"; };
+		1608A4B129B92E0D00806C55 /* EnemyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyCardView.swift; sourceTree = "<group>"; };
+		1608A4B529B9301700806C55 /* EnemiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemiesViewModel.swift; sourceTree = "<group>"; };
+		1608A4B729B931AE00806C55 /* EnemyExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyExtendedCardView.swift; sourceTree = "<group>"; };
 		1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleView.swift; sourceTree = "<group>"; };
 		1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellExtendedCardVIew.swift; sourceTree = "<group>"; };
 		1634061129B26CF10047D1E3 /* PotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsView.swift; sourceTree = "<group>"; };
@@ -181,6 +189,24 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		1608A4AD29B92DDA00806C55 /* EnemiesViews */ = {
+			isa = PBXGroup;
+			children = (
+				1608A4B029B92DF800806C55 /* Components */,
+				1608A4AE29B92DF200806C55 /* EnemiesScreenView.swift */,
+			);
+			path = EnemiesViews;
+			sourceTree = "<group>";
+		};
+		1608A4B029B92DF800806C55 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1608A4B129B92E0D00806C55 /* EnemyCardView.swift */,
+				1608A4B729B931AE00806C55 /* EnemyExtendedCardView.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		1634060F29B26C8D0047D1E3 /* PotionsViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +297,7 @@
 		16725C8F29A40A0800FD1286 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1608A4AD29B92DDA00806C55 /* EnemiesViews */,
 				1608A4A829B7D12600806C55 /* ProfessorsViews */,
 				1608A49729B6589700806C55 /* CompanionsViews */,
 				1608A48F29B55A2200806C55 /* WandHandlesViews */,
@@ -297,6 +324,7 @@
 				1608A49529B55CAF00806C55 /* WandHandlesViewModel.swift */,
 				1608A49A29B659BB00806C55 /* CompanionsViewModel.swift */,
 				1608A4A629B7CFA900806C55 /* ProfessorsViewModel.swift */,
+				1608A4B529B9301700806C55 /* EnemiesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -442,9 +470,11 @@
 			files = (
 				1608A49629B55CAF00806C55 /* WandHandlesViewModel.swift in Sources */,
 				1608A49129B55A4800806C55 /* WandHandlesScreenView.swift in Sources */,
+				1608A4B829B931AE00806C55 /* EnemyExtendedCardView.swift in Sources */,
 				16C022AD29A95F9B00F964BF /* CardBackgroundView.swift in Sources */,
 				1608A49E29B65C5200806C55 /* CompanionCardView.swift in Sources */,
 				1634061429B285A70047D1E3 /* PotionsViewModel.swift in Sources */,
+				1608A4AF29B92DF300806C55 /* EnemiesScreenView.swift in Sources */,
 				167E4D2729B4260700456CCB /* BroomsViewModel.swift in Sources */,
 				16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */,
 				16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */,
@@ -463,6 +493,7 @@
 				1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */,
 				16C022A629A91A2F00F964BF /* SpellsView.swift in Sources */,
 				1608A48E29B5273100806C55 /* BroomExtendedCardView.swift in Sources */,
+				1608A4B229B92E0D00806C55 /* EnemyCardView.swift in Sources */,
 				1634060529AE80DF0047D1E3 /* CategoryTitleView.swift in Sources */,
 				16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */,
 				16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */,
@@ -473,6 +504,7 @@
 				1634061D29B3EA000047D1E3 /* BeastViewModel.swift in Sources */,
 				1608A4A729B7CFA900806C55 /* ProfessorsViewModel.swift in Sources */,
 				16CA82A129AD8DB700D10C2A /* NavBarBackgroundView.swift in Sources */,
+				1608A4B629B9301700806C55 /* EnemiesViewModel.swift in Sources */,
 				1608A4A529B7CF5900806C55 /* ProfessorsScreenView.swift in Sources */,
 				16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */,
 				167E4D2B29B4282D00456CCB /* BroomCardView.swift in Sources */,
