@@ -26,7 +26,7 @@
         "unlock": "Main Quest - The Path to Hogwarts",
         "description": "Flashlight.",
         "upgrades": "None",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FLumos.avif?alt=media&token=02360787-53cc-4708-ac78-df824d6ea717"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FLumos.png?alt=media&token=4291b4a5-8fb2-49b5-8ca4-1481a7bb1d30"
       },
       {
         "spell-name": "Protego & Stupefy",
@@ -44,7 +44,7 @@
         "unlock": "Main Quest - Defence Against the Dark Arts Class",
         "description": "Lifts enemies and objects into the air.",
         "upgrades": "Also lifts enemies around target into air.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FLevioso.avif?alt=media&token=f7bd1c6c-0086-4e1a-8b0e-7dc6f61c6dfe"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FLevioso.png?alt=media&token=acaf05e8-be7b-4f43-9c52-e18b32a2b9dc"
       },
       {
         "spell-name": "Accio",
@@ -53,7 +53,7 @@
         "unlock": "Main Quest - Charms Class",
         "description": "Yanks most enemies to you, and pulls them airborne. Used in exploration to grab collectibles.",
         "upgrades": "Also pulls enemies around target to you.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2Faccio.avif?alt=media&token=0e12d0f8-1db0-4e36-acd6-44499272e023"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FAccio.png?alt=media&token=293cde5f-7971-404a-bc56-1c48804d2e73"
       },
       {
         "spell-name": "Reparo",
@@ -89,7 +89,7 @@
         "unlock": "Assignment Side Quest - Professor Hecat’s Assignment 2",
         "description": "Long-range attack. Disarms most enemies and damages them.",
         "upgrades": "Expelliarmus curses enemies.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FExpelliarmus.avif?alt=media&token=34f3e288-da7e-40fc-9f84-af8a087469e5"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FExpelliarmus.png?alt=media&token=bce1d301-9195-4f07-bc9c-8d5bcef60720"
       },
       {
         "spell-name": "Incendio",
@@ -98,7 +98,7 @@
         "unlock": "Assignment Side Quest - Professor Hecat’s Assignment 1",
         "description": "Short-range flamethrower.",
         "upgrades": "Turns Incendio into a circle AOE around player.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FIncendio.avif?alt=media&token=1116c7d9-410f-42eb-9da9-e8de4c3360a6"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FIncendio.png?alt=media&token=90886b9c-32e3-4301-995e-e5b7eae8e43e"
       },
       {
         "spell-name": "Depulso",
@@ -107,7 +107,7 @@
         "unlock": "Assignment Side Quest - Professor Sharp’s Assignment 1",
         "description": "Throws enemies and objects. Does no damage on it's own, but enemies and objects can be thrown into surfaces or other enemies.",
         "upgrades": "Releases additional blast in AOE around player.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDepulso.avif?alt=media&token=df1cc928-207a-4666-bb64-1d94f9ab005c"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDepulso.png?alt=media&token=978ca2cb-78c4-4944-9f50-f36be1b622d2"
       },
       {
         "spell-name": "Disillusionment",
@@ -116,7 +116,7 @@
         "unlock": "Main Quest - Secrets of the Restricted Section",
         "description": "Makes you mostly invisible, enters stealth mode.",
         "upgrades": "Can sprint while stealthed.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDisillusionment.avif?alt=media&token=502fe4f9-2b76-48ea-b81c-ea6178459a59"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDesillusionment.png?alt=media&token=f5003e53-9237-44b6-b7ad-a97c391b18e2"
       },
       {
         "spell-name": "Evanesco",
@@ -125,7 +125,7 @@
         "unlock": "Main Quest - The Room of Requirement",
         "description": "Vanishes Room of Requirement item, refunds into Moonstone",
         "upgrades": "None",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FEvanesco.avif?alt=media&token=7c400aab-0a09-44b0-b8d5-5ebf6b250dc6"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FEvanesco.png?alt=media&token=3ab927aa-6ad6-4503-b462-e52f706f0fa0"
       },
       {
         "spell-name": "Conjuring spell",
@@ -134,7 +134,7 @@
         "unlock": "Main Quest - The Room of Requirement",
         "description": "Conjures Room of Requirement Items",
         "upgrades": "None",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FConjuring%20Spell%20.avif?alt=media&token=ab3bd653-a87f-4429-a2d5-c544d2053a14"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FConjuring%20Spell.png?alt=media&token=70f8532a-f53b-4ca6-a7c6-8f9b46a71718"
       },
       {
         "spell-name": "Altering spell",
@@ -143,7 +143,7 @@
         "unlock": "Main Quest - The Room of Requirement",
         "description": "Alters the form and features of Room of Requirement items",
         "upgrades": "None",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FAltering%20Spell%20.avif?alt=media&token=a70dfa91-d2ab-4a6c-b2f3-8e455deece22"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FAltering%20Spell.png?alt=media&token=e9d9c52c-bbf9-4d6b-9ead-d0dda0ffc66b"
       },
       {
         "spell-name": "Confringo",
@@ -152,7 +152,7 @@
         "unlock": "Main Quest - In the Shadow of the Undercroft",
         "description": "Long-range fireball. Sets enemy on fire.",
         "upgrades": "Impacts create bolts of fire that seek out enemies.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FConfringo.avif?alt=media&token=3cf8de3c-0fd4-4eda-83ca-d0cf413e06e7"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FConfringo.png?alt=media&token=b05c4a4c-cd95-4383-8420-1b659591a251"
       },
       {
         "spell-name": "Petrificus Totalus",
@@ -170,7 +170,7 @@
         "unlock": "Assignment Side Quest - Professor Sharp’s Assignment 2",
         "description": "Longe-range attack. Deals considerable damage.",
         "upgrades": "Slices through target to hit enemies behind them.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDiffindo.avif?alt=media&token=549101a2-8c0e-485e-b80e-6b6112b50dd3"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDiffindo.png?alt=media&token=b6be854f-4073-4a19-8853-df89f482a0af"
       },
       {
         "spell-name": "Wingardium Leviosa",
@@ -179,7 +179,7 @@
         "unlock": "Assignment Side Quest - Professor Garlick’s Assignment 1",
         "description": "A spell that lifts small objects or animals in the air. While this spell does not work on humans, it can make them levitate a few feets up in the air if the spell is cast upon a target's clothes.",
         "upgrades": "None",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FWingardium%20Leviosa.avif?alt=media&token=1d49fc69-306f-4811-b57f-242b004ccecc"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FWingardium%20Leviosa.png?alt=media&token=f1b8eafd-c6e3-4446-875e-35b7ca3e4269"
       },
       {
         "spell-name": "Alohomora",
@@ -197,7 +197,7 @@
         "unlock": "Assignment Side Quest - Madam Kogawa’s Assignment 1",
         "description": "Freezes enemies, increases damage of subsequent attacks.",
         "upgrades": "Creates damaging ice shards when striking frozen enemy.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FGlacius.avif?alt=media&token=d70e8a37-7087-4e89-af50-183d96aeadaf"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FGlacius.png?alt=media&token=d4e3d134-bc7b-476c-bb34-0ad83ba56e4e"
       },
       {
         "spell-name": "Descendo",
@@ -206,7 +206,7 @@
         "unlock": "Assignment Side Quest - Professor Onai’s Assignment",
         "description": "Slams enemies into the ground. Does more damage if they're airborne.",
         "upgrades": "Creates shockwave around target's impact point.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDescendo.avif?alt=media&token=85c53be5-b767-4d82-ab95-5e354208ab87"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FDescendo.png?alt=media&token=c165c84e-9ffa-4b87-8e60-466b9ff5576d"
       },
       {
         "spell-name": "Beast Petting Brush",
@@ -215,7 +215,7 @@
         "unlock": "Main Quest - Beasts Class",
         "description": "For taking care of beasts.",
         "upgrades": "None",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FBeast%20Petting%20Brush.png?alt=media&token=bb3be09f-5248-4a34-9441-8db2a19cd473"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FBeast%20Petting%20Brush.png?alt=media&token=3e19da1c-b226-45b5-bd4e-bfa0f7124a41"
       },
       {
         "spell-name": "Beast Feed",
@@ -224,7 +224,7 @@
         "unlock": "Main Quest - Beasts Class",
         "description": "For taking care of beasts.",
         "upgrades": "None",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FBeast%20Feed.png?alt=media&token=6af26eb7-bfa2-4806-9905-0b935a976cfe"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FBeast%20Feed.png?alt=media&token=aa5be164-1422-4ef4-8f71-814b051de505"
       },
       {
         "spell-name": "Nab-Sack",
@@ -233,7 +233,7 @@
         "unlock": "Main Quest - The Elf, the Nab-Sack, and the Loom",
         "description": "Captures beasts.",
         "upgrades": "None",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FNab-Sack.png?alt=media&token=f984bcf6-4fc7-4cbc-948c-fd3dd3ee237e"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FNab%20Sack.png?alt=media&token=81002481-813a-4599-8ac2-de161f10e794"
       },
       {
         "spell-name": "Bombarda",
@@ -242,7 +242,7 @@
         "unlock": "Assignment Side Quest - Professor Howin's Assignment",
         "description": "Deals heavy damage and hits surrounding enemies.",
         "upgrades": "Creates massive AOE around target.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FBombarda.png?alt=media&token=065aee23-5750-4ec2-a29a-61cc4206b155"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FBombarda.png?alt=media&token=423cc31b-84d1-47ae-aeb7-f650a6c75688"
       },
       {
         "spell-name": "Flipendo",
@@ -251,7 +251,7 @@
         "unlock": "Assignment Side Quest - Professor Garlick’s Assignment 2",
         "description": "Flips enemies and objects. Your fastest cooldown spell to get the enemy airborne.",
         "upgrades": "Flipendo curses enemies.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FFlipendo.png?alt=media&token=60dcc4e4-fd2e-42a8-8ab2-213547b44ab9"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FFlipendo.png?alt=media&token=1c99b7c8-d05d-4114-9a61-04745a54031d"
       },
       {
         "spell-name": "Arresto Momentum",
@@ -260,7 +260,7 @@
         "unlock": "Assignment Side Quest - Madam Kogawa’s Assignment 2",
         "description": "Slows objects and enemies. Sends enemies airborne.",
         "upgrades": "Curses enemies.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FArresto%20Momentum%20.avif?alt=media&token=cc75cec2-fea8-4038-a11b-88c397b4a96a"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FArresto%20Momentum.png?alt=media&token=16e66f2b-cfc7-40b5-91c5-82fa391658a3"
       },
       {
         "spell-name": "Transformation",
@@ -269,7 +269,7 @@
         "unlock": "Assignment Side Quest - Professor Weasley's Assignment",
         "description": "Transforms objects and enemies into alternate forms.",
         "upgrades": "Transform enemies into explosive objects.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FTransformation.png?alt=media&token=976ffbcf-c337-4dfd-a051-49bad510f2c1"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FTransformation.png?alt=media&token=52c85435-c276-416d-a300-5d0710aa4f77"
       },
       {
         "spell-name": "Crucio",
@@ -278,7 +278,7 @@
         "unlock": "Companion Quest - Sebastian Sallow's In the Shadow of the Study",
         "description": "Inflicts damage over time and curses enemies.",
         "upgrades": "Striking cursed enemy creates cursing projectile.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FCrucio.png?alt=media&token=c289d049-0689-4b7e-a20a-7e4a9d244961"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FCrucio.png?alt=media&token=4186d14d-6575-4806-a3b1-71395da73d5a"
       },
       {
         "spell-name": "Imperio",
@@ -287,7 +287,7 @@
         "unlock": "Companion Quest - Sebastian Sallow's In the Shadow of Time",
         "description": "Charms and curses enemies.",
         "upgrades": "Charmed enemies spread Curse through their attacks.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FImperio.png?alt=media&token=3d844b13-460a-48df-8faa-04af95b6067e"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FImperio.png?alt=media&token=c0eb4858-fdab-4768-8682-cd36ac8a4546"
       },
       {
         "spell-name": "Avada Kedavra",
@@ -296,13 +296,13 @@
         "unlock": "Companion Quest - Sebastian Sallow's In the Shadow of the Relic",
         "description": "Kills enemies instantly.",
         "upgrades": "Kills all cursed enemies.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FAvada%20Kedavra.png?alt=media&token=ff00c09d-154d-4d77-8ef5-1a613cfd0f5a"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FAvada%20Kedavra.png?alt=media&token=12c2956b-0784-46a4-a048-9066763937ea"
       }
     ],
     "Potions": [
       {
         "potion-name": "Wiggenweld potion",
-        "description": "This potion is used to heal injuries.",
+        "description": "Aids in healing and restores a bit of the drinker's health",
         "unlock": "First Potions class.",
         "ingredients": "1x Horklump Juice \n1x Dittany Leaves",
         "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Potions%2FWiggenweld.png?alt=media&token=eac2deed-f373-4421-9052-b17851df30cb"
@@ -1023,57 +1023,62 @@
       {
         "name": "Eleazar Fig",
         "description": "A wizard who teaches Magic Theory at Hogwarts. An essential character throughout your journey as he investigates the mystery of Ranrok's rebellion.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FEleazar_Fig.webp?alt=media&token=9af1ad7d-8928-475f-be00-f88c97f3f193"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FEleazar%20Fig.png?alt=media&token=b3676537-44b4-44de-b52c-c43581ac448b"
       },
       {
         "name": "Matlida Weasley",
         "description": "A witch who teaches Transfiguration at Hogwarts and eventually becomes the Deputy Headmistress. She will eventually lead you to the Room of Requirement, a crucial aspect of the game.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FMatilda_Weasley.webp?alt=media&token=6287e1c1-58b3-423b-aa53-e9d13b1c1580"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FMatilda%20Weasley.png?alt=media&token=bac22cc7-3180-4b76-a49b-cad2b32f4a11"
       },
       {
         "name": "Phineas Nigellus Black",
         "description": "The Headmaster at Hogwarts. An unpopular figure among his peers due to his disinterest in the position, even canceling Quidditch for the entire school year.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FPhineas_Black.webp?alt=media&token=2b783693-a5f4-4ba7-bc6d-d428062001d0"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FPhineas%20Nigellus%20Black.png?alt=media&token=6bda4cbe-d59c-4dd0-9222-4e1db6f112f3"
       },
       {
         "name": "Aesop Sharp",
         "description": "A Potions Master at Hogwarts. A stern and straightforward professor, Sharp became known for his challenging classes and lack of patience with students who didn't want to learn. However, he received immense satisfaction for students that go the extra mile.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FAesop_Sharp.webp?alt=media&token=21cd03b7-f93c-4ae0-8183-cd8f7103d2d0"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FAesop%20Sharp.png?alt=media&token=35c50e7f-197d-411a-9882-25aab0ee4d72"
       },
       {
         "name": "Dinah Hecat",
         "description": "A witch who taught Defence Against the Dark Arts. An authoritative and likable professor, her classes were demanding as her teaching methods were hands-on.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FDinah_Hecat.webp?alt=media&token=ed6a0464-f17d-4b80-ab98-5a75cf63ff39"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FDinah%20Hecat.png?alt=media&token=b6b43846-aa61-4683-9d0d-92b841a01178"
       },
       {
         "name": "Mirabel Garlick",
         "description": "The Herbology Professor at Hogwarts. A kind, thoughtful, and caring professor who has an affinity for magical plants.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FMirabel_Garlick.webp?alt=media&token=5ee6903a-c60f-4e7e-a264-bc0c1e3f7118"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FMaribel%20Garlick.png?alt=media&token=5e99886b-19b3-463f-a44e-83381de98bb6"
       },
       {
         "name": "Abraham Ronen",
         "description": "A Charms Master Professor at Hogwarts. An easygoing and enthusiastic professor, he created the Summoning Court to allow students to practice the Summoning Charm. He considers his relationships with students and activities to be equally as important as class itself.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FAbraham_Ronen.webp?alt=media&token=81a81c0a-d028-4af7-8a6e-01541d855c2a"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FAbraham%20Ronen.png?alt=media&token=1f631ff0-e300-4fa6-a074-199c27ae5229"
       },
       {
         "name": "Bai Howin",
         "description": "Teaches Beasts Class at Hogwarts. During her class, you'll encounter a few tamed Beasts that you can interact with.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FBai_Howin.webp?alt=media&token=4df4f49e-c92c-4194-8e96-7471428a1769"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FBai%20Howin.png?alt=media&token=8cd80928-fc75-4866-9062-8a389ddd81a0"
       },
       {
         "name": "Chiyo Kogawa",
         "description": "Teaches Broom Flight Class. A strict teacher who follows the rules to a tee due to the nature of the class, this is where you'll learn how to fly for the first time.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FChiyo_Kogawa.webp?alt=media&token=df03cd35-7c93-4e41-880e-b2abd1e09386"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FChiyo%20Kogawa.png?alt=media&token=c7a4041b-afd5-4aa0-adfd-e23ed5fbf440"
       },
       {
         "name": "Mudiwa Onai",
         "description": "The mother of one of your companions, Natsai Onai, Mudiwa teaches Divination at Hogwarts.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FNatsai_Onai.webp?alt=media&token=00476a98-ecac-42e0-8514-2580301fa7f6"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FMudiwa%20Onai.png?alt=media&token=8302d82a-29bf-4774-8e34-261bee7014a0"
       },
       {
         "name": "Gladwin Moon",
         "description": "A caretaker at Hogwarts. He will eventually teach you Alohamora, a spell that allows you to unlock locks.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FGladwin_Moon.webp?alt=media&token=0eb50144-f5a7-4c66-bb81-77cba765c687"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FGladwin%20Moon.png?alt=media&token=293c37df-7d6d-4591-979a-e814852bc62f"
+      },
+      {
+          "name": "Satyavati Shah",
+          "description": "Professor Satyavati Shah was the professor of Astronomy at Hogwarts School of Witchcraft and Wizardry in the late 19th century. Professor Shah had a sister named Suchrita who also studied Astronomy and had contact at Cambridge University. They seemingly had a close relationship, taking at least one trip together to Jantar Mantar in late 1890",
+          "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Professors%2FSatyavati%20Shah.png?alt=media&token=4c835bea-4cfc-4a76-928f-8c858ad645a1"
       }
     ],
     "Challenges": {

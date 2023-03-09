@@ -91,8 +91,9 @@ struct DashboardView: View {
                 }
                 
                 if dashboardViewModel.selectedOption == "Challenges" {
-                    Text("Challenges View")
+                    Text("Coming soon")
                         .foregroundColor(Color.white)
+                        .font(.custom("UniversityOldstyleBook", size: 16))
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
             }
@@ -183,5 +184,6 @@ struct DashboardView: View {
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView(isTransitionActive: .constant(true))
+            .preferredColorScheme(.dark)
     }
 }
