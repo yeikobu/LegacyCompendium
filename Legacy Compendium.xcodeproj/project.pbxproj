@@ -23,6 +23,7 @@
 		1608A4B229B92E0D00806C55 /* EnemyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4B129B92E0D00806C55 /* EnemyCardView.swift */; };
 		1608A4B629B9301700806C55 /* EnemiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4B529B9301700806C55 /* EnemiesViewModel.swift */; };
 		1608A4B829B931AE00806C55 /* EnemyExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4B729B931AE00806C55 /* EnemyExtendedCardView.swift */; };
+		1608A4BA29BA862500806C55 /* ProfessorExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A4B929BA862500806C55 /* ProfessorExtendedCardView.swift */; };
 		1634060529AE80DF0047D1E3 /* CategoryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */; };
 		1634060729AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */; };
 		1634061229B26CF10047D1E3 /* PotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061129B26CF10047D1E3 /* PotionsView.swift */; };
@@ -78,6 +79,7 @@
 		1608A4B129B92E0D00806C55 /* EnemyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyCardView.swift; sourceTree = "<group>"; };
 		1608A4B529B9301700806C55 /* EnemiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemiesViewModel.swift; sourceTree = "<group>"; };
 		1608A4B729B931AE00806C55 /* EnemyExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyExtendedCardView.swift; sourceTree = "<group>"; };
+		1608A4B929BA862500806C55 /* ProfessorExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorExtendedCardView.swift; sourceTree = "<group>"; };
 		1634060429AE80DF0047D1E3 /* CategoryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleView.swift; sourceTree = "<group>"; };
 		1634060629AEBB0B0047D1E3 /* SpellExtendedCardVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellExtendedCardVIew.swift; sourceTree = "<group>"; };
 		1634061129B26CF10047D1E3 /* PotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				1608A4AB29B7D16B00806C55 /* ProfessorCardView.swift */,
+				1608A4B929BA862500806C55 /* ProfessorExtendedCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */,
 				16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */,
 				1608A4AC29B7D16B00806C55 /* ProfessorCardView.swift in Sources */,
+				1608A4BA29BA862500806C55 /* ProfessorExtendedCardView.swift in Sources */,
 				16C022AB29A95B9A00F964BF /* SpellCardView.swift in Sources */,
 				1634061629B288BF0047D1E3 /* PotionCardView.swift in Sources */,
 				1608A4A029B6864700806C55 /* CompanionExtendedCardView.swift in Sources */,
