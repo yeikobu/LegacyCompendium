@@ -25,7 +25,7 @@ struct WandHandleCardView: View {
                         .stroke(Color("SelectedOptionBorder"), lineWidth: 2)
                         .matchedGeometryEffect(id: "image\(String(describing: wandHandleModel.handleName))border", in: animation)
                 )
-                .frame(height: 250)
+                .frame(height: 200)
                 .offset(y: -95)
             
             VStack {
@@ -34,7 +34,7 @@ struct WandHandleCardView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color("SelectedOptionBorder"))
                     .matchedGeometryEffect(id: "handleName\(String(describing: wandHandleModel.handleName))", in: animation)
-                    .padding(.top, 190)
+                    .padding(.top, 130)
                     .padding(.horizontal, 5)
                 
                 VStack(alignment: .leading, spacing: 5) {
@@ -55,7 +55,21 @@ struct WandHandleCardView: View {
         .matchedGeometryEffect(id: "allView\(String(describing: wandHandleModel.handleName))", in: animation)
         .frame(width: 300, height: 320)
         .background {
-            CardBackgroundView()
+            ZStack {
+                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                    .fill(.ultraThinMaterial)
+                    .blur(radius: 0)
+                    .opacity(0.85)
+                
+                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                    .fill(Color("Card"))
+                    .blur(radius: 0)
+                    .opacity(0.80)
+            }
+            .overlay(
+                RoundedRectangle(cornerRadius: 30)
+                    .stroke(Color("SelectedOptionBorder"), lineWidth: 2)
+            )
         }
         .padding(.top, 100)
     }
