@@ -70,55 +70,13 @@ struct ProfessorsScreenView: View {
         .overlay(alignment: .center) {
             if isProfessorSelected {
                 ZStack {
-                    Color("Background").opacity(isProfessorSelected ? 1 : 0)
-                        .onTapGesture {
-                            withAnimation(.easeInOut(duration: 0.3)) {
-                                isProfessorSelected = false
-                            }
-                            
-                            withAnimation(.easeInOut(duration: 0.1)) {
-                                showContent = false
-                            }
-                        }
-                    
-                    ProfessorExtendedCardView(professorModel: professorsViewModel.selectedProfessor, showContent: $showContent, animation: animation)
-                        .offset(y: offset + dragOffset)
-                        .gesture(
-                            DragGesture()
-                                .updating($dragOffset) { value, state, _ in
-                                    state = value.translation.height
-                                }
-                                .onEnded { value in
-                                    let screenHeight = UIScreen.main.bounds.height
-                                    let swipeThreshold = screenHeight * 0.10
-                                    
-                                    if value.translation.height > swipeThreshold {
-                                        withAnimation(.easeInOut(duration: 0.3)) {
-                                            isProfessorSelected = false
-                                        }
-                                        
-                                        
-                                        withAnimation(.easeInOut(duration: 0.1)) {
-                                            showContent = false
-                                        }
-                                        
-                                        withAnimation {
-                                            offset = screenHeight
-                                        }
-                                    } else {
-                                        withAnimation {
-                                            offset = 0
-                                        }
-                                    }
-                                }
-                        )
+                    GeometryReader {
+                        let safeAre = $0.safeAreaInsets
+                        let size = $0.size
+                        
+                        ProfessorExtendedCardView(professorModel: professorsViewModel.selectedProfessor, showContent: $showContent, isProfessorSelected: $isProfessorSelected, animation: animation, safeArea: safeAre, size: size)
+                    }
                 }
-                .transition(.offset(x: 1, y: 1))
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                .onDisappear {
-                    offset = 0
-                }
-                .ignoresSafeArea()
             }
         }
         .onAppear {

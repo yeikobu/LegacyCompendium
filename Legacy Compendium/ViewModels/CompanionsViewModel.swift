@@ -8,8 +8,8 @@
 import Foundation
 
 class CompanionsViewModel: LegacyCompendiumViewModel {
-    @Published var companios = [Companion]()
-    @Published var selectedCompanion = Companion(name: "", house: "", description: "", biography: "", magicalAbilitiesAndSkills: MagicalAbilitiesAndSkills(transfiguration: "", charms: "", dueling: "", wandlessMagic: "", darkArts: "", charismaAndManipulation: "", love: "", parseltongue: "", defenceAgainstTheDarkArts: "", magicalBeasts: ""), img: "")
+    @Published var companios = [Personage]()
+    @Published var selectedCompanion = Personage(name: "", house: "", description: "", biography: "", magicalAbilitiesAndSkills: MagicalAbilitiesAndSkills(transfiguration: "", charms: "", dueling: "", wandlessMagic: "", darkArts: "", charismaAndManipulation: "", love: "", parseltongue: "", defenceAgainstTheDarkArts: "", magicalBeasts: "", magicalTheory: "", magizoology: "", auror: "", potions: "", magicalKnowledge: "", herbology: "", flight: "", divination: "", astronomy: ""), img: "")
     
     func getCompanion() {
         getData()
