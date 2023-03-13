@@ -12,7 +12,7 @@ class DashboardViewModel: ObservableObject {
     @Published var isShowMenuButtonTapped = false
     @Published var showSelectedOptionView = true
     @Published var selectedOptionBackgroundTransition = false
-    @Published var menuOptions = ["Spells", "Beasts", "Brooms", "Wand Handles", "Potions", "Companions", "Professors", "Enemies", "Challenges"]
+    @Published var menuOptions = ["Spells", "Beasts", "Brooms", "Wand Handles", "Potions", "Companions", "Professors", "Enemies"]
     @Published var selectedOption = "Spells"
     @Published var isOptionSelected = false
     
