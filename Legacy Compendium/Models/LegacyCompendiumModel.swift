@@ -24,8 +24,8 @@ struct Collections: Codable, Hashable {
     let enemies: [Enemy]?
     let wandHandles: [WandHandle]?
     let brooms: [Broom]?
-    let companions: [Companion]?
-    let professors: [Professor]?
+    let companions: [Personage]?
+    let professors: [Personage]?
     let challenges: Challenges?
 
     enum CodingKeys: String, CodingKey {
@@ -177,7 +177,7 @@ struct RoomOfRequirement: Codable, Hashable {
 }
 
 // MARK: - Companion
-struct Companion: Codable, Hashable {
+struct Personage: Codable, Hashable {
     let name, house, description, biography: String?
     let magicalAbilitiesAndSkills: MagicalAbilitiesAndSkills?
     let img: String?
@@ -197,6 +197,9 @@ struct MagicalAbilitiesAndSkills: Codable, Hashable {
     let transfiguration, charms, dueling, wandlessMagic: String?
     let darkArts, charismaAndManipulation, love, parseltongue: String?
     let defenceAgainstTheDarkArts, magicalBeasts: String?
+    let magicalTheory, magizoology, auror: String?
+    let potions, magicalKnowledge: String?
+    let herbology, flight, divination, astronomy: String?
 
     enum CodingKeys: String, CodingKey {
         case transfiguration, charms, dueling
@@ -207,6 +210,15 @@ struct MagicalAbilitiesAndSkills: Codable, Hashable {
         case parseltongue = "parseltongue"
         case defenceAgainstTheDarkArts = "defence against the dark arts"
         case magicalBeasts = "magical-beasts"
+        case magicalTheory = "magical theory"
+        case magizoology = "magizoology"
+        case auror = "auror"
+        case potions = "potions"
+        case herbology = "herbology"
+        case magicalKnowledge = "magical knowledge"
+        case flight = "flight"
+        case divination = "divination"
+        case astronomy = "astronomy"
     }
 }
 

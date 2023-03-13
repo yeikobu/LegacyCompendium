@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct CompanionCardView: View {
-    @State var companionModel: Companion
+    @State var companionModel: Personage
     var animation: Namespace.ID
     
     var body: some View {

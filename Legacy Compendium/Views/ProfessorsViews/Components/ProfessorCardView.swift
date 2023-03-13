@@ -10,7 +10,7 @@ import Kingfisher
 
 struct ProfessorCardView: View {
     
-    @State var professorModel: Professor
+    @State var professorModel: Personage
     var animation: Namespace.ID
     
     var body: some View {
