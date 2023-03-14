@@ -11,8 +11,11 @@ import SwiftUI
 class DashboardViewModel: ObservableObject {
     @Published var isShowMenuButtonTapped = false
     @Published var showSelectedOptionView = true
+    @Published var isSettingsButtonShowed = false
+    @Published var isSettingsMenuShowed = false
     @Published var selectedOptionBackgroundTransition = false
-    @Published var menuOptions = ["Spells", "Beasts", "Brooms", "Wand Handles", "Potions", "Companions", "Professors", "Enemies"]
+    let menuOptions = ["Spells", "Beasts", "Brooms", "Wand Handles", "Potions", "Companions", "Professors", "Enemies"]
+    let settingsMenuOptions = ["Terms", "Privacy Police", "Contact support", "Remove Ads"]
     @Published var selectedOption = "Spells"
     @Published var isOptionSelected = false
     
@@ -26,11 +29,13 @@ class DashboardViewModel: ObservableObject {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 withAnimation(.easeOut(duration: 0.5)) {
                     self.selectedOptionBackgroundTransition = true
+                    self.isSettingsButtonShowed = true
                 }
             }
         } else {
             withAnimation(.easeOut(duration: 0.5)) {
                 self.selectedOptionBackgroundTransition = false
+                self.isSettingsButtonShowed = true
             }
         }
     }
@@ -47,6 +52,14 @@ class DashboardViewModel: ObservableObject {
                     self.isShowMenuButtonTapped.toggle()
                 }
             }
+        }
+    }
+    
+    //MARK: - show settings menu
+    func showSettingsMenu() {
+        withAnimation(.easeOut(duration: 0.3)) {
+            self.isSettingsMenuShowed.toggle()
+            print(isSettingsMenuShowed)
         }
     }
 }
