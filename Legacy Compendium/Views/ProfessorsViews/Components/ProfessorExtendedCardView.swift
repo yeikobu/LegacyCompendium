@@ -264,6 +264,73 @@ struct ProfessorExtendedCardView: View {
                                 .padding(.bottom, 5)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
+                        
+                    }
+                    
+                    VStack {
+                        if professorModel.magicalAbilitiesAndSkills?.magicalTheory != nil {
+                            Text(professorModel.magicalAbilitiesAndSkills?.magicalTheory ?? "")
+                                .font(.custom("UniversityOldstyleBook", size: 16))
+                                .foregroundColor(Color("SelectedOptionBorder"))
+                                .padding(.bottom, 5)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        
+                        if professorModel.magicalAbilitiesAndSkills?.magizoology != nil {
+                            Text(professorModel.magicalAbilitiesAndSkills?.magizoology ?? "")
+                                .font(.custom("UniversityOldstyleBook", size: 16))
+                                .foregroundColor(Color("SelectedOptionBorder"))
+                                .padding(.bottom, 5)
+                        }
+                        
+                        if professorModel.magicalAbilitiesAndSkills?.auror != nil {
+                            Text(professorModel.magicalAbilitiesAndSkills?.auror ?? "")
+                                .font(.custom("UniversityOldstyleBook", size: 16))
+                                .foregroundColor(Color("SelectedOptionBorder"))
+                                .padding(.bottom, 5)
+                        }
+                        
+                        if professorModel.magicalAbilitiesAndSkills?.potions != nil {
+                            Text(professorModel.magicalAbilitiesAndSkills?.potions ?? "")
+                                .font(.custom("UniversityOldstyleBook", size: 16))
+                                .foregroundColor(Color("SelectedOptionBorder"))
+                                .padding(.bottom, 5)
+                        }
+                        
+                        if professorModel.magicalAbilitiesAndSkills?.herbology != nil {
+                            Text(professorModel.magicalAbilitiesAndSkills?.herbology ?? "")
+                                .font(.custom("UniversityOldstyleBook", size: 16))
+                                .foregroundColor(Color("SelectedOptionBorder"))
+                                .padding(.bottom, 5)
+                        }
+                        
+                        if professorModel.magicalAbilitiesAndSkills?.magicalKnowledge != nil {
+                            Text(professorModel.magicalAbilitiesAndSkills?.magicalKnowledge ?? "")
+                                .font(.custom("UniversityOldstyleBook", size: 16))
+                                .foregroundColor(Color("SelectedOptionBorder"))
+                                .padding(.bottom, 5)
+                        }
+                        
+                        if professorModel.magicalAbilitiesAndSkills?.flight != nil {
+                            Text(professorModel.magicalAbilitiesAndSkills?.flight ?? "")
+                                .font(.custom("UniversityOldstyleBook", size: 16))
+                                .foregroundColor(Color("SelectedOptionBorder"))
+                                .padding(.bottom, 5)
+                        }
+                        
+                        if professorModel.magicalAbilitiesAndSkills?.divination != nil {
+                            Text(professorModel.magicalAbilitiesAndSkills?.divination ?? "")
+                                .font(.custom("UniversityOldstyleBook", size: 16))
+                                .foregroundColor(Color("SelectedOptionBorder"))
+                                .padding(.bottom, 5)
+                        }
+                        
+                        if professorModel.magicalAbilitiesAndSkills?.astronomy != nil {
+                            Text(professorModel.magicalAbilitiesAndSkills?.astronomy ?? "")
+                                .font(.custom("UniversityOldstyleBook", size: 16))
+                                .foregroundColor(Color("SelectedOptionBorder"))
+                                .padding(.bottom, 5)
+                        }
                     }
 
                     VStack {
