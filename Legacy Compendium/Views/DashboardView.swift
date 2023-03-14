@@ -21,7 +21,7 @@ struct DashboardView: View {
     var body: some View {
         ZStack {
             VStack {
-                //MARK: If button tapped shows the menu
+                //MARK: If button is tapped it shows the menu
                 if dashboardViewModel.isShowMenuButtonTapped {
                     ForEach(dashboardViewModel.menuOptions, id: \.self) { option in
                         ZStack(alignment: .center) {
@@ -45,9 +45,70 @@ struct DashboardView: View {
                                 }
                         }
                     }
+                    .offset(x: dashboardViewModel.isSettingsMenuShowed ? 2000 : 0)
                 }
             }
             .padding(.top, -80)
+            
+            
+            VStack {
+                ForEach(dashboardViewModel.settingsMenuOptions, id: \.self) { settingsOption in
+                    TextStyleView(text: settingsOption, isOffsetableScrollViewDraggedUp: $textSizeChanged)
+                        .matchedGeometryEffect(id: "\(settingsOption)", in: animation)
+                        .padding(.horizontal, 20)
+                        .padding(.top, 20)
+                        .onTapGesture {
+                            withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
+//                                    dashboardViewModel.selectedOption = option
+                            }
+                            
+                            dashboardViewModel.hideMenuWhenOptionIsSelected()
+                        }
+                }
+                .offset(x: dashboardViewModel.isSettingsMenuShowed ? 0 : -2000)
+//                .frame(maxWidth: dashboardViewModel.isSettingsMenuShowed ? .infinity : 0)
+            }
+            
+            //MARK: If menu button is tapped show the settings button
+            if dashboardViewModel.isShowMenuButtonTapped {
+                ZStack(alignment: .bottomLeading) {
+                    Button {
+                        dashboardViewModel.showSettingsMenu()
+                    } label: {
+                        VStack {
+                            Image(systemName: dashboardViewModel.isSettingsMenuShowed ? "xmark" : "gearshape.fill")
+                                .foregroundColor(Color("Border"))
+                                .font(.system(size: 16, weight: .bold, design: .rounded))
+                        }
+                        .padding(8)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 30)
+                                .stroke(Color("Border"), lineWidth: 0.5)
+                                .padding(4)
+                        )
+                        .background {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                    .fill(.ultraThinMaterial).blur(radius: 0)
+                                    .blur(radius: 0)
+                                    .opacity(0.5)
+                                
+                                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                    .fill(Color("Buttons"))
+                                    .blur(radius: 0)
+                                    .opacity(0.85)
+                            }
+                        }
+                        .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4))
+                        .cornerRadius(40)
+                        .shadow(color: dashboardViewModel.isSettingsButtonShowed ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: dashboardViewModel.isSettingsButtonShowed ? 10 : 20)
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                .padding(.horizontal, 40)
+//                .padding(.bottom, 50)
+                .offset(x: dashboardViewModel.isSettingsButtonShowed ? 0 : -3000)
+            }
             
             VStack {
                 if dashboardViewModel.selectedOption == "Spells" {
