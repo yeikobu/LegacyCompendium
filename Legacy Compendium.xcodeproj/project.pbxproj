@@ -33,6 +33,7 @@
 		1634061B29B3AC8F0047D1E3 /* BeastsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061A29B3AC8F0047D1E3 /* BeastsScreenView.swift */; };
 		1634061D29B3EA000047D1E3 /* BeastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061C29B3EA000047D1E3 /* BeastViewModel.swift */; };
 		1634062029B3EB660047D1E3 /* BeastCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634061F29B3EB660047D1E3 /* BeastCardView.swift */; };
+		16378D0F29C3ACF1002E44AE /* StoreKitTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16378D0E29C3ACF1002E44AE /* StoreKitTool.swift */; };
 		16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C7B29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift */; };
 		16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C7D29A3DD0F00FD1286 /* ContentView.swift */; };
 		16725C8029A3DD1000FD1286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16725C7F29A3DD1000FD1286 /* Assets.xcassets */; };
@@ -89,6 +90,8 @@
 		1634061A29B3AC8F0047D1E3 /* BeastsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastsScreenView.swift; sourceTree = "<group>"; };
 		1634061C29B3EA000047D1E3 /* BeastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastViewModel.swift; sourceTree = "<group>"; };
 		1634061F29B3EB660047D1E3 /* BeastCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastCardView.swift; sourceTree = "<group>"; };
+		16378D0E29C3ACF1002E44AE /* StoreKitTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitTool.swift; sourceTree = "<group>"; };
+		16378D1229C3CABE002E44AE /* StoreKitProducts.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreKitProducts.storekit; sourceTree = "<group>"; };
 		16725C7829A3DD0F00FD1286 /* Legacy Compendium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Legacy Compendium.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16725C7B29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy_CompendiumApp.swift; sourceTree = "<group>"; };
 		16725C7D29A3DD0F00FD1286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -246,6 +249,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		16378D1329C3CAE5002E44AE /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				16378D0E29C3ACF1002E44AE /* StoreKitTool.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		16725C6F29A3DD0F00FD1286 = {
 			isa = PBXGroup;
 			children = (
@@ -265,15 +276,17 @@
 		16725C7A29A3DD0F00FD1286 /* Legacy Compendium */ = {
 			isa = PBXGroup;
 			children = (
-				1608A4A129B68AA900806C55 /* Helpers */,
+				16725C8E29A3FF1700FD1286 /* Legacy-Compendium-Info.plist */,
+				16378D1229C3CABE002E44AE /* StoreKitProducts.storekit */,
+				16725C7B29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift */,
+				16725C7F29A3DD1000FD1286 /* Assets.xcassets */,
 				16725C7D29A3DD0F00FD1286 /* ContentView.swift */,
+				16378D1329C3CAE5002E44AE /* Store */,
+				1608A4A129B68AA900806C55 /* Helpers */,
 				16725C9129A40A2800FD1286 /* Models */,
 				16725C8F29A40A0800FD1286 /* Views */,
 				16725C9029A40A1300FD1286 /* ViewModels */,
 				16725C8929A3FC8400FD1286 /* Fonts */,
-				16725C8E29A3FF1700FD1286 /* Legacy-Compendium-Info.plist */,
-				16725C7B29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift */,
-				16725C7F29A3DD1000FD1286 /* Assets.xcassets */,
 				16725C8129A3DD1000FD1286 /* Preview Content */,
 			);
 			path = "Legacy Compendium";
@@ -514,6 +527,7 @@
 				167E4D2B29B4282D00456CCB /* BroomCardView.swift in Sources */,
 				16725C7C29A3DD0F00FD1286 /* Legacy_CompendiumApp.swift in Sources */,
 				16A724CF29A578B4005E9A24 /* TextStyleView.swift in Sources */,
+				16378D0F29C3ACF1002E44AE /* StoreKitTool.swift in Sources */,
 				16CA82A329AD97E600D10C2A /* SpellsViewModel.swift in Sources */,
 				1608A49429B55C3000806C55 /* WandHandleCardView.swift in Sources */,
 				167E4D2129B3EFF000456CCB /* BeastExtendedCardView.swift in Sources */,
