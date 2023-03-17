@@ -168,7 +168,6 @@ struct DashboardView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 .padding(.horizontal, 20)
                 .padding(.top, 10)
-//                .padding(.bottom, 50)
                 .offset(x: dashboardViewModel.isSettingsButtonShowed ? 0 : -3000)
             }
             
