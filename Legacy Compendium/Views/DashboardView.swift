@@ -32,17 +32,32 @@ struct DashboardView: View {
                                     .offset(x: dashboardViewModel.selectedOptionBackgroundTransition ? 0 : 2000)
                             }
                             
-                            TextStyleView(text: option, isOffsetableScrollViewDraggedUp: $textSizeChanged)
-                                .matchedGeometryEffect(id: "\(option)", in: animation)
-                                .padding(.horizontal, 20)
-                                .padding(.top, 20)
-                                .onTapGesture {
+                            HStack(spacing: 0) {
+                                TextStyleView(text: option, isOffsetableScrollViewDraggedUp: $textSizeChanged)
+                                    .padding(.horizontal, 20)
+                                    .padding(.top, 20)
+                                
+                                //If the showed options on the menu are not spells and companion and the user has not purchased the app, a lock icon appears in the left side of the menu's option
+                                if option != "Spells" && option != "Companions" && !isFullAppPurchased {
+                                    Image(systemName: "lock.shield")
+                                        .font(.system(size: 25))
+                                        .foregroundColor(Color("Title"))
+                                        .shadow(color:Color(.gray), radius: 1)
+                                        .padding(.leading, -10)
+                                        .padding(.top, 15)
+                                }
+                            }
+                            .matchedGeometryEffect(id: "\(option)", in: animation)
+                            .onTapGesture {
+                                //If the option showed in the menu are spells, companions and user does not purchased the full app, he only can acces to spells and companions screens
+                                if option == "Spells" || option == "Companions" || isFullAppPurchased {
                                     withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
                                         dashboardViewModel.selectedOption = option
                                     }
                                     
                                     dashboardViewModel.hideMenuWhenOptionIsSelected()
                                 }
+                            }
                         }
                     }
                     .offset(x: dashboardViewModel.isSettingsMenuShowed ? 2000 : 0)
@@ -117,43 +132,42 @@ struct DashboardView: View {
             
             //MARK: If menu button is tapped show the settings button
             if dashboardViewModel.isShowMenuButtonTapped {
-                ZStack(alignment: .bottomLeading) {
+                ZStack(alignment: .topLeading) {
                     Button {
                         dashboardViewModel.showSettingsMenu()
                     } label: {
                         VStack {
-                            Image(systemName: dashboardViewModel.isSettingsMenuShowed ? "xmark" : "gearshape.fill")
+                            Image(systemName: dashboardViewModel.isSettingsMenuShowed ? "chevron.left" : "gearshape.fill")
                                 .foregroundColor(Color("Border"))
                                 .font(.system(size: 16, weight: .bold, design: .rounded))
                         }
-                        .padding(8)
+                        .padding(10)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 30)
+                            Circle()
                                 .stroke(Color("Border"), lineWidth: 0.5)
                                 .padding(4)
                         )
                         .background {
                             ZStack {
-                                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                Circle()
                                     .fill(.ultraThinMaterial).blur(radius: 0)
                                     .blur(radius: 0)
                                     .opacity(0.5)
                                 
-                                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                Circle()
                                     .fill(Color("Buttons"))
                                     .blur(radius: 0)
                                     .opacity(0.85)
                             }
                         }
-                        .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4))
+                        .overlay(Circle().stroke(Color("Border"), lineWidth: 4))
                         .cornerRadius(40)
                         .shadow(color: dashboardViewModel.isSettingsButtonShowed ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: dashboardViewModel.isSettingsButtonShowed ? 10 : 20)
                     }
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                .padding(.horizontal, 10)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .padding(.horizontal, 20)
                 .padding(.top, 10)
-//                .padding(.bottom, 50)
                 .offset(x: dashboardViewModel.isSettingsButtonShowed ? 0 : -3000)
             }
             
@@ -239,6 +253,10 @@ struct DashboardView: View {
                         VStack {
                             Button {
                                 dashboardViewModel.showOrHideMenuWhenButtonIsTapped()
+                                
+                                withAnimation(.easeInOut(duration: 0.3)) {
+                                    dashboardViewModel.isSettingsMenuShowed = false
+                                }
                             } label: {
                                 VStack {
                                     Image(systemName: !dashboardViewModel.isShowMenuButtonTapped ? "wand.and.stars" : "xmark")
