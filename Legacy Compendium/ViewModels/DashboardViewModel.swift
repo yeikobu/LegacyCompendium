@@ -14,10 +14,11 @@ class DashboardViewModel: ObservableObject {
     @Published var isSettingsButtonShowed = false
     @Published var isSettingsMenuShowed = false
     @Published var selectedOptionBackgroundTransition = false
-    let menuOptions = ["Spells", "Beasts", "Brooms", "Wand Handles", "Potions", "Companions", "Professors", "Enemies"]
-    let settingsMenuOptions = ["Terms", "Privacy Police", "Contact support", "Remove Ads"]
     @Published var selectedOption = "Spells"
     @Published var isOptionSelected = false
+    
+    let menuOptions = ["Spells", "Beasts", "Brooms", "Wand Handles", "Potions", "Companions", "Professors", "Enemies"]
+    let settingsMenuOptions = ["Terms", "Privacy Police", "Contact support"]
     
     //MARK: - change the state in order to show the navigation menu
     func showOrHideMenuWhenButtonIsTapped() {
@@ -59,7 +60,6 @@ class DashboardViewModel: ObservableObject {
     func showSettingsMenu() {
         withAnimation(.easeOut(duration: 0.3)) {
             self.isSettingsMenuShowed.toggle()
-            print(isSettingsMenuShowed)
         }
     }
 }

@@ -10,13 +10,13 @@ import SwiftUI
 struct DashboardView: View {
     
     @StateObject var dashboardViewModel = DashboardViewModel()
+    @StateObject var storeKitTool = StoreKitTool()
     @Binding var isTransitionActive: Bool
     @Namespace var animation
-    @State private var menuFontSize: CGFloat = 22
-    @State private var offsetTransition: CGFloat = 400
     @State private var animationAfterSplashScreen = false
     @State private var isOptionTapped = false
     @State private var textSizeChanged = false
+    @State private var isFullAppPurchased = false
     
     var body: some View {
         ZStack {
@@ -50,7 +50,7 @@ struct DashboardView: View {
             }
             .padding(.top, -80)
             
-            
+            //MARK: Settings menu appears when the settings button is tapped
             VStack {
                 ForEach(dashboardViewModel.settingsMenuOptions, id: \.self) { settingsOption in
                     TextStyleView(text: settingsOption, isOffsetableScrollViewDraggedUp: $textSizeChanged)
@@ -58,16 +58,62 @@ struct DashboardView: View {
                         .padding(.horizontal, 20)
                         .padding(.top, 20)
                         .onTapGesture {
-                            withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
-//                                    dashboardViewModel.selectedOption = option
+                            if dashboardViewModel.selectedOption != "Unlock full app" {
+                                dashboardViewModel.hideMenuWhenOptionIsSelected()
                             }
-                            
-                            dashboardViewModel.hideMenuWhenOptionIsSelected()
                         }
                 }
-                .offset(x: dashboardViewModel.isSettingsMenuShowed ? 0 : -2000)
-//                .frame(maxWidth: dashboardViewModel.isSettingsMenuShowed ? .infinity : 0)
+                
+                if !isFullAppPurchased {
+                    VStack {
+                        Button {
+                            Task {
+                                try await storeKitTool.purchase()
+                            }
+                        } label: {
+                            ZStack {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 15, style: .continuous)
+                                        .fill(.ultraThinMaterial)
+                                        .blur(radius: 0)
+                                        .opacity(0.85)
+                                    
+                                    RoundedRectangle(cornerRadius: 15, style: .continuous)
+                                        .fill(Color("Card"))
+                                        .blur(radius: 0)
+                                        .opacity(0.80)
+                                }
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .stroke(Color("SelectedOptionBorder"), lineWidth: 2)
+                                )
+                                .shadow(color: Color(.black).opacity(0.8), radius: 5, x: -2 ,y: 5)
+                                    .padding(30)
+                                    .frame(maxWidth: .infinity, maxHeight: 110)
+                                
+                                HStack {
+                                    Text("Unlock the full app")
+                                        .font(.custom("CrimesOfGrindelwald", size: 20))
+                                        .foregroundColor(Color("Title"))
+                                        .shadow(color:Color(.gray), radius: 1)
+                                        .multilineTextAlignment(.center)
+                                    
+                                    if storeKitTool.purchasedIDs.isEmpty {
+                                        if let product = storeKitTool.products.first {
+                                            //Text shows the storekit appstore price
+                                            Text("(\(product.displayPrice))")
+                                                .foregroundColor(Color("Title"))
+                                                .shadow(color:Color(.gray), radius: 1)
+                                                .multilineTextAlignment(.center)
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
+            .offset(x: dashboardViewModel.isSettingsMenuShowed ? 0 : -2000)
             
             //MARK: If menu button is tapped show the settings button
             if dashboardViewModel.isShowMenuButtonTapped {
@@ -105,7 +151,8 @@ struct DashboardView: View {
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                .padding(.horizontal, 40)
+                .padding(.horizontal, 10)
+                .padding(.top, 10)
 //                .padding(.bottom, 50)
                 .offset(x: dashboardViewModel.isSettingsButtonShowed ? 0 : -3000)
             }
@@ -237,6 +284,18 @@ struct DashboardView: View {
                         animationAfterSplashScreen = true
                     }
                 }
+            }
+        }
+        .task {
+            await storeKitTool.fetchProducts()
+            
+            if !storeKitTool.purchasedIDs.isEmpty {
+                isFullAppPurchased = true
+            }
+        }
+        .onChange(of: storeKitTool.action) { action in
+            if action == .successful {
+                isFullAppPurchased = true
             }
         }
     }

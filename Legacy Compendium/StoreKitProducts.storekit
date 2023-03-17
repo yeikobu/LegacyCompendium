@@ -1,0 +1,35 @@
+{
+  "identifier" : "E9E9E457",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "6446205482",
+      "localizations" : [
+        {
+          "description" : "Unlock all the features and screens",
+          "displayName" : "Unlock all the features",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "LegacyCompendiumFullApp",
+      "referenceName" : "Full application purchase ",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6446182392",
+    "_developerTeamID" : "6Z8MU97UL5",
+    "_lastSynchronizedDate" : 700697282.03464305
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}
