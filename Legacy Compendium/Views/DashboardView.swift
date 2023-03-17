@@ -32,17 +32,32 @@ struct DashboardView: View {
                                     .offset(x: dashboardViewModel.selectedOptionBackgroundTransition ? 0 : 2000)
                             }
                             
-                            TextStyleView(text: option, isOffsetableScrollViewDraggedUp: $textSizeChanged)
-                                .matchedGeometryEffect(id: "\(option)", in: animation)
-                                .padding(.horizontal, 20)
-                                .padding(.top, 20)
-                                .onTapGesture {
+                            HStack(spacing: 0) {
+                                TextStyleView(text: option, isOffsetableScrollViewDraggedUp: $textSizeChanged)
+                                    .padding(.horizontal, 20)
+                                    .padding(.top, 20)
+                                
+                                //If the showed options on the menu are not spells and companion and the user has not purchased the app, a lock icon appears in the left side of the menu's option
+                                if option != "Spells" && option != "Companions" && !isFullAppPurchased {
+                                    Image(systemName: "lock.shield")
+                                        .font(.system(size: 25))
+                                        .foregroundColor(Color("Title"))
+                                        .shadow(color:Color(.gray), radius: 1)
+                                        .padding(.leading, -10)
+                                        .padding(.top, 15)
+                                }
+                            }
+                            .matchedGeometryEffect(id: "\(option)", in: animation)
+                            .onTapGesture {
+                                //If the option showed in the menu are spells, companions and user does not purchased the full app, he only can acces to spells and companions screens
+                                if option == "Spells" || option == "Companions" || isFullAppPurchased {
                                     withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
                                         dashboardViewModel.selectedOption = option
                                     }
                                     
                                     dashboardViewModel.hideMenuWhenOptionIsSelected()
                                 }
+                            }
                         }
                     }
                     .offset(x: dashboardViewModel.isSettingsMenuShowed ? 2000 : 0)
