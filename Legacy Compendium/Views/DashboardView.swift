@@ -132,7 +132,7 @@ struct DashboardView: View {
             
             //MARK: If menu button is tapped show the settings button
             if dashboardViewModel.isShowMenuButtonTapped {
-                ZStack(alignment: .topLeading) {
+                ZStack {
                     Button {
                         dashboardViewModel.showSettingsMenu()
                     } label: {
@@ -147,7 +147,7 @@ struct DashboardView: View {
                                 .stroke(Color("Border"), lineWidth: 0.5)
                                 .padding(4)
                         )
-                        .background {
+                        .background(
                             ZStack {
                                 Circle()
                                     .fill(.ultraThinMaterial).blur(radius: 0)
@@ -159,7 +159,7 @@ struct DashboardView: View {
                                     .blur(radius: 0)
                                     .opacity(0.85)
                             }
-                        }
+                        )
                         .overlay(Circle().stroke(Color("Border"), lineWidth: 4))
                         .cornerRadius(40)
                         .shadow(color: dashboardViewModel.isSettingsButtonShowed ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: dashboardViewModel.isSettingsButtonShowed ? 10 : 20)
@@ -269,7 +269,7 @@ struct DashboardView: View {
                                         .stroke(Color("Border"), lineWidth: 0.5)
                                         .padding(4)
                                 )
-                                .background {
+                                .background(
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 30, style: .continuous)
                                             .fill(.ultraThinMaterial).blur(radius: 0)
@@ -281,7 +281,7 @@ struct DashboardView: View {
                                             .blur(radius: 0)
                                             .opacity(0.85)
                                     }
-                                }
+                                )
                                 .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4))
                                 .cornerRadius(40)
                                 .shadow(color: dashboardViewModel.isShowMenuButtonTapped ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: dashboardViewModel.isShowMenuButtonTapped ? 10 : 20)
