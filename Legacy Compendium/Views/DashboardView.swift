@@ -74,6 +74,10 @@ struct DashboardView: View {
                         .padding(.top, 20)
                         .onTapGesture {
                             if dashboardViewModel.selectedOption != "Unlock full app" {
+                                withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
+                                    dashboardViewModel.selectedOption = settingsOption
+                                }
+                                
                                 dashboardViewModel.hideMenuWhenOptionIsSelected()
                             }
                         }
@@ -216,6 +220,14 @@ struct DashboardView: View {
                     Text("Coming soon")
                         .foregroundColor(Color.white)
                         .font(.custom("UniversityOldstyleBook", size: 16))
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+            }
+            
+            
+            VStack {
+                if dashboardViewModel.selectedOption == "Privacy Policy" {
+                    PrivacyView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
             }
