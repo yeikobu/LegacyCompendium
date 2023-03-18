@@ -74,6 +74,10 @@ struct DashboardView: View {
                         .padding(.top, 20)
                         .onTapGesture {
                             if dashboardViewModel.selectedOption != "Unlock full app" {
+                                withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
+                                    dashboardViewModel.selectedOption = settingsOption
+                                }
+                                
                                 dashboardViewModel.hideMenuWhenOptionIsSelected()
                             }
                         }
@@ -132,7 +136,7 @@ struct DashboardView: View {
             
             //MARK: If menu button is tapped show the settings button
             if dashboardViewModel.isShowMenuButtonTapped {
-                ZStack(alignment: .topLeading) {
+                ZStack {
                     Button {
                         dashboardViewModel.showSettingsMenu()
                     } label: {
@@ -147,7 +151,7 @@ struct DashboardView: View {
                                 .stroke(Color("Border"), lineWidth: 0.5)
                                 .padding(4)
                         )
-                        .background {
+                        .background(
                             ZStack {
                                 Circle()
                                     .fill(.ultraThinMaterial).blur(radius: 0)
@@ -159,7 +163,7 @@ struct DashboardView: View {
                                     .blur(radius: 0)
                                     .opacity(0.85)
                             }
-                        }
+                        )
                         .overlay(Circle().stroke(Color("Border"), lineWidth: 4))
                         .cornerRadius(40)
                         .shadow(color: dashboardViewModel.isSettingsButtonShowed ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: dashboardViewModel.isSettingsButtonShowed ? 10 : 20)
@@ -171,6 +175,7 @@ struct DashboardView: View {
                 .offset(x: dashboardViewModel.isSettingsButtonShowed ? 0 : -3000)
             }
             
+            //MARK: - Menu Options Views
             VStack {
                 if dashboardViewModel.selectedOption == "Spells" {
                    SpellsView()
@@ -216,6 +221,19 @@ struct DashboardView: View {
                     Text("Coming soon")
                         .foregroundColor(Color.white)
                         .font(.custom("UniversityOldstyleBook", size: 16))
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+            }
+            
+            //MARK: - Settings Menu Options Views
+            VStack {
+                if dashboardViewModel.selectedOption == "Privacy Policy" {
+                    PrivacyView()
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if dashboardViewModel.selectedOption == "Terms of use" {
+                    TermsView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
             }
@@ -269,7 +287,7 @@ struct DashboardView: View {
                                         .stroke(Color("Border"), lineWidth: 0.5)
                                         .padding(4)
                                 )
-                                .background {
+                                .background(
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 30, style: .continuous)
                                             .fill(.ultraThinMaterial).blur(radius: 0)
@@ -281,7 +299,7 @@ struct DashboardView: View {
                                             .blur(radius: 0)
                                             .opacity(0.85)
                                     }
-                                }
+                                )
                                 .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4))
                                 .cornerRadius(40)
                                 .shadow(color: dashboardViewModel.isShowMenuButtonTapped ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: dashboardViewModel.isShowMenuButtonTapped ? 10 : 20)

@@ -18,7 +18,7 @@ class DashboardViewModel: ObservableObject {
     @Published var isOptionSelected = false
     
     let menuOptions = ["Spells", "Beasts", "Brooms", "Wand Handles", "Potions", "Companions", "Professors", "Enemies"]
-    let settingsMenuOptions = ["Terms", "Privacy Police", "Contact support"]
+    let settingsMenuOptions = ["Terms of use", "Privacy Policy"]
     
     //MARK: - change the state in order to show the navigation menu
     func showOrHideMenuWhenButtonIsTapped() {
