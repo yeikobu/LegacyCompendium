@@ -39,6 +39,7 @@ struct PrivacyView: View {
                             .font(.custom("UniversityOldstyleBook", size: textSize))
                             .padding(.top, 5)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Information we may collect in the future")
@@ -52,6 +53,7 @@ struct PrivacyView: View {
                             .font(.custom("UniversityOldstyleBook", size: textSize))
                             .padding(.top, 5)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Kingfisher")
@@ -61,6 +63,7 @@ struct PrivacyView: View {
                             .font(.custom("UniversityOldstyleBook", size: textSize))
                             .padding(.top, 5)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Use of information")
@@ -70,6 +73,7 @@ struct PrivacyView: View {
                             .font(.custom("UniversityOldstyleBook", size: textSize))
                             .padding(.top, 5)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Security")
@@ -79,6 +83,7 @@ struct PrivacyView: View {
                             .font(.custom("UniversityOldstyleBook", size: textSize))
                             .padding(.top, 5)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Changes to the privacy policy")
@@ -88,6 +93,7 @@ struct PrivacyView: View {
                             .font(.custom("UniversityOldstyleBook", size: textSize))
                             .padding(.top, 5)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Contact")

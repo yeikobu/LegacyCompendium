@@ -175,6 +175,7 @@ struct DashboardView: View {
                 .offset(x: dashboardViewModel.isSettingsButtonShowed ? 0 : -3000)
             }
             
+            //MARK: - Menu Options Views
             VStack {
                 if dashboardViewModel.selectedOption == "Spells" {
                    SpellsView()
@@ -224,10 +225,15 @@ struct DashboardView: View {
                 }
             }
             
-            
+            //MARK: - Settings Menu Options Views
             VStack {
                 if dashboardViewModel.selectedOption == "Privacy Policy" {
                     PrivacyView()
+                        .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
+                }
+                
+                if dashboardViewModel.selectedOption == "Terms of use" {
+                    TermsView()
                         .opacity(dashboardViewModel.isShowMenuButtonTapped ? 0 : 1)
                 }
             }

@@ -48,6 +48,7 @@
 		167E4D2729B4260700456CCB /* BroomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E4D2629B4260700456CCB /* BroomsViewModel.swift */; };
 		167E4D2B29B4282D00456CCB /* BroomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E4D2A29B4282D00456CCB /* BroomCardView.swift */; };
 		168574B329C64B7900CAC486 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168574B229C64B7900CAC486 /* PrivacyView.swift */; };
+		168574B529C6567C00CAC486 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168574B429C6567C00CAC486 /* TermsView.swift */; };
 		16A724C629A53D7D005E9A24 /* LegacyCompendiumData.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */; };
 		16A724C829A55243005E9A24 /* LegacyCompendiumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */; };
 		16A724CA29A553C1005E9A24 /* LegacyCompendiumVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */; };
@@ -109,6 +110,7 @@
 		167E4D2629B4260700456CCB /* BroomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroomsViewModel.swift; sourceTree = "<group>"; };
 		167E4D2A29B4282D00456CCB /* BroomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroomCardView.swift; sourceTree = "<group>"; };
 		168574B229C64B7900CAC486 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		168574B429C6567C00CAC486 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
 		16A724C529A53D7D005E9A24 /* LegacyCompendiumData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LegacyCompendiumData.json; sourceTree = "<group>"; };
 		16A724C729A55243005E9A24 /* LegacyCompendiumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCompendiumModel.swift; sourceTree = "<group>"; };
 		16A724C929A553C1005E9A24 /* LegacyCompendiumVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCompendiumVIewModel.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 		16725C8F29A40A0800FD1286 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				168574B629C6568400CAC486 /* TermsViews */,
 				168574B129C64B5800CAC486 /* PrivacyViews */,
 				1608A4AD29B92DDA00806C55 /* EnemiesViews */,
 				1608A4A829B7D12600806C55 /* ProfessorsViews */,
@@ -381,6 +384,14 @@
 				168574B229C64B7900CAC486 /* PrivacyView.swift */,
 			);
 			path = PrivacyViews;
+			sourceTree = "<group>";
+		};
+		168574B629C6568400CAC486 /* TermsViews */ = {
+			isa = PBXGroup;
+			children = (
+				168574B429C6567C00CAC486 /* TermsView.swift */,
+			);
+			path = TermsViews;
 			sourceTree = "<group>";
 		};
 		16A724CD29A5789A005E9A24 /* Global View Components */ = {
@@ -529,6 +540,7 @@
 				167E4D2429B4250800456CCB /* BroomsScreenView.swift in Sources */,
 				1634061829B2B8AA0047D1E3 /* PotionExtendedCardView.swift in Sources */,
 				1634061B29B3AC8F0047D1E3 /* BeastsScreenView.swift in Sources */,
+				168574B529C6567C00CAC486 /* TermsView.swift in Sources */,
 				1608A49B29B659BB00806C55 /* CompanionsViewModel.swift in Sources */,
 				1634061D29B3EA000047D1E3 /* BeastViewModel.swift in Sources */,
 				1608A4A729B7CFA900806C55 /* ProfessorsViewModel.swift in Sources */,
