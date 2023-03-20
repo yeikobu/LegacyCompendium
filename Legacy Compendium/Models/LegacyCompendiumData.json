@@ -62,7 +62,7 @@
         "unlock": "Assignment Side Quest - Professor Ronen’s Assignment",
         "description": "Rebuild damaged objects. Can rebuild throwables after throwing them.",
         "upgrades": "None",
-        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FReparo.avif?alt=media&token=511cc300-e6d0-405e-87d3-e80ace753ecc"
+        "img": "https://firebasestorage.googleapis.com/v0/b/legacy-helper.appspot.com/o/Spells%2FReparo.png?alt=media&token=4ec87992-b9d1-4427-a831-88c7688c10e4"
       },
       {
         "spell-name": "Ancient Magic Throw",
