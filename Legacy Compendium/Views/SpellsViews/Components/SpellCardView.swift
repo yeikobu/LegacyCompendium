@@ -74,15 +74,13 @@ struct SpellCardView: View {
                     .foregroundColor(Color("SelectedOptionBorder"))
                     .padding(.horizontal, 5)
                     .padding(.top, 10)
-                
-                
             }
             .padding(10)
             .padding(.top, 10)
         }
         .matchedGeometryEffect(id: "allView\(spellModel.spellName)", in: animation)
         .padding(.vertical, 30)
-        .frame(width: 220, height: 270)
+        .frame(maxWidth: 220, minHeight: 270)
     }
 }
 

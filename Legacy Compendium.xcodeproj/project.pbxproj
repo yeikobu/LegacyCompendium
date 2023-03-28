@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1604CA7829CD0011006D09E0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604CA7729CD0011006D09E0 /* SearchView.swift */; };
 		1608A48E29B5273100806C55 /* BroomExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A48D29B5273100806C55 /* BroomExtendedCardView.swift */; };
 		1608A49129B55A4800806C55 /* WandHandlesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49029B55A4800806C55 /* WandHandlesScreenView.swift */; };
 		1608A49429B55C3000806C55 /* WandHandleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608A49329B55C3000806C55 /* WandHandleCardView.swift */; };
@@ -43,6 +44,7 @@
 		16725C9329A40A4D00FD1286 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9229A40A4D00FD1286 /* SplashScreen.swift */; };
 		16725C9729A42B4100FD1286 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9629A42B4100FD1286 /* DashboardView.swift */; };
 		16725C9929A42B9200FD1286 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725C9829A42B9200FD1286 /* BackgroundView.swift */; };
+		167D181029D2486700E72A54 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D180F29D2486700E72A54 /* SearchViewModel.swift */; };
 		167E4D2129B3EFF000456CCB /* BeastExtendedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E4D2029B3EFF000456CCB /* BeastExtendedCardView.swift */; };
 		167E4D2429B4250800456CCB /* BroomsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E4D2329B4250800456CCB /* BroomsScreenView.swift */; };
 		167E4D2729B4260700456CCB /* BroomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E4D2629B4260700456CCB /* BroomsViewModel.swift */; };
@@ -66,6 +68,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1604CA7729CD0011006D09E0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		1608A48D29B5273100806C55 /* BroomExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroomExtendedCardView.swift; sourceTree = "<group>"; };
 		1608A49029B55A4800806C55 /* WandHandlesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandHandlesScreenView.swift; sourceTree = "<group>"; };
 		1608A49329B55C3000806C55 /* WandHandleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandHandleCardView.swift; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 		16725C9229A40A4D00FD1286 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		16725C9629A42B4100FD1286 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		16725C9829A42B9200FD1286 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		167D180F29D2486700E72A54 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		167E4D2029B3EFF000456CCB /* BeastExtendedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastExtendedCardView.swift; sourceTree = "<group>"; };
 		167E4D2329B4250800456CCB /* BroomsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroomsScreenView.swift; sourceTree = "<group>"; };
 		167E4D2629B4260700456CCB /* BroomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroomsViewModel.swift; sourceTree = "<group>"; };
@@ -138,6 +142,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1604CA7629CCFFF6006D09E0 /* SearchViews */ = {
+			isa = PBXGroup;
+			children = (
+				1604CA7729CD0011006D09E0 /* SearchView.swift */,
+			);
+			path = SearchViews;
+			sourceTree = "<group>";
+		};
 		1608A48F29B55A2200806C55 /* WandHandlesViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +329,7 @@
 		16725C8F29A40A0800FD1286 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1604CA7629CCFFF6006D09E0 /* SearchViews */,
 				168574B629C6568400CAC486 /* TermsViews */,
 				168574B129C64B5800CAC486 /* PrivacyViews */,
 				1608A4AD29B92DDA00806C55 /* EnemiesViews */,
@@ -347,6 +360,7 @@
 				1608A49A29B659BB00806C55 /* CompanionsViewModel.swift */,
 				1608A4A629B7CFA900806C55 /* ProfessorsViewModel.swift */,
 				1608A4B529B9301700806C55 /* EnemiesViewModel.swift */,
+				167D180F29D2486700E72A54 /* SearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -546,6 +560,7 @@
 				1608A4A729B7CFA900806C55 /* ProfessorsViewModel.swift in Sources */,
 				16CA82A129AD8DB700D10C2A /* NavBarBackgroundView.swift in Sources */,
 				1608A4B629B9301700806C55 /* EnemiesViewModel.swift in Sources */,
+				1604CA7829CD0011006D09E0 /* SearchView.swift in Sources */,
 				1608A4A529B7CF5900806C55 /* ProfessorsScreenView.swift in Sources */,
 				16725C7E29A3DD0F00FD1286 /* ContentView.swift in Sources */,
 				167E4D2B29B4282D00456CCB /* BroomCardView.swift in Sources */,
@@ -553,6 +568,7 @@
 				16A724CF29A578B4005E9A24 /* TextStyleView.swift in Sources */,
 				16378D0F29C3ACF1002E44AE /* StoreKitTool.swift in Sources */,
 				16CA82A329AD97E600D10C2A /* SpellsViewModel.swift in Sources */,
+				167D181029D2486700E72A54 /* SearchViewModel.swift in Sources */,
 				1608A49429B55C3000806C55 /* WandHandleCardView.swift in Sources */,
 				167E4D2129B3EFF000456CCB /* BeastExtendedCardView.swift in Sources */,
 			);
