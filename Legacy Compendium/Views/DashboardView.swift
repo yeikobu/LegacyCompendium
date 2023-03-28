@@ -17,6 +17,7 @@ struct DashboardView: View {
     @State private var isOptionTapped = false
     @State private var textSizeChanged = false
     @State private var isFullAppPurchased = false
+    @State private var isSearchButtonTapped = false
     
     var body: some View {
         ZStack {
@@ -61,6 +62,7 @@ struct DashboardView: View {
                         }
                     }
                     .offset(x: dashboardViewModel.isSettingsMenuShowed ? 2000 : 0)
+                    .offset(y: isSearchButtonTapped ? 2000 : 0)
                 }
             }
             .padding(.top, -80)
@@ -168,11 +170,16 @@ struct DashboardView: View {
                         .cornerRadius(40)
                         .shadow(color: dashboardViewModel.isSettingsButtonShowed ? Color(.black).opacity(0.3) : Color("Title").opacity(0.2), radius: dashboardViewModel.isSettingsButtonShowed ? 10 : 20)
                     }
+                    .offset(x: isSearchButtonTapped ? -300 : 0)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 .padding(.horizontal, 20)
-                .padding(.top, 10)
+                .padding(.top, 20)
                 .offset(x: dashboardViewModel.isSettingsButtonShowed ? 0 : -3000)
+                
+                if isFullAppPurchased {
+                    SearchView(isSearchButtonTapped: $isSearchButtonTapped)
+                }
             }
             
             //MARK: - Menu Options Views
@@ -274,6 +281,7 @@ struct DashboardView: View {
                                 
                                 withAnimation(.easeInOut(duration: 0.3)) {
                                     dashboardViewModel.isSettingsMenuShowed = false
+                                    isSearchButtonTapped = false
                                 }
                             } label: {
                                 VStack {

@@ -63,7 +63,7 @@ class StoreKitTool: ObservableObject {
     @MainActor
     func purchase() async throws {
         guard let product = products.first else { return }
-
+        
         do {
             let result = try await product.purchase()
             
