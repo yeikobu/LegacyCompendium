@@ -120,4 +120,8 @@ class StoreKitTool: ObservableObject {
             return safe
         }
     }
+    
+    func restorePurchase() {
+        sync()
+    }
 }
