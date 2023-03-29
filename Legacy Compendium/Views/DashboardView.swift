@@ -50,7 +50,7 @@ struct DashboardView: View {
                             }
                             .matchedGeometryEffect(id: "\(option)", in: animation)
                             .onTapGesture {
-                                //If the option showed in the menu are spells, companions and user does not purchased the full app, he only can acces to spells and companions screens
+                                //If the showed options in the menu are spells, companions and the user does not purchased the full app, he only can acces to spells and companions screens
                                 if option == "Spells" || option == "Companions" || isFullAppPurchased {
                                     withAnimation(.spring(response: 0.2, dampingFraction: 1)) {
                                         dashboardViewModel.selectedOption = option
@@ -119,14 +119,12 @@ struct DashboardView: View {
                                         .shadow(color:Color(.gray), radius: 1)
                                         .multilineTextAlignment(.center)
                                     
-                                    if storeKitTool.purchasedIDs.isEmpty {
-                                        if let product = storeKitTool.products.first {
-                                            //Text shows the storekit appstore price
-                                            Text("(\(product.displayPrice))")
-                                                .foregroundColor(Color("Title"))
-                                                .shadow(color:Color(.gray), radius: 1)
-                                                .multilineTextAlignment(.center)
-                                        }
+                                    if let product = storeKitTool.products.first {
+                                        //Text shows the storekit price of the full app
+                                        Text("(\(product.displayPrice))")
+                                            .foregroundColor(Color("Title"))
+                                            .shadow(color:Color(.gray), radius: 1)
+                                            .multilineTextAlignment(.center)
                                     }
                                 }
                             }
@@ -324,10 +322,22 @@ struct DashboardView: View {
             .padding(.top, 100)
             .onAppear {
                 if isTransitionActive {
-                    withAnimation(.spring(response: 0.5, dampingFraction: 1)){
+                    withAnimation(.spring(response: 0.5, dampingFraction: 1)) {
                         animationAfterSplashScreen = true
                     }
                 }
+            }
+            
+            //MARK: - When purchase full app button is tapped, a loading view is shows (Everything in the view disappear)
+            if storeKitTool.isTransactionActive {
+                ZStack {
+                    BackgroundView()
+                    
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: Color("Title")))
+                        .scaleEffect(2)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
         .task {

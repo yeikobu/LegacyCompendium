@@ -22,6 +22,7 @@ enum PurchaseAction {
 class StoreKitTool: ObservableObject {
     @Published var products: [Product] = []
     @Published var purchasedIDs: [String] = []
+    @Published var isTransactionActive: Bool = false
     @Published private(set) var action: PurchaseAction?
     private var transactionListener: TransactionListener?
     
@@ -62,6 +63,8 @@ class StoreKitTool: ObservableObject {
     
     @MainActor
     func purchase() async throws {
+        isTransactionActive = true
+        
         guard let product = products.first else { return }
         
         do {
@@ -94,11 +97,14 @@ class StoreKitTool: ObservableObject {
             let transaction = try checkVerified(verification)
             action = .successful
             await transaction.finish()
+            isTransactionActive = false
         case .userCancelled:
             print("The user has been cancelled")
+            isTransactionActive = false
             break
         case .pending:
             print("Pending...")
+            isTransactionActive = false
             break
         @unknown default:
             break
