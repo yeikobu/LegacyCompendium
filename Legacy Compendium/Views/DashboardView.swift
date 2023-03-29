@@ -85,47 +85,48 @@ struct DashboardView: View {
                         }
                 }
                 
+                Text("If you have already purchased the app on a previous occasion and do not have access to the features, press the 'Sync my purchase' button to synchronize your purchase data")
+                    .font(.custom("UniversityOldstyleBook", size: 12))
+                    .padding(.top, 30)
+                    .padding(.bottom, -20)
+                    .padding(.horizontal, 20)
+                
+                Button {
+                    storeKitTool.restorePurchase()
+                } label: {
+                    ZStack {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 15, style: .continuous)
+                                .fill(.ultraThinMaterial)
+                                .blur(radius: 0)
+                                .opacity(0.85)
+                            
+                            RoundedRectangle(cornerRadius: 15, style: .continuous)
+                                .fill(Color("Card"))
+                                .blur(radius: 0)
+                                .opacity(0.80)
+                        }
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 15)
+                                .stroke(Color("SelectedOptionBorder"), lineWidth: 2)
+                        )
+                        .shadow(color: Color(.black).opacity(0.8), radius: 5, x: -2 ,y: 5)
+                            .padding(30)
+                            .frame(maxWidth: .infinity, maxHeight: 110)
+                        
+                        HStack {
+                            Text("Sync my purchase")
+                                .font(.custom("CrimesOfGrindelwald", size: 20))
+                                .foregroundColor(Color("Title"))
+                                .shadow(color:Color(.gray), radius: 1)
+                                .multilineTextAlignment(.center)
+                        }
+                    }
+                }
+                
                 //MARK: If the the full app does not purchased, it shows the unlock full app button. Also it shows the restore purchase button if the user has already bought the full app
                 if !isFullAppPurchased {
                     VStack {
-                        Text("If you already purchased the full app, press the 'Sync my purchase' button")
-                            .font(.custom("UniversityOldstyleBook", size: 14))
-                            .padding(.top, 30)
-                            .padding(.bottom, -20)
-                        
-                        Button {
-                            storeKitTool.restorePurchase()
-                        } label: {
-                            ZStack {
-                                ZStack {
-                                    RoundedRectangle(cornerRadius: 15, style: .continuous)
-                                        .fill(.ultraThinMaterial)
-                                        .blur(radius: 0)
-                                        .opacity(0.85)
-                                    
-                                    RoundedRectangle(cornerRadius: 15, style: .continuous)
-                                        .fill(Color("Card"))
-                                        .blur(radius: 0)
-                                        .opacity(0.80)
-                                }
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 15)
-                                        .stroke(Color("SelectedOptionBorder"), lineWidth: 2)
-                                )
-                                .shadow(color: Color(.black).opacity(0.8), radius: 5, x: -2 ,y: 5)
-                                    .padding(30)
-                                    .frame(maxWidth: .infinity, maxHeight: 110)
-                                
-                                HStack {
-                                    Text("Sync my purchase")
-                                        .font(.custom("CrimesOfGrindelwald", size: 20))
-                                        .foregroundColor(Color("Title"))
-                                        .shadow(color:Color(.gray), radius: 1)
-                                        .multilineTextAlignment(.center)
-                                }
-                            }
-                        }
-                        
                         Button {
                             Task {
                                 try await storeKitTool.purchase()
