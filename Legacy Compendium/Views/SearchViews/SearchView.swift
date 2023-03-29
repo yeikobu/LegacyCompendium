@@ -92,47 +92,72 @@ struct SearchView: View {
             VStack {
                 if isSearchButtonTapped {
                     HStack {
-                        VStack {
-                            Image(systemName: "magnifyingglass")
-                                .foregroundColor(Color("Border"))
-                                .font(.system(size: 16, weight: .medium, design: .rounded))
-                        }
-                        .matchedGeometryEffect(id: "magnifyingglass", in: animation)
-                        .padding(.leading, 10)
-                        .onTapGesture {
-                            searchViewModel.search()
-                        }
-                        
-                        ZStack(alignment: .leading) {
-                            if self.searchViewModel.searchedText.isEmpty {
-                                Text(verbatim: "Search magical stuff")
-                                    .font(.custom("UniversityOldstyleBook", size: 20))
+                        HStack {
+                            VStack {
+                                Image(systemName: "magnifyingglass")
                                     .foregroundColor(Color("Border"))
+                                    .font(.system(size: 16, weight: .medium, design: .rounded))
+                            }
+                            .padding(.leading, 10)
+                            .onTapGesture {
+                                searchViewModel.search()
                             }
                             
-                            TextField("", text: self.$searchViewModel.searchedText)
-                                .foregroundColor(Color("Border"))
-                                .font(.custom("UniversityOldstyleBook", size: 20))
-                                .keyboardType(.default)
-                                .ignoresSafeArea(.keyboard, edges: .bottom)
-                                .padding(.vertical, 5)
-                                .onChange(of: self.searchViewModel.searchedText) { newText in
-                                    if newText == "" {
-                                        searchViewModel.removeItems()
+                            ZStack(alignment: .leading) {
+                                if self.searchViewModel.searchedText.isEmpty {
+                                    Text(verbatim: "Search magical stuff")
+                                        .font(.custom("UniversityOldstyleBook", size: 20))
+                                        .foregroundColor(Color("Border"))
+                                }
+                                
+                                TextField("", text: self.$searchViewModel.searchedText)
+                                    .foregroundColor(Color("Border"))
+                                    .font(.custom("UniversityOldstyleBook", size: 20))
+                                    .keyboardType(.default)
+                                    .ignoresSafeArea(.keyboard, edges: .bottom)
+                                    .padding(.vertical, 5)
+                                    .onChange(of: self.searchViewModel.searchedText) { newText in
+                                        if newText == "" {
+                                            searchViewModel.removeItems()
+                                        }
                                     }
-                                }
-                                .onSubmit {
-                                    searchViewModel.search()
-                                }
+                                    .onSubmit {
+                                        searchViewModel.search()
+                                    }
+                            }
+                            
+                            VStack {
+                                Image(systemName: "xmark")
+                                    .foregroundColor(Color("Border"))
+                                    .font(.system(size: 16, weight: .medium, design: .rounded))
+                            }
+                            .padding(.trailing, 10)
+                            .onTapGesture {
+                                searchViewModel.removeItems()
+                                searchViewModel.searchedText = ""
+                            }
                         }
+                        .background(
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                    .fill(.ultraThinMaterial).blur(radius: 0)
+                                    .blur(radius: 0)
+                                    .opacity(0.85)
+                                
+                                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                    .fill(Color("Buttons"))
+                                    .blur(radius: 0)
+                                    .opacity(0.85)
+                            }
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 3)
+//                                .matchedGeometryEffect(id: "allsearch", in: animation)
+                        )
+//                        .matchedGeometryEffect(id: "magnifyingglassbackground", in: animation)
+                        .matchedGeometryEffect(id: "magnifyingglass", in: animation)
                         
-                        VStack {
-                            Image(systemName: "xmark")
-                                .foregroundColor(Color("Border"))
-                                .font(.system(size: 16, weight: .medium, design: .rounded))
-                        }
-                        .padding(.trailing, 10)
-                        .onTapGesture {
+                        Button {
                             withAnimation(.spring(response: 0.3, dampingFraction: 0.9)) {
                                 isSearchButtonTapped.toggle()
                             }
@@ -140,34 +165,42 @@ struct SearchView: View {
                             withAnimation(.easeInOut(duration: 0.2)) {
                                 showBackground = false
                             }
-                            
-                            searchViewModel.removeItems()
-                            searchViewModel.searchedText = ""
+                        } label: {
+                            VStack {
+                                Image(systemName: "xmark")
+                                    .foregroundColor(Color("Border"))
+                                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                            }
+                            .padding(10)
+                            .overlay(
+                                Circle()
+                                    .stroke(Color("Border"), lineWidth: 0.5)
+                                    .padding(4)
+                            )
+                            .background(
+                                ZStack {
+                                    Circle()
+                                        .fill(.ultraThinMaterial).blur(radius: 0)
+                                        .blur(radius: 0)
+                                        .opacity(0.5)
+                                    
+                                    Circle()
+                                        .fill(Color("Buttons"))
+                                        .blur(radius: 0)
+                                        .opacity(0.85)
+                                }
+                            )
+                            .overlay(Circle().stroke(Color("Border"), lineWidth: 4))
+                            .cornerRadius(40)
+                            .shadow(color: Color("Title").opacity(0.2), radius: 20)
                         }
+                        .offset(x: isSearchButtonTapped ? 0 : 3000)
                     }
-                    .background(
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 30, style: .continuous)
-                                .fill(.ultraThinMaterial).blur(radius: 0)
-                                .blur(radius: 0)
-                                .opacity(0.85)
-                            
-                            RoundedRectangle(cornerRadius: 30, style: .continuous)
-                                .fill(Color("Buttons"))
-                                .blur(radius: 0)
-                                .opacity(0.85)
-                        }
-                        .matchedGeometryEffect(id: "magnifyingglassbackground", in: animation)
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 3)
-                            .matchedGeometryEffect(id: "allsearch", in: animation)
-                    )
                     .padding(20)
                 }
                 
                 Button {
-                    withAnimation(.spring(response: 0.3, dampingFraction: 0.9)) {
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
                         isSearchButtonTapped.toggle()
                     }
                     
@@ -182,7 +215,6 @@ struct SearchView: View {
                             .foregroundColor(Color("Border"))
                             .font(.system(size: 16, weight: .medium, design: .rounded))
                     }
-                    .matchedGeometryEffect(id: "magnifyingglass", in: animation)
                     .padding(10)
                     .background(
                         ZStack {
@@ -196,16 +228,18 @@ struct SearchView: View {
                                 .blur(radius: 0)
                                 .opacity(0.85)
                         }
-                        .matchedGeometryEffect(id: "magnifyingglassbackground", in: animation)
                     )
                     .overlay(
                         RoundedRectangle(cornerRadius: 30).stroke(Color("Border"), lineWidth: 4)
-                            .matchedGeometryEffect(id: "allsearch", in: animation)
+//                            .matchedGeometryEffect(id: "allsearch", in: animation)
                     )
                     .cornerRadius(40)
                     .shadow(color: Color(.black).opacity(0.3), radius: 10)
                 }
+//                .matchedGeometryEffect(id: "magnifyingglassbackground", in: animation)
+                .matchedGeometryEffect(id: "magnifyingglass", in: animation)
                 .padding(20)
+                .opacity(isSearchButtonTapped ? 0 : 1)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
         }
