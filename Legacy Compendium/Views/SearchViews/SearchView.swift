@@ -105,7 +105,7 @@ struct SearchView: View {
                             
                             ZStack(alignment: .leading) {
                                 if self.searchViewModel.searchedText.isEmpty {
-                                    Text(verbatim: "Search magical stuff")
+                                    Text(verbatim: "Search for some magical stuff")
                                         .font(.custom("UniversityOldstyleBook", size: 20))
                                         .foregroundColor(Color("Border"))
                                 }
